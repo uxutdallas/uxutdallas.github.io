@@ -1,0 +1,128 @@
+.mobile-nav-shade {
+  z-index: -1;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.86) 100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  will-change: opacity;
+
+  &.is-active {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.mobile-menu-trigger {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, $secondary-3 0%, $primary 100%);
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.3);
+    position: fixed;
+    z-index: 13;
+    bottom: 15px;
+    right: 15px;
+
+    @media screen and (max-width: 950px) {
+      display: flex;
+    }
+
+    &.is-active {
+      span {
+        background: #1A1F21;
+      }
+    }
+
+    span {
+      width: 25px;
+      height: 2px;
+      display: block;
+      background: white;
+    }
+
+    span+span {
+      margin-top: 4px;
+    }
+}
+
+.mobile-navigation {
+  transform: scale(0);
+  position: fixed;
+  bottom: 82px;
+  right: 7%;
+  z-index: 9999;
+
+  &.is-active {
+    transform: scale(1);
+
+    li {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  ul {
+
+  }
+
+  li {
+    opacity: 0;
+    display: inline-block;
+    text-align: left;
+    transition: all 0.3s ease;
+    transform: translate3d(4px, 0px, 0);
+
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: 700;
+    cursor: pointer;
+
+    li:first-child {
+      transition-delay: 0.08s;
+    }
+
+    li:nth-child(2) {
+      transition-delay: 0.07s;
+    }
+
+    li:nth-child(3) {
+      transition-delay: 0.05s;
+    }
+
+    li:nth-child(4) {
+      transition-delay: 0.01s;
+    }
+
+    &:after {
+      display:block;
+      content: '';
+      position: relative;
+      top: 4px;
+      height: 2px;
+      background: #fff;
+      transform: scaleX(0.0001);
+      transition: transform 240ms ease-in-out;
+      box-shadow: inset -40px 0px 30px -25px, rgba($primary, .2);
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+    }
+  }
+}

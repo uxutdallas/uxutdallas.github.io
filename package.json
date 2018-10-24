@@ -1,0 +1,27 @@
+{
+  "name": "uxutdwebsite",
+  "version": "1.0.0",
+  "description": "website for UX club @ UTD",
+  "main": "index.html",
+  "repository": "https://github.com/ShayanJavadi/uxutdwebsite",
+  "author": "shayanjavadi <shayanjavadi1375@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "global": "^4.3.2",
+    "jump.js": "^1.0.2",
+    "popmotion": "^8.1.7",
+    "postcss-loader": "^2.0.10",
+    "waypoints": "^4.0.1",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0"
+  }
+}
