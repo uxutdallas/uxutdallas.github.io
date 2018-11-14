@@ -1,1 +1,2 @@
-# uxutdwebsite
+# UX Club at UT Dallas
+

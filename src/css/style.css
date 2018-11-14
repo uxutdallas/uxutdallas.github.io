@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  height: 10rem;
+  margin: 1rem 0;
+}
+
+.splash {
+  background: linear-gradient(135deg, #25336E 0%, #009FDA 36%, #48C4E5 81%, #9CDBF1 100%);
+  color: #ffffff;
+  height: 100%;
+  padding-top: 6rem;
+}
+
+.splash h2 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.navbar-brand img {
+  width: 10rem;
+}
+
+.event img {
+  width: 20rem;
+}
+
+.event {
+  margin-bottom: 5rem;
+}
+
+.collaborations img {
+  width: 8rem;
+}
+
+.mailing-list {
+  background: #222222;
+  color: #ffffff;
+}
+
+.btn.btn-primary {
+  background: transparent;
+  outline: none;
+  border: solid 1px #ffffff;
+}
+
+form {
+  padding: 4rem 2rem;
+}
+
+.footer {
+  background: #181d1f;
+  color: #ffffff;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+}
+
+.main-content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.mailing-list .container {
+  padding: 4rem 0;
+}
+
+.container.navbar-container {
+  padding: 0;
+}
+
+.lead {
+  font-size: 1rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .splash h2 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .copyright {
+    line-height: 48px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .splash {
+    padding-right: 15rem;
+    padding-left: 15rem;  
+  }
+
+  .logo {
+    height: 13rem;
+    margin: 1.2rem 0;
+  }
+
+  .collaborations img {
+    width: 11rem;
+  }
+
+  .event img {
+    width: 25rem;
+  }
+
+  .event .text-content {
+    padding-right: 10rem; 
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .splash {
+    padding-right: 25rem;
+    padding-left: 25rem;
+    padding-top: 3rem; 
+  }
+
+  .logo {
+    height: 15rem;
+    margin: 1.2rem 0;
+  }
+
+  .navbar-brand img {
+    width: 13rem;
+  }
+}
