@@ -1,187 +1,211 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>UX Club at UT Dallas</title>
-  </head>
-  <body>
-    <div class="container my-0 py-0">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/">
-          <img src="./src/imgs/logo-with-tagline.png" alt="UX UTD">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link events-link" href="#main">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
-            Join Us
-          </button>
+    <link rel="stylesheet" href="src/styles/mobile-styles.css">
 
-          <!-- Modal -->
-          <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2>Stay in the know!</h2>
-                  <p class="lead">Join our mailing list.</p>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="src/script/main.js"></script>
+
+    <title>UX Club at UT Dallas</title>
+</head>
+
+
+<body>
+    <div class="container my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">
+                <img src="resources/logo-with-tagline.png" alt="UX UTD">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/content/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link events-link" href="#main">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="src/content/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
+                    Join Us
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Stay in the know!</h2>
+                                <p class="lead">Join our mailing list.</p>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </div>
     <div class="container-fluid splash text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <img src="./src/imgs/logo-white.png" alt="UX UTD logo" class="logo">
-            <h2>The UX Club at UT Dallas aims to increase consciousness of User-Centered Design.</h2>
-            <p class="lead">Every experience you encounter with a product, service, or brand impacts your decisions. Possessing empathy, problem solving skills, and creative innovation are our core values that perfect people experiences.</p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="resources/logo-white.png" alt="UX UTD logo" class="logo">
+                    <h2>The UX Club at UT Dallas aims to increase consciousness of User-Centered Design.</h2>
+                    <p class="lead">Every experience you encounter with a product, service, or brand impacts your
+                        decisions.
+                        Possessing empathy, problem solving skills, and creative innovation are our core values that
+                        perfect
+                        people experiences.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <div class="main-content">
-      <div class="container" id="main">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="font-weight-bold">Upcoming Event</h2>
-            <p class="lead">Check out our Facebook for more events.</p>
-          </div>
+        <div class="container" id="main">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="font-weight-bold">Upcoming Event</h2>
+                    <p class="lead">Check out our Facebook for more events.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row-reverse event">
+                <div class="align-self-center text-center flex-fill">
+                    <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/45153596_1067944116700688_363339308230246400_o.jpg?_nc_cat=111&_nc_ht=scontent-dfw5-2.xx&oh=d87ea90d46ac17cf5dd9a38a09c2577a&oe=5C6F4550">
+                </div>
+                <div class="align-self-center font-weight-light flex-fill text-content">
+                    <h3 class="font-weight-normal">Wireframing 101</h3>
+                    <p>Wednesday, November 7 | 7 - 9 pm | ATC 2.918</p>
+                    <p>
+                        Learn the basics of wireframing - an essential step in the UX design process.
+                        Join us for a workshop where we'll talk about wireframing - the laying out of apps & websites -
+                        including how to do it and why it's important. Practice by redesigning an app or website that
+                        you
+                        already know, like Facebook or Snapchat!
+                        The workshop will be held at ATC 2.918 from 7 to 9 PM on November 7. Please RSVP on Facebook!
+                    </p>
+                    <a href="https://www.facebook.com/pg/uxutd/events/" class="btn btn-gradient">More Events</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="font-weight-bold">Collaborations</h2>
+                    <p class="lead">Organizations we've collaborated with.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center collaborations text-center">
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/adobe-logo.png" alt="Adobe">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/capital-one-logo.png" alt="Capital One">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/credera-logo.png" alt="Credera">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/project202-logo.png" alt="Project 202">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/big-design-logo.jpg" alt="Big Design">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/ladies-that-ux.png" alt="Ladies that UX">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/uxpa-logo.png" alt="UXPA">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/universal-mind-logo.png" alt="Universal Mind">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/ibm-logo.png" alt="IBM">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/bold-idea-logo.png" alt="Bold Idea">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/world-ia.png" alt="World IA">
+                </div>
+                <div class="m-3 align-self-center">
+                    <img src="resources/logos/austincsi-logo.svg" alt="Austin CSI">
+                </div>
+            </div>
         </div>
-        <div class="d-flex flex-column flex-md-row-reverse event">
-          <div class="align-self-center text-center flex-fill">
-            <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/45153596_1067944116700688_363339308230246400_o.jpg?_nc_cat=111&_nc_ht=scontent-dfw5-2.xx&oh=d87ea90d46ac17cf5dd9a38a09c2577a&oe=5C6F4550">
-          </div>
-          <div class="align-self-center font-weight-light flex-fill text-content">
-            <h3 class="font-weight-normal">Wireframing 101</h3>
-            <p>Wednesday, November 7 | 7 - 9 pm | ATC 2.918</p>
-            <p>
-              Learn the basics of wireframing - an essential step in the UX design process.
-              Join us for a workshop where we'll talk about wireframing - the laying out of apps & websites - including how to do it and why it's important. Practice by redesigning an app or website that you already know, like Facebook or Snapchat!
-              The workshop will be held at ATC 2.918 from 7 to 9 PM on November 7. Please RSVP on Facebook!
-            </p>
-            <a href="https://www.facebook.com/pg/uxutd/events/" class="btn btn-gradient">More Events</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h2 class="font-weight-bold">Collaborations</h2>
-            <p class="lead">Organizations we've collaborated with.</p>
-          </div>
-        </div>
-        <div class="d-flex flex-wrap justify-content-center collaborations text-center">
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/adobe-logo.png" alt="Adobe">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/capital-one-logo.png" alt="Capital One">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/credera-logo.png" alt="Credera">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/project202-logo.png" alt="Project 202">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/big-design-logo.jpg" alt="Big Design">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/ladies-that-ux.png" alt="Ladies that UX">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/uxpa-logo.png" alt="UXPA">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/universal-mind-logo.png" alt="Universal Mind">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/ibm-logo.png" alt="IBM">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/bold-idea-logo.png" alt="Bold Idea">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/world-ia.png" alt="World IA">
-          </div>
-          <div class="m-3 align-self-center">
-            <img src="./src/imgs/logos/austincsi-logo.svg" alt="Austin CSI">
-          </div>
-        </div>
-      </div>
     </div>
     <div class="container-fluid mailing-list">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 d-none d-md-block">
-            <h2>Stay in the know!</h2>
-            <p>Sign up for emails to get updates about our upcoming events and other UX/UI events around the DFW area.</p>
-          </div>
-          <div class="col-12 col-md-6">
-            <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&id=64ddf2eab7" method="post">
-              <div class="form-group">
-                <label for="user_email" class="d-md-none">Join our mailing list!</label>
-                <input type="email" name="MERGE0" class="form-control" id="user_email" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <button type="submit" class="btn btn-clear">Sign Up</button>
-            </form>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-none d-md-block">
+                    <h2>Stay in the know!</h2>
+                    <p>Sign up for emails to get updates about our upcoming events and other UX/UI events around the DFW
+                        area.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&id=64ddf2eab7"
+                          method="post">
+                        <div class="form-group">
+                            <label for="user_email" class="d-md-none">Join our mailing list!</label>
+                            <input type="email" name="MERGE0" class="form-control" id="user_email"
+                                   aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.
+                            </small>
+                        </div>
+                        <button type="submit" class="btn btn-clear">Sign Up</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <div class="container-fluid footer text-center">
-      <div class="container py-4">
-        <div class="d-flex flex-column flex-md-row-reverse">
-          <div class="social-links">
-            <a href="https://www.facebook.com/uxutd/">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="https://twitter.com/UX_UTD">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-            <a href="https://www.instagram.com/ux_utd/">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="mailto:uxutdallas@gmail.com">
-              <i class="fas fa-envelope-square"></i>
-            </a>
-          </div>
-          <div class="mr-md-auto copyright">
-            <p>&copy; Copyright <script>document.write(new Date().getFullYear())</script> UX UTD</p>
-          </div>
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row-reverse">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/uxutd/">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://twitter.com/UX_UTD">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ux_utd/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:uxutdallas@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                </div>
+                <div class="mr-md-auto copyright">
+                    <p>&copy; Copyright
+                        <script>document.write(new Date().getFullYear())</script>
+                        UX UTD
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
-  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="./src/js/main.js"></script>
+</body>
+
 </html>
