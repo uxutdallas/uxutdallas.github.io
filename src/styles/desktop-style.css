@@ -1,0 +1,60 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .splash h2 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .copyright {
+    line-height: 48px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .splash {
+    padding-right: 15rem;
+    padding-left: 15rem;
+  }
+
+  .logo {
+    height: 13rem;
+    margin: 1.2rem 0;
+  }
+
+  .collaborations img {
+    width: 11rem;
+  }
+
+  .event img {
+    width: 25rem;
+  }
+
+  .event .text-content {
+    padding-right: 10rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .splash {
+    padding-right: 25rem;
+    padding-left: 25rem;
+    padding-top: 3rem;
+  }
+
+  .logo {
+    height: 15rem;
+    margin: 1.2rem 0;
+  }
+
+  .navbar-brand img {
+    width: 13rem;
+  }
+}

@@ -1,5 +1,13 @@
+<!-- TODO
+Join us button
+Apply button
+About us
+Contact us - form
+Making events a new page
+-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,6 +17,7 @@
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/styles/mobile-styles.css">
+    <link rel="stylesheet" href="src/styles/desktop-style.css">
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/popper.js/dist/popper.min.js"></script>
@@ -21,21 +30,25 @@
 
 <body>
     <div class="container my-0 py-0">
+        <!--menu bar-->
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="/">
-                <img src="resources/logo-with-tagline.png" alt="UX UTD">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="resources/logo-with-tagline.png" alt="UX UTD" onclick="window.open(index.html)">
             </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="src/content/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link events-link" href="#main">Events</a>
+                        <a class="nav-link events-link" href="./src/content/event.html">Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="src/content/contact.html">Contact</a>
@@ -51,16 +64,22 @@
                      aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
-                            <div class="modal-header">
+                            <div class="modal-header text-center">
                                 <h2>Stay in the know!</h2>
-                                <p class="lead">Join our mailing list.</p>
-                            </div>
-                            <div class="modal-body">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
 
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+
+                            <div class="md-form mb-9">
+                                <input type="email" id="form2" class="form-control validate" style="padding: 0 1em">
+                                <label data-error="wrong" data-success="right" for="form2" style="padding: 0 1em">Your email</label>
+                            </div>
+
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary">Send</button>
                             </div>
                         </div>
                     </div>
@@ -68,7 +87,10 @@
             </div>
         </nav>
     </div>
-    <div class="container-fluid splash text-center">
+
+
+
+    <div class="container-fluid splash text-center" id="">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -83,8 +105,13 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="main-content">
-        <div class="container" id="main">
+        <div class="container" id="upcoming-event">
+
+            <!--events-->
             <div class="row">
                 <div class="col-12">
                     <h2 class="font-weight-bold">Upcoming Event</h2>
@@ -109,6 +136,8 @@
                     <a href="https://www.facebook.com/pg/uxutd/events/" class="btn btn-gradient">More Events</a>
                 </div>
             </div>
+
+            <!--collaborations-->
             <div class="row">
                 <div class="col-12">
                     <h2 class="font-weight-bold">Collaborations</h2>
@@ -155,6 +184,10 @@
             </div>
         </div>
     </div>
+
+
+    <!--footer-->
+    <!--mailing list-->
     <div class="container-fluid mailing-list">
         <div class="container">
             <div class="row">
@@ -180,6 +213,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="container-fluid footer text-center">
         <div class="container py-4">
             <div class="d-flex flex-column flex-md-row-reverse">
@@ -199,13 +234,15 @@
                 </div>
                 <div class="mr-md-auto copyright">
                     <p>&copy; Copyright
-                        <script>document.write(new Date().getFullYear())</script>
+                        <script>document.write(String(new Date().getFullYear()))</script>
                         UX UTD
                     </p>
                 </div>
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>

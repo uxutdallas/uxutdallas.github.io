@@ -9,3 +9,4 @@ eventsLink.addEventListener('click', function (e) {
     inline: 'nearest'
   });
 });
+
