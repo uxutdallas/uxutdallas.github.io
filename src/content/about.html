@@ -10,27 +10,142 @@
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/popper.js/dist/popper.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../script/main.js"></script>
-    <script src="../script/main.js"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous">
-    </script>
+    <!--<script src="../script/main.js"></script>-->
 
-    <script>
-        $(function(){
-            $("#footer").load("footer.html");
-        });
-    </script>
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup{background:#fff;clear:left; font:14px Helvetica,Arial,sans-serif;text-align: center  }
+    </style>
 
     <title>UX Club at UT Dallas</title>
 </head>
 
 <body>
-    <div id="header-1"></div>
+    <!--header-->
+    <div class="container my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
 
-    <div id="footer-1"></div>
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../resources/logo-with-tagline.png" alt="UX UTD" onclick="window.open(index.html)">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../src/content/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link events-link" href="../../src/content/event.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../src/content/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfsD04hdYnxFRB4GTlVLadGESocnUzPTgUK0Xl2mTfq4bQ_lQ/viewform">Apply</a>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
+                    Join Us
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <h2>Join our mailing list</h2>
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body mx-3">
+                                <div id="mc_embed_signup">
+                                    <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=64ddf2eab7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                        <div class="clear">
+                                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" class="btn btn-primary">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!--footer-->
+    <div class="container-fluid mailing-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-none d-md-block">
+                    <br>
+                    <br>
+                    <h2>Stay in the know!</h2>
+                    <p>Sign up for emails to get updates about our upcoming events and other UX/UI events around the DFW
+                        area.</p>
+                </div>
+                <div class="col-12 col-md-6" id="mailing-list">
+                    <form action="https://uxutd.us9.list-manage.com/subscribe?u=b3eeeea1ecb7754e8a0f6cdca&id=64ddf2eab7"
+                          method="post">
+                        <div class="form-group">
+                            <label for="user_email" class="d-md-none">Join our mailing list!</label>
+                            <input type="email" name="MERGE0" class="form-control" id="user_email"
+                                   aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.
+                            </small>
+                        </div>
+                        <button type="submit" class="btn btn-clear">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer text-center">
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row-reverse">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/uxutd/">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://twitter.com/UX_UTD">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ux_utd/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:uxutdallas@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                </div>
+                <div class="mr-md-auto copyright">
+                    <p>&copy; Copyright
+                        <script>document.write(String(new Date().getFullYear()))</script>
+                        UX UTD
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
