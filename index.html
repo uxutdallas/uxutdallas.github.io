@@ -1,273 +1,427 @@
 <!DOCTYPE html>
 <html>
-  <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#48C4E5"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css">
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=gb18030">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <meta name="theme-color"
+          content="#48C4E5"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="./vendor/font-awesome/css/font-awesome.min.css">
     <title>UX Club at UT Dallas</title>
     <script src="./lib/bundle.js"></script>
-    <link rel="stylesheet" href="./src/css/style.css">
-  </head>
-  <body>
+    <link rel="stylesheet"
+          href="./src/css/style.css">
+</head>
+<body>
     <header>
-      <nav class="navbar">
-        <div class="navbar-lower-wrapper">
-          <div class="logo-wrapper">
-            <img src="./src/imgs/logo-with-tagline.png" alt="UX UTD logo" class="logo introduction-node">
-          </div>
-          <div class="nav-items-wrapper">
-            <ul>
-              <div><li class="events-node">Events</li></div>
-              <div><li class="sponsors-node">Sponsors</li></div>
-              <div><li class="contact-node">Contact</li></div>
-              <div onclick="location.href = 'https://goo.gl/forms/N2wunF2R1YotcqtG2';"><li class="join-node">Apply</li></div>
-            </ul>
-          </div>
-          <div class="nav-button-wrapper">
-            <button type="button" name="button" class="gradient-button open-modal">Join Us</button>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="section-introduction" id="introduction">
-      <div class="section-introduction-content-wrapper">
-        <img src="./src/imgs/logo-white.png" alt="UX UTD logo" class="logo move-up fade-in one">
-        <div class="club-description-wrapper">
-          <h1 class="move-up fade-in two">The UX Club at UT Dallas aims to increase consciousness of User-Centered Design.<h1>
-          <p class="move-up fade-in three">Every experience you encounter with a product, service, or brand impacts your life. Possessing empathy, problem solving skills, and creative innovation are our core values that perfect people experiences.</p>
-        </div>
-        <div class="down-arrow-wrapper events-node">
-          <p>Learn More</p>
-          <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-        </div>
-      </div>
-    </div>
-    <div class="section-events" id="events">
-      <div class="section-content-wrapper">
-        <h1 class="header">Events</h1>
-        <div class="section-main-event">
-          <div class="section-event-left">
-            <h2>Adobe Workshop 1: App Brainstorming</h2>
-            <p class="event-date">Wednesday, February 20 | 7 - 9 pm | ATC 2.918</p>
-            <p class="event-description">
-              This semester we will be hosting events for a 3-part workshop series focused on teaching the UX design process to members.
-              <br>
-              Part one of this series - App Brainstorming - will focus on creating user personas, deciding key features of the app, and discussing information architecture.
-              <br>
-              This event is a part of the UX Club's partnership with the Adobe Creative Club network. We will be using Adobe Stock, InDesign CC, and Behance.
-              <br>
-              Please RSVP on the Facebook event page!
-            </p>
-            <button onclick="location.href='https://www.facebook.com/events/323507161618337/';"  type="button" name="button" class="gradient-button">Learn More</button>
-          </div>
-          <div class="section-event-right" style="justify-content: center">
-            <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/51805380_1134965239998575_1285328203811913728_o.jpg?_nc_cat=108&_nc_ht=scontent-dfw5-2.xx&oh=a3f7215a6d933adf13611ebacae7f0cc&oe=5CDD7338" style="width: 20rem" class="logo">
-          </div>
-        </div>
-        <!-- <div class="section-other-events">
-          <div class="event">
-            <h2 class="event-title">End of Semester Party</h2>
-            <p class="event-date">Thurs 6/4, 4:00 PM 锟斤拷ATC steps</p>
-            <p class="event-description">Join the UX CD f of Semester Party with food &amp; drinks, a photobooth, and swag giveaways!</p>
-            <button type="button" name="button" class="gradient-button">Learn More</button>
-          </div>
-          <div class="event">
-            <h2 class="event-title">Party of Something</h2>
-            <p class="event-date">Thurs 6/4, 4:00 PM 锟斤拷ATC steps</p>
-            <p class="event-description">Join the UX Club at UTD for an End of Semester Party with food &amp; drinks, a photobooth, a giveaways!</p>
-            <button type="button" name="button" class="gradient-button">Learn More</button>
-
-          </div>
-          <div class="event">
-            <h2 class="event-title">Event thing</h2>
-            <p class="event-date">Thurs 6/4, 4:00 PM 锟斤拷ATC steps</p>
-            <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp, </p>
-            <button type="button" name="button" class="gradient-button">Learn More</button>
-
-          </div>
-        </div> -->
-      </div>
-    </div>
-    <div class="section-friends" id="sponsors">
-      <div class="section-friends-content-wrapper section-content-wrapper">
-        <div class="friends-title-wrapper">
-          <h1>Partners</h1>
-          <p>Companies we collaborate with.</p>
-        </div>
-        <div class="friends">
-          <div class="friends-row">
-            <div class="friend">
-              <img src="./src/imgs/logos/adobe-logo.png" alt="adobe" class="friend-logo">
-            </div>
-            <div class="friend">
-              <img src="./src/imgs/logos/capital-one-logo.png" alt="capital one" class="friend-logo">
-            </div>
-            <div class="friend">
-              <img src="./src/imgs/logos/credera-logo.png" alt="credera" class="friend-logo">
-            </div>
-            <div class="friend">
-              <img src="./src/imgs/logos/project202-logo.png" alt="projekt202" class="friend-logo">
-            </div>
-          </div>
-          <div class="friends-row">
-            <div class="friend">
-              <img src="./src/imgs/logos/big-design-logo.jpg" alt="big design" class="friend-logo">
-            </div>
-            <div class="friend">
-              <img src="./src/imgs/logos/ladies-that-ux.png" alt="ladies that ux" class="friend-logo">
-            </div>
-            <div class="friend">
-              <img src="./src/imgs/logos/uxpa-logo.png" alt="uxpa" class="uxpa-logo friend-logo">
-            </div>
-            <div class="friend">
-              <img src="./src/imgs/logos/universal-mind-logo.png" alt="universal mind" class="friend-logo">
-            </div>
-          </div>
-          <div class="friends-row">
-            <div class="friend">
-              <img src="./src/imgs/logos/ibm-logo.png" alt="ibm logo" class="friend-logo">
-            </div>
-            <div class="friend">
-              <img src="./src/imgs/logos/bold-idea-logo.png" alt="bold idea logo" class="friend-logo">
-            </div>
-            <div class="friend">
-              <img src="./src/imgs/logos/world-ia.png" alt="world ia logo" class="uxpa-logo friend-logo">
-            </div>
-            <div class="friend">
-              <img src="./src/imgs/logos/austincsi-logo.svg" alt="austin csi logo" class="friend-logo">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer" id="contact">
-      <div class="footer-content-wrapper">
-        <div class="footer-left">
-          <div class="content-wrapper">
-            <div class="facebook">
-
-              <div class="fb-page" data-href="https://www.facebook.com/uxutd/" data-tabs="timeline" data-width="210" data-height="250" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/uxutd/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uxutd/">The UX Club at UT Dallas</a></blockquote></div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-middle">
-          <div class="content-wrapper">
-            <div class="twitter">
-              <a class="twitter-timeline" data-width="210" data-height="250" data-theme="light" href="https://twitter.com/UX_UTD?ref_src=twsrc%5Etfw">Tweets by UX_UTD</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-right">
-          <div class="content-wrapper">
-            <div class="header-container">
-              <h3>Sign up for updates</h3>
-              <p>Keep up with announcements and event updates!</p>
-            </div>
-            <div class="footer-email-signup-form-container" id="mc-embed_signup">
-              <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="input-container" id="mc_embed_signup_scroll">
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your email address" required>
-                  <button type="submit" name="button" id="mc-embedded-subscribe">Add me!</button>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b3eeeea1ecb7754e8a0f6cdca_e1c6c0ac63" tabindex="-1" value=""></div>
+        <nav class="navbar">
+            <div class="navbar-lower-wrapper">
+                <div class="logo-wrapper">
+                    <img src="./src/imgs/logo-with-tagline.png"
+                         alt="UX UTD logo"
+                         class="logo introduction-node">
                 </div>
-              </form>
+                <div class="nav-items-wrapper">
+                    <ul>
+                        <div>
+                            <li class="events-node">Events</li>
+                        </div>
+                        <div>
+                            <li class="sponsors-node">Sponsors</li>
+                        </div>
+                        <div>
+                            <li class="contact-node">Contact</li>
+                        </div>
+                        <div onclick="location.href = 'https://goo.gl/forms/N2wunF2R1YotcqtG2';">
+                            <li class="join-node">Apply</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="nav-button-wrapper">
+                    <button type="button"
+                            name="button"
+                            class="gradient-button open-modal">Join Us
+                    </button>
+                </div>
             </div>
-            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-            <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-            <div class="responses-wrapper">
-              <div id="mce-responses" class="clear">
-                <div class="response error" id="mce-error-response" style="display:none"></div>
-                <div class="response success" id="mce-success-response" style="display:none"></div>
-              </div>
+        </nav>
+    </header>
+    <div class="section-introduction"
+         id="introduction">
+        <div class="section-introduction-content-wrapper">
+            <img src="./src/imgs/logo-white.png"
+                 alt="UX UTD logo"
+                 class="logo move-up fade-in one">
+            <div class="club-description-wrapper">
+                <h1 class="move-up fade-in two">The UX Club at UT Dallas aims to increase consciousness of User-Centered
+                    Design.
+                    <h1>
+                        <p class="move-up fade-in three">Every experience you encounter with a product, service, or
+                            brand impacts your life. Possessing empathy, problem solving skills, and creative innovation
+                            are our core values that perfect people experiences.</p>
             </div>
-          </div>
+            <div class="down-arrow-wrapper events-node">
+                <p>Learn More</p>
+                <i class="fa fa-arrow-circle-o-down"
+                   aria-hidden="true"></i>
+            </div>
         </div>
-      </div>
+    </div>
+    <div class="section-events"
+         id="events">
+        <div class="section-content-wrapper">
+            <h1 class="header">Events</h1>
+            <div class="section-main-event">
+                <div class="section-event-left">
+                    <h2>Adobe Workshop 2: Wireframing</h2>
+                    <p class="event-date">Wednesday, March 27 | 7 - 9 pm | ATC 2.918</p>
+                    <p class="event-description">
+                        This semester we will be hosting events for a 3-part workshop series focused on teaching the UX
+                        design process to members.
+                        <br>
+                        We will be focused on building wireframes from the user personas, key features, and the information architecture we had discussed in the last part of the workshop
+                        <br>
+                        This event is a part of the UX Club's partnership with the Adobe Creative Club network. We will
+                        be using Adobe Stock, InDesign CC, and Behance. We're also collaborating with another UTD
+                        student organization, Hack To Help
+                        <br>
+                        Please RSVP on the Facebook event page!
+                    </p>
+                    <button onclick="location.href='https://www.facebook.com/events/372995443555262/';"
+                            type="button"
+                            name="button"
+                            class="gradient-button">Learn More
+                    </button>
+                </div>
+                <div class="section-event-right"
+                     style="justify-content: center">
+                    <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/51805380_1134965239998575_1285328203811913728_o.jpg?_nc_cat=108&_nc_ht=scontent-dfw5-2.xx&oh=a3f7215a6d933adf13611ebacae7f0cc&oe=5CDD7338"
+                         style="width: 20rem"
+                         class="logo">
+                </div>
+            </div>
+            <!-- <div class="section-other-events">
+              <div class="event">
+                <h2 class="event-title">End of Semester Party</h2>
+                <p class="event-date">Thurs 6/4, 4:00 PM ��ATC steps</p>
+                <p class="event-description">Join the UX CD f of Semester Party with food &amp; drinks, a photobooth, and swag giveaways!</p>
+                <button type="button" name="button" class="gradient-button">Learn More</button>
+              </div>
+              <div class="event">
+                <h2 class="event-title">Party of Something</h2>
+                <p class="event-date">Thurs 6/4, 4:00 PM ��ATC steps</p>
+                <p class="event-description">Join the UX Club at UTD for an End of Semester Party with food &amp; drinks, a photobooth, a giveaways!</p>
+                <button type="button" name="button" class="gradient-button">Learn More</button>
+
+              </div>
+              <div class="event">
+                <h2 class="event-title">Event thing</h2>
+                <p class="event-date">Thurs 6/4, 4:00 PM ��ATC steps</p>
+                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp, </p>
+                <button type="button" name="button" class="gradient-button">Learn More</button>
+
+              </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="section-friends"
+         id="sponsors">
+        <div class="section-friends-content-wrapper section-content-wrapper">
+            <div class="friends-title-wrapper">
+                <h1>Partners</h1>
+                <p>Companies we collaborate with.</p>
+            </div>
+            <div class="friends">
+                <div class="friends-row">
+                    <div class="friend">
+                        <img src="./src/imgs/logos/adobe-logo.png"
+                             alt="adobe"
+                             class="friend-logo">
+                    </div>
+                    <div class="friend">
+                        <img src="./src/imgs/logos/capital-one-logo.png"
+                             alt="capital one"
+                             class="friend-logo">
+                    </div>
+                    <div class="friend">
+                        <img src="./src/imgs/logos/credera-logo.png"
+                             alt="credera"
+                             class="friend-logo">
+                    </div>
+                    <div class="friend">
+                        <img src="./src/imgs/logos/project202-logo.png"
+                             alt="projekt202"
+                             class="friend-logo">
+                    </div>
+                </div>
+                <div class="friends-row">
+                    <div class="friend">
+                        <img src="./src/imgs/logos/big-design-logo.jpg"
+                             alt="big design"
+                             class="friend-logo">
+                    </div>
+                    <div class="friend">
+                        <img src="./src/imgs/logos/ladies-that-ux.png"
+                             alt="ladies that ux"
+                             class="friend-logo">
+                    </div>
+                    <div class="friend">
+                        <img src="./src/imgs/logos/uxpa-logo.png"
+                             alt="uxpa"
+                             class="uxpa-logo friend-logo">
+                    </div>
+                    <div class="friend">
+                        <img src="./src/imgs/logos/universal-mind-logo.png"
+                             alt="universal mind"
+                             class="friend-logo">
+                    </div>
+                </div>
+                <div class="friends-row">
+                    <div class="friend">
+                        <img src="./src/imgs/logos/ibm-logo.png"
+                             alt="ibm logo"
+                             class="friend-logo">
+                    </div>
+                    <div class="friend">
+                        <img src="./src/imgs/logos/bold-idea-logo.png"
+                             alt="bold idea logo"
+                             class="friend-logo">
+                    </div>
+                    <div class="friend">
+                        <img src="./src/imgs/logos/world-ia.png"
+                             alt="world ia logo"
+                             class="uxpa-logo friend-logo">
+                    </div>
+                    <div class="friend">
+                        <img src="./src/imgs/logos/austincsi-logo.svg"
+                             alt="austin csi logo"
+                             class="friend-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"
+         id="contact">
+        <div class="footer-content-wrapper">
+            <div class="footer-left">
+                <div class="content-wrapper">
+                    <div class="facebook">
+
+                        <div class="fb-page"
+                             data-href="https://www.facebook.com/uxutd/"
+                             data-tabs="timeline"
+                             data-width="210"
+                             data-height="250"
+                             data-small-header="true"
+                             data-adapt-container-width="true"
+                             data-hide-cover="true"
+                             data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/uxutd/"
+                                        class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uxutd/">The UX
+                                Club at UT Dallas</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="content-wrapper">
+                    <div class="twitter">
+                        <a class="twitter-timeline"
+                           data-width="210"
+                           data-height="250"
+                           data-theme="light"
+                           href="https://twitter.com/UX_UTD?ref_src=twsrc%5Etfw">Tweets by UX_UTD</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="content-wrapper">
+                    <div class="header-container">
+                        <h3>Sign up for updates</h3>
+                        <p>Keep up with announcements and event updates!</p>
+                    </div>
+                    <div class="footer-email-signup-form-container"
+                         id="mc-embed_signup">
+                        <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
+                              method="post"
+                              id="mc-embedded-subscribe-form"
+                              name="mc-embedded-subscribe-form"
+                              class="validate"
+                              target="_blank"
+                              novalidate>
+                            <div class="input-container"
+                                 id="mc_embed_signup_scroll">
+                                <input type="email"
+                                       value=""
+                                       name="EMAIL"
+                                       class="email"
+                                       id="mce-EMAIL"
+                                       placeholder="your email address"
+                                       required>
+                                <button type="submit"
+                                        name="button"
+                                        id="mc-embedded-subscribe">Add me!
+                                </button>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;"
+                                     aria-hidden="true"><input type="text"
+                                                               name="b_b3eeeea1ecb7754e8a0f6cdca_e1c6c0ac63"
+                                                               tabindex="-1"
+                                                               value=""></div>
+                            </div>
+                        </form>
+                    </div>
+                    <script type="text/javascript"
+                            src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+                    <script type="text/javascript">(function ($) {
+                        window.fnames = new Array();
+                        window.ftypes = new Array();
+                        fnames[0] = 'EMAIL';
+                        ftypes[0] = 'email';
+                    }(jQuery));
+                    var $mcj = jQuery.noConflict(true);</script>
+                    <div class="responses-wrapper">
+                        <div id="mce-responses"
+                             class="clear">
+                            <div class="response error"
+                                 id="mce-error-response"
+                                 style="display:none"></div>
+                            <div class="response success"
+                                 id="mce-success-response"
+                                 style="display:none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="gutter">
-      <div class="gutter-left">
-        <div class="header">
-          <p>Built with <i class="fa fa-heart" aria-hidden="true"></i> by the UX club @ UTD</p>
-        </div>
-      </div>
-      <div class="gutter-right">
-        <div class="links">
-          <a href="mailto:uxutdallas@gmail.com">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.facebook.com/uxutd/">
-            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-          </a>
-          <a href="https://twitter.com/ux_utd?lang=en">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/ux_utd/">
-            <div class="instagram-logo-container">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+        <div class="gutter-left">
+            <div class="header">
+                <p>Built with <i class="fa fa-heart"
+                                 aria-hidden="true"></i> by the UX club @ UTD</p>
             </div>
-          </a>
+        </div>
+        <div class="gutter-right">
+            <div class="links">
+                <a href="mailto:uxutdallas@gmail.com">
+                    <i class="fa fa-envelope"
+                       aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/uxutd/">
+                    <i class="fa fa-facebook-official"
+                       aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/ux_utd?lang=en">
+                    <i class="fa fa-twitter"
+                       aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/ux_utd/">
+                    <div class="instagram-logo-container">
+                        <i class="fa fa-instagram"
+                           aria-hidden="true"></i>
+                        <i class="fa fa-instagram"
+                           aria-hidden="true"></i>
+                    </div>
+                </a>
 
-        </div>
-      </div>
-    </div>
-  </body>
-  <div class="modal-shade"></div>
-  <div class="modal-container">
-    <div class="modal">
-      <i class="fa fa-times modal-cancel" aria-hidden="true"></i>
-      <div class="modal-header">
-      </div>
-      <div class="modal-middle">
-        <h2>Join our mailing list to stay up to date!</h2>
-        <p></p>
-        <div class="footer-email-signup-form-container" id="mc-embed_signup">
-          <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div class="input-container" id="mc_embed_signup_scroll">
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your email address" required>
-              <button type="submit" name="button" id="mc-embedded-subscribe">Add me!</button>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b3eeeea1ecb7754e8a0f6cdca_e1c6c0ac63" tabindex="-1" value=""></div>
             </div>
-          </form>
         </div>
-      </div>
-      <div class="modal-footer">
-        <div class="links">
-          <a href="https://www.facebook.com/uxutd/">
-            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-          </a>
-          <a href="https://twitter.com/ux_utd?lang=en">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/ux_utd/">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-          <a href="mailto:uxutdallas@gmail.com">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="mobile-nav-shade"></div>
-  <div class="mobile-navigation">
+</body>
+<div class="modal-shade"></div>
+<div class="modal-container">
+    <div class="modal">
+        <i class="fa fa-times modal-cancel"
+           aria-hidden="true"></i>
+        <div class="modal-header">
+        </div>
+        <div class="modal-middle">
+            <h2>Join our mailing list to stay up to date!</h2>
+            <p></p>
+            <div class="footer-email-signup-form-container"
+                 id="mc-embed_signup">
+                <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
+                      method="post"
+                      id="mc-embedded-subscribe-form"
+                      name="mc-embedded-subscribe-form"
+                      class="validate"
+                      target="_blank"
+                      novalidate>
+                    <div class="input-container"
+                         id="mc_embed_signup_scroll">
+                        <input type="email"
+                               value=""
+                               name="EMAIL"
+                               class="email"
+                               id="mce-EMAIL"
+                               placeholder="your email address"
+                               required>
+                        <button type="submit"
+                                name="button"
+                                id="mc-embedded-subscribe">Add me!
+                        </button>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"
+                             aria-hidden="true"><input type="text"
+                                                       name="b_b3eeeea1ecb7754e8a0f6cdca_e1c6c0ac63"
+                                                       tabindex="-1"
+                                                       value=""></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="links">
+                <a href="https://www.facebook.com/uxutd/">
+                    <i class="fa fa-facebook-official"
+                       aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/ux_utd?lang=en">
+                    <i class="fa fa-twitter"
+                       aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/ux_utd/">
+                    <i class="fa fa-instagram"
+                       aria-hidden="true"></i>
+                </a>
+                <a href="mailto:uxutdallas@gmail.com">
+                    <i class="fa fa-envelope-o"
+                       aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile-nav-shade"></div>
+<div class="mobile-navigation">
     <ul>
-      <div><li class="events-node mobile-nav-li">Events</li></div>
-      <div><li class="sponsors-node mobile-nav-li">Sponsors</li></div>
-      <div><li class="contact-node mobile-nav-li">Contact</li></div>
-      <div onclick="location.href = 'https://goo.gl/forms/N2wunF2R1YotcqtG2';"><li class="join-node mobile-nav-li">Apply</li></div>
+        <div>
+            <li class="events-node mobile-nav-li">Events</li>
+        </div>
+        <div>
+            <li class="sponsors-node mobile-nav-li">Sponsors</li>
+        </div>
+        <div>
+            <li class="contact-node mobile-nav-li">Contact</li>
+        </div>
+        <div onclick="location.href = 'https://goo.gl/forms/N2wunF2R1YotcqtG2';">
+            <li class="join-node mobile-nav-li">Apply</li>
+        </div>
     </ul>
-  </div>
-  <div class="mobile-menu-trigger">
+</div>
+<div class="mobile-menu-trigger">
     <div class="">
-      <span></span>
-      <span></span>
-      <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-  </div>
-  <div id="fb-root"></div>
+</div>
+<div id="fb-root"></div>
 </html>
