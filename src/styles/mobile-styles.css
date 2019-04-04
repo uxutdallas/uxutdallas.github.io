@@ -1,145 +1,150 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
 
 html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
-  height: 10rem;
-  margin: 1rem 0;
+    height: 10rem;
+    margin: 1rem 0;
 }
 
 .splash {
-  background: linear-gradient(135deg, #25336E 0%, #009FDA 36%, #48C4E5 81%, #9CDBF1 100%);
-  color: #ffffff;
-  height: 100%;
-  padding-top: 6rem;
+    background: linear-gradient(135deg, #25336E 0%, #009FDA 36%, #48C4E5 81%, #9CDBF1 100%);
+    color: #ffffff;
+    height: 100%;
+    padding-top: 6rem;
 }
 
 .splash h2 {
-  font-weight: 700;
-  font-size: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .navbar-brand img {
-  width: 10rem;
+    width: 10rem;
 }
 
 .navbar .nav-item a.nav-link {
-  color: #009FDA;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
+    color: #009FDA;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
 }
 
 .navbar .nav-item a.nav-link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #009FDA;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #009FDA;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar .nav-item a.nav-link:hover,
 .navbar .nav-item a.nav-link:active,
 .navbar .nav-item a.nav-link:focus {
-  color: #009FDA;
+    color: #009FDA;
 }
 
 .navbar .nav-item a.nav-link:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(0.8);
-  transform: scaleX(0.8);
+    visibility: visible;
+    -webkit-transform: scaleX(0.8);
+    transform: scaleX(0.8);
 }
 
 .event img {
-  width: 20rem;
+    width: 20rem;
 }
 
 .event {
-  margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .collaborations img {
-  width: 8rem;
+    width: 8rem;
 }
 
 .mailing-list {
-  background: #222222;
-  color: #ffffff;
+    background: #222222;
+    color: #ffffff;
 }
 
 .btn-gradient {
-  text-decoration: none;
-  color: #ffffff;
-  transition: all 0.2s ease;
-  background: linear-gradient(135deg, #009FDA 0%, #48C4E5 100%);
-  font-weight: 700;
-  box-shadow: 0 1.5px 3.5px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.14);
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    background: linear-gradient(135deg, #009FDA 0%, #48C4E5 100%);
+    font-weight: 700;
+    box-shadow: 0 1.5px 3.5px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.14);
 }
 
 .btn-gradient:hover {
-  box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.24);
-  color: #ffffff;
+    box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.24);
+    color: #ffffff;
 }
 
 .btn-clear {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #fff;
-  font-weight: normal;
-  font-size: 14px;
-  height: 43px;
-  transition: all 0.5s;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #fff;
+    font-weight: normal;
+    font-size: 14px;
+    height: 43px;
+    transition: all 0.5s;
 }
 
 .btn-clear:hover {
-  background-color: #fff;
-  color: #222;
-  font-weight: 700;
+    background-color: #fff;
+    color: #222;
+    font-weight: 700;
 }
 
 form {
-  padding: 4rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .footer {
-  background: #181d1f;
-  color: #ffffff;
+    background: #181d1f;
+    color: #ffffff;
 }
 
 .social-links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
 }
 
 .social-links a:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .main-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .mailing-list .container {
-  padding: 4rem 0;
+    padding: 4rem 0;
 }
 
 .container.navbar-container {
-  padding: 0;
+    padding: 0;
 }
 
 .lead {
-  font-size: 1rem;
+    font-size: 1rem;
+}
+
+.parallax-window{
+    min-height: 400px;
+    background: transparent;
 }

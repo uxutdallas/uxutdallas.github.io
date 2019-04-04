@@ -6,7 +6,7 @@ const recentEventsTemplate =
               </div>
               <div class="align-self-center font-weight-light flex-fill text-content">
                 <h3 class="font-weight-normal event-name"></h3>
-                <p>Wednesday, November 7 | 7 - 9 pm | ATC 2.918</p>
+                <p class="event-info">Wednesday, November 7 | 7 - 9 pm | ATC 2.918</p>
                 <p class="event-description"></p>
                     <a href="https://www.facebook.com/pg/uxutd/events/"
                        class="btn btn-gradient">More Events</a>
@@ -14,7 +14,11 @@ const recentEventsTemplate =
         </div>
      </div>`;
 
+
+
+
 const skillGroupTemplate = `<div class="row skillGroup">
 								<div class="col-lg-4 skillGroupName"></div>
 								<div class="col-lg-8 skillGroupValue"></div>
 							</div>`;
+
