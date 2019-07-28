@@ -6,6 +6,21 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.no-border {
+    border: none;
+}
+
+.btn-dark-light {
+    border: solid 1.5px #000;
+    color: #000;
+    background: transparent;
+}
+
+.btn-dark-light:hover {
+    color: #fff;
+    background: #000;
+}
+
 .logo {
     height: 10rem;
     margin: 1rem 0;

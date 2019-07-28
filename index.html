@@ -9,9 +9,9 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
     <link rel="stylesheet"
-          href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+          href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet"
-          href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+          href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet"
           href="src/styles/mobile-styles.css">
     <link rel="stylesheet"
@@ -97,8 +97,10 @@
                      aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered"
                          role="document">
-                        <div class="modal-content">
-                            <div class="modal-header text-center">
+                        <div class="modal-content p-4">
+                            <div class="modal-header no-border flex-column-reverse m-0 p-0">
+                                <!-- sub-text goes first because flex direction is reversed. -->
+                                <p class="lead">Sign up for emails to get updates about our upcoming events and other UX/UI events around the DFW area.</p>
                                 <h2>Stay in the know!</h2>
 
                                 <button type="button"
@@ -110,22 +112,30 @@
 
                             </div>
 
-                            <div class="modal-body">
-                                <input type="email"
-                                       id="form2"
-                                       class="form-control validate"
-                                       placeholder="email@example.com">
+                            <div class="modal-body no-border m-0 p-0">
+                                <form class="m-0 p-0" action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63" method="POST">
+                                    <div class="form-group row p-4">
+                                        <label for="user_email" class="sr-only">Email</label>
+                                        <input name="EMAIL" id="mce-EMAIL" class="form-control col-8" type="email" placeholder="micheal@dundermifflin.com">
+                                        <button type="submit" class="btn btn-dark-light col-4">Sign Up!</button>
+                                    </div>
+                                </form>
                             </div>
 
-                            <div class="modal-footer">
-                                <i class="fab fa-facebook-square"></i>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <button>Send</button>
-                                    </div>
-                                    <div class="col-12">
-                                        <i class="fab fa-facebook-square"></i>
-                                    </div>
+                            <div class="modal-footer no-border m-0 p-0">
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/uxutd/">
+                                        <i class="fab fa-facebook-square text-dark"></i>
+                                    </a>
+                                    <a href="https://twitter.com/UX_UTD">
+                                        <i class="fab fa-twitter-square text-dark"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/ux_utd/">
+                                        <i class="fab fa-instagram text-dark"></i>
+                                    </a>
+                                    <a href="mailto:uxutdallas@gmail.com">
+                                        <i class="fas fa-envelope-square text-dark"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -259,17 +269,17 @@
                         area.</p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&id=64ddf2eab7"
-                          method="post">
+                    <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
+                          method="POST">
                         <div class="form-group">
                             <label for="user_email"
                                    class="d-md-none">Join our mailing list!</label>
                             <input type="email"
-                                   name="MERGE0"
+                                    name="EMAIL"
                                    class="form-control"
-                                   id="user_email"
+                                   id="mce-EMAIL"
                                    aria-describedby="emailHelp"
-                                   placeholder="Enter email">
+                                   placeholder="micheal@dundermifflin.com">
                             <small id="emailHelp"
                                    class="form-text text-muted">We'll never share your email with anyone
                                 else.
