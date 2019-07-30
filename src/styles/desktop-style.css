@@ -39,6 +39,10 @@
   .event .text-content {
     padding-right: 10rem;
   }
+
+  .officers .external-links {
+    padding-top: 40%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

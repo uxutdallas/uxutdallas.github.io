@@ -6,6 +6,77 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.splash-about {
+    background: #000 url('/src/imgs/officers.jpg');
+    background-size: cover;
+    color: #ffffff;
+    height: 85%;
+    padding-top: 6rem;
+    position: relative;
+}
+
+.about-content {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.officers {
+    position: relative;
+}
+
+.officers img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.officers img:hover ~ .external-links, .officers .external-links:hover {
+    display: inline-block;
+}
+
+.officers .external-links {
+ background: #00000066;
+ height: 100%;
+ width: 100%;
+ border-radius: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: none;
+ color: #fff;
+ text-decoration: none;
+ font-size: 1.4rem;
+ padding-top: 35%;
+}
+
+.officer-wrapper {
+    width: 11rem;
+    margin: 0 auto;
+}
+
+.officer-description * {
+    padding: 0;
+    margin: 0;
+}
+
+.external-links a {
+    color: inherit;
+}
+
+.external-links a:hover {
+    opacity: 0.8;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #25336E 0%, #009FDA 36%, #48C4E5 81%, #9CDBF1 100%);
+    opacity: 0.8;
+}
+
 .no-border {
     border: none;
 }
