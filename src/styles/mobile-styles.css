@@ -100,7 +100,7 @@ html, body {
 .splash {
     background: linear-gradient(135deg, #25336E 0%, #009FDA 36%, #48C4E5 81%, #9CDBF1 100%);
     color: #ffffff;
-    height: 100%;
+    height: 85%;
     padding-top: 6rem;
 }
 
