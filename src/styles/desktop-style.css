@@ -23,6 +23,11 @@
     padding-left: 15rem;
   }
 
+  .splash-about {
+    padding-right: 15rem;
+    padding-left: 15rem;
+  }
+
   .logo {
     height: 13rem;
     margin: 1.2rem 0;
@@ -48,6 +53,12 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .splash {
+    padding-right: 25rem;
+    padding-left: 25rem;
+    padding-top: 3rem;
+  }
+
+  .splash-about {
     padding-right: 25rem;
     padding-left: 25rem;
     padding-top: 3rem;
