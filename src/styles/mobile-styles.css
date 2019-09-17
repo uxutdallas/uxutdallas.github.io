@@ -234,3 +234,7 @@ form {
     min-height: 400px;
     background: transparent;
 }
+
+.fb-page {
+    text-align: center;
+}
