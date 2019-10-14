@@ -15,6 +15,15 @@ html, body {
     position: relative;
 }
 
+.splash-event {
+    background: #000;
+    background-size: cover;
+    color: #ffffff;
+    height: 85%;
+    padding-top: 6rem;
+    position: relative;
+}
+
 .about-content {
     padding-top: 4rem;
     padding-bottom: 6rem;
