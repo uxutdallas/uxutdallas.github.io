@@ -28,6 +28,11 @@
     padding-left: 15rem;
   }
 
+  .splash-event {
+    padding-right: 15rem;
+    padding-left: 15rem;
+  }
+
   .logo {
     height: 13rem;
     margin: 1.2rem 0;
@@ -62,6 +67,12 @@
     padding-right: 25rem;
     padding-left: 25rem;
     padding-top: 3rem;
+  }
+
+  .splash-event {
+      padding-right: 25rem;
+      padding-left: 25rem;
+      padding-top: 3rem;
   }
 
   .logo {
