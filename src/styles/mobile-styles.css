@@ -16,7 +16,7 @@ html, body {
 }
 
 .splash-event {
-    background: #000;
+    background: #000 url("/src/imgs/ATEC.jpg");
     background-size: cover;
     color: #ffffff;
     height: 85%;
