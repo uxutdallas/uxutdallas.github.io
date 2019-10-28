@@ -44,18 +44,18 @@ html, body {
 }
 
 .officers .external-links {
- background: #00000066;
- height: 100%;
- width: 100%;
- border-radius: 100%;
- position: absolute;
- top: 0;
- left: 0;
- display: none;
- color: #fff;
- text-decoration: none;
- font-size: 1.4rem;
- padding-top: 35%;
+    background: #00000066;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-top: 35%;
 }
 
 .officer-wrapper {
