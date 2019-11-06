@@ -6,8 +6,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.splash-about {
-    background: #000 url('/src/imgs/officers.jpg');
+.splash-sub {
     background-size: cover;
     color: #ffffff;
     height: 85%;
@@ -15,13 +14,12 @@ html, body {
     position: relative;
 }
 
+.splash-about {
+    background: #000 url('/src/imgs/officers.jpg');
+}
+
 .splash-event {
     background: #000 url("/src/imgs/ATEC.jpg");
-    background-size: cover;
-    color: #ffffff;
-    height: 85%;
-    padding-top: 6rem;
-    position: relative;
 }
 
 .about-content {
