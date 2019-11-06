@@ -19,7 +19,7 @@ html, body {
 }
 
 .splash-event {
-    background: #000 url("/src/imgs/ATEC.jpg");
+    background: #000 url("../imgs/ATEC.jpg");
 }
 
 .about-content {
@@ -57,12 +57,13 @@ html, body {
 }
 
 .officer-wrapper {
-    width: 11rem;
+    width: 14rem;
     margin: 0 auto;
 }
 
 .officer-description * {
-    padding: 0;
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
     margin: 0;
 }
 
