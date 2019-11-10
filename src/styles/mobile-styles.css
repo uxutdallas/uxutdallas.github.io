@@ -15,11 +15,13 @@ html, body {
 }
 
 .splash-about {
-    background: #000 url('/src/imgs/officers.jpg');
+    background: #000 url('../imgs/officers.jpg');
+    background-size: cover;
 }
 
 .splash-event {
     background: #000 url("../imgs/ATEC.jpg");
+    background-size: cover;
 }
 
 .about-content {
