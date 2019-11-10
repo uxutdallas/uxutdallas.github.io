@@ -165,6 +165,24 @@ html, body {
     margin-bottom: 5rem;
 }
 
+.event-time {
+    font-weight: bold;
+}
+
+.event-activity-name {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.event-activity-description {
+
+}
+
+#event-location img {
+    width: 100%;
+    height: auto;
+}
+
 .collaborations img {
     width: 8rem;
 }
@@ -248,3 +266,4 @@ form {
 .fb-page {
     text-align: center;
 }
+
