@@ -25,18 +25,11 @@
 
 <body>
     <div class="container my-0 py-0">
-        <!--menu bar-->
         <nav class="navbar navbar-expand-lg navbar-light">
-
-            <a class="navbar-brand"
-               href="/">
-                <img src="../src/imgs/logos/ux/logo-with-tagline.png"
-                     alt="UX UTD"
-                     onclick="window.open(index.html)">
+            <a class="navbar-brand" href="/">
+                <img src="../src/imgs/logos/ux/logo-with-tagline.png" alt="UX UTD" onclick="window.open(index.html)">
             </a>
-
-            <button class="navbar-toggler"
-                    type="button"
+            <button class="navbar-toggler" type="button"
                     data-toggle="collapse"
                     data-target="#navbarNav"
                     aria-controls="navbarNav"
@@ -44,9 +37,7 @@
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse"
-                 id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="../about">About</a>
@@ -158,80 +149,17 @@
                     <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-            <!--TODO: implement modal an button with the correct MailChimp list-->
+            <!--TODO: implement button to link to the correct form-->
             <div class="row">
                 <div class="col-12 text-center">
-                    <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">Subscribe
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
-                         aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered"
-                             role="document">
-                            <div class="modal-content p-4">
-                                <div class="modal-header no-border flex-column m-0 p-0">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <h2>Stay in the know!</h2>
-                                    <p class="lead">Sign up for emails to get updates about our UXperience event!</p>
-                                </div>
-
-                                <div class="modal-body no-border m-0 p-0">
-                                    <form class="m-0 p-0" action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
-                                          method="POST">
-                                        <div class="form-group row p-4">
-                                            <label for="user_email"
-                                                   class="sr-only">Email</label>
-                                            <input name="EMAIL"
-                                                   id="mce-EMAIL"
-                                                   class="form-control col-8"
-                                                   type="email"
-                                                   placeholder="micheal@dundermifflin.com">
-                                            <button type="submit"
-                                                    class="btn btn-dark-light col-4">Sign Up!
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <div class="modal-footer no-border m-0 p-0">
-                                    <div class="social-links">
-                                        <a href="https://www.facebook.com/uxutd/">
-                                            <i class="fab fa-facebook-square text-dark"></i>
-                                        </a>
-                                        <a href="https://twitter.com/UX_UTD">
-                                            <i class="fab fa-twitter-square text-dark"></i>
-                                        </a>
-                                        <a href="https://www.instagram.com/ux_utd/">
-                                            <i class="fab fa-instagram text-dark"></i>
-                                        </a>
-                                        <a href="mailto:uxutdallas@gmail.com">
-                                            <i class="fas fa-envelope-square text-dark"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button id="subscribe" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScnWzZuikfnoIs_Pb0B9R1_SnQoZHWIV3B3xl9q2k2dQgXztQ/viewform';" type="submit" class="btn btn-gradient ml-md-4">Subscribe</button>
                 </div>
             </div>
         </div>
         <br>
         <br>
         <br>
-        <!--TODO: implement timeline for event-->
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="font-weight-bold">Schedule Highlights</h2>
-                    <p class="lead"></p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -244,14 +172,12 @@
                             <div class="row">
                                 <div class="col-md-4 ">
                                     <div class="position-relative officer-wrapper">
-                                        <img src="../src/imgs/default-avatar.png"
-                                             alt="web"
-                                             class="rounded-circle">
+                                        <img src="../src/imgs/default-avatar.png" alt="web" class="rounded-circle">
                                         <div class="external-links">
                                             <a href="https://uxutd.com/"
                                                target="_blank"><i class="fas fa-globe"></i></a>
                                             <a href="https://github.com/uxutdallas/uxutdallas.github.io"
-                                               target="_blank"><i class="fas fa-code"></i></a>
+                                               target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -269,7 +195,7 @@
                                             <a href="https://uxutd.com/"
                                                target="_blank"><i class="fas fa-globe"></i></a>
                                             <a href="https://github.com/uxutdallas/uxutdallas.github.io"
-                                               target="_blank"><i class="fas fa-code"></i></a>
+                                               target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -287,7 +213,7 @@
                                             <a href="https://uxutd.com/"
                                                target="_blank"><i class="fas fa-globe"></i></a>
                                             <a href="https://github.com/uxutdallas/uxutdallas.github.io"
-                                               target="_blank"><i class="fas fa-code"></i></a>
+                                               target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -309,7 +235,7 @@
                                             <a href="https://uxutd.com/"
                                                target="_blank"><i class="fas fa-globe"></i></a>
                                             <a href="https://github.com/uxutdallas/uxutdallas.github.io"
-                                               target="_blank"><i class="fas fa-code"></i></a>
+                                               target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -327,7 +253,7 @@
                                             <a href="https://uxutd.com/"
                                                target="_blank"><i class="fas fa-globe"></i></a>
                                             <a href="https://github.com/uxutdallas/uxutdallas.github.io"
-                                               target="_blank"><i class="fas fa-code"></i></a>
+                                               target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -346,6 +272,7 @@
         <br>
         <br>
         <br>
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -392,6 +319,20 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+
+        <!--TODO: implement timeline for event-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="font-weight-bold">Schedule Highlights</h2>
+                    <p class="lead"></p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="container-fluid mailing-list">
