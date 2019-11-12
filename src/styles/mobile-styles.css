@@ -24,6 +24,11 @@ html, body {
     background-size: cover;
 }
 
+.splash-uxperience {
+    background: #000 url("../imgs/uxperience/blackstone_launchpad.jpg");
+    background-size: cover;
+}
+
 .about-content {
     padding-top: 4rem;
     padding-bottom: 6rem;
@@ -171,14 +176,14 @@ html, body {
 
 .event-activity-name {
     font-weight: bold;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 .event-activity-description {
-
+    font-size: 1rem;
 }
 
-#event-location img {
+#flyer img {
     width: 100%;
     height: auto;
 }
