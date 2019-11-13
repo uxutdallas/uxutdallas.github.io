@@ -6,8 +6,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.splash-about {
-    background: #000 url('/src/imgs/officers.jpg');
+.splash-sub {
     background-size: cover;
     color: #ffffff;
     height: 85%;
@@ -15,13 +14,19 @@ html, body {
     position: relative;
 }
 
-.splash-event {
-    background: #000 url("/src/imgs/ATEC.jpg");
+.splash-about {
+    background: #000 url('../imgs/officers.jpg');
     background-size: cover;
-    color: #ffffff;
-    height: 85%;
-    padding-top: 6rem;
-    position: relative;
+}
+
+.splash-event {
+    background: #000 url("../imgs/ATEC.jpg");
+    background-size: cover;
+}
+
+.splash-uxperience {
+    background: #000 url("../imgs/uxperience/blackstone_launchpad.jpg");
+    background-size: cover;
 }
 
 .about-content {
@@ -44,27 +49,28 @@ html, body {
 }
 
 .officers .external-links {
- background: #00000066;
- height: 100%;
- width: 100%;
- border-radius: 100%;
- position: absolute;
- top: 0;
- left: 0;
- display: none;
- color: #fff;
- text-decoration: none;
- font-size: 1.4rem;
- padding-top: 35%;
+    background: #00000066;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-top: 35%;
 }
 
 .officer-wrapper {
-    width: 11rem;
+    width: 14rem;
     margin: 0 auto;
 }
 
 .officer-description * {
-    padding: 0;
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
     margin: 0;
 }
 
@@ -164,6 +170,24 @@ html, body {
     margin-bottom: 5rem;
 }
 
+.event-time {
+    font-weight: bold;
+}
+
+.event-activity-name {
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
+.event-activity-description {
+    font-size: 1rem;
+}
+
+#flyer img {
+    width: 100%;
+    height: auto;
+}
+
 .collaborations img {
     width: 8rem;
 }
@@ -247,3 +271,4 @@ form {
 .fb-page {
     text-align: center;
 }
+
