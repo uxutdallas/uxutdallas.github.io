@@ -246,6 +246,12 @@ form {
     opacity: 0.8;
 }
 
+.ux-video {
+    display: block;
+    padding-top: 3rem;
+    margin: auto;
+}
+
 .main-content {
     padding-top: 6rem;
     padding-bottom: 6rem;
