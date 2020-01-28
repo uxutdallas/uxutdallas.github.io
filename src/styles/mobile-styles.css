@@ -167,6 +167,15 @@ html, body {
     transform: scaleX(0.8);
 }
 
+.fb-page {
+    text-align: center;
+    margin: auto;
+}
+
+.past-events-container {
+    margin-top: 4rem;
+}
+
 .event img {
     width: 20rem;
 }
@@ -277,9 +286,5 @@ form {
 .parallax-window{
     min-height: 400px;
     background: transparent;
-}
-
-.fb-page {
-    text-align: center;
 }
 
