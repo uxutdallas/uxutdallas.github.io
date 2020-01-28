@@ -9,9 +9,14 @@ html, body {
 .splash-sub {
     background-size: cover;
     color: #ffffff;
-    height: 100%;
+    height: 85%;
     padding-top: 6rem;
     position: relative;
+}
+
+.splash-sub h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .splash-about {
