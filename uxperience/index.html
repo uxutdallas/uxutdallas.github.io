@@ -19,6 +19,23 @@
     <script src="../node_modules/popper.js/dist/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../src/script/main.js"></script>
+    <script>
+        (function () {
+            var qs, js, q, s, d = document,
+                gi = d.getElementById,
+                ce = d.createElement,
+                gt = d.getElementsByTagName,
+                id = "typef_orm_share",
+                b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+                js = ce.call(d, "script");
+                js.id = id;
+                js.src = b + "embed.js";
+                q = gt.call(d, "script")[0];
+                q.parentNode.insertBefore(js, q)
+            }
+        })()
+    </script>
     <title>UX Club at UT Dallas | UXperience</title>
 </head>
 
@@ -460,7 +477,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
     <!--footer-->
     <div class="container-fluid mailing-list">
@@ -498,13 +515,13 @@
         <div class="container py-4">
             <div class="d-flex flex-column flex-md-row-reverse">
                 <div class="social-links">
-                    <a href="https://www.facebook.com/uxutd/">
+                    <a href="https://www.facebook.com/uxutd/" target="_blank">
                         <i class="fab fa-facebook-square"></i>
                     </a>
-                    <a href="https://twitter.com/UX_UTD">
+                    <a href="https://twitter.com/UX_UTD" target="_blank">
                         <i class="fab fa-twitter-square"></i>
                     </a>
-                    <a href="https://www.instagram.com/ux_utd/">
+                    <a href="https://www.instagram.com/ux_utd/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a href="mailto:uxutdallas@gmail.com">
