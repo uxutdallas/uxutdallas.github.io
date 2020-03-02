@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700"
+		/>
+		<link
+			rel="stylesheet"
+			href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../src/styles/mobile-styles.css" />
+		<link rel="stylesheet" href="../src/styles/desktop-style.css" />
+
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+		<script src="../node_modules/popper.js/dist/popper.min.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../src/script/main.js"></script>
+		<script>
+			(function() {
+				var qs,
+					js,
+					q,
+					s,
+					d = document,
+					gi = d.getElementById,
+					ce = d.createElement,
+					gt = d.getElementsByTagName,
+					id = "typef_orm_share",
+					b = "https://embed.typeform.com/";
+				if (!gi.call(d, id)) {
+					js = ce.call(d, "script");
+					js.id = id;
+					js.src = b + "embed.js";
+					q = gt.call(d, "script")[0];
+					q.parentNode.insertBefore(js, q);
+				}
+			})();
+		</script>
+		<title>UX Club at UT Dallas | Design Challenge</title>
+	</head>
+
+	<body>
+		<div class="container my-0 py-0">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="/">
+					<img
+						src="../src/imgs/logos/ux/logo-with-tagline.png"
+						alt="UX UTD"
+						onclick="window.open(index.html)"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="../">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link events-link" href="../events">Events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link events-link" href="./">Design Challenge</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/uxperience">UXperience</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link typeform-share button"
+								data-mode="popup"
+								href="https://utduxclub.typeform.com/to/LsNaLW"
+								>Apply</a
+							>
+						</li>
+					</ul>
+					<!-- Button trigger modal -->
+					<button
+						type="button"
+						class="btn btn-gradient ml-md-4"
+						data-toggle="modal"
+						data-target="#modal"
+					>
+						Join Us
+					</button>
+
+					<!-- Modal -->
+					<div
+						class="modal fade"
+						id="modal"
+						tabindex="-1"
+						role="dialog"
+						aria-labelledby="modalTitle"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content p-4">
+								<div class="modal-header no-border flex-column m-0 p-0">
+									<button
+										type="button"
+										class="close"
+										data-dismiss="modal"
+										aria-label="Close"
+									>
+										<span aria-hidden="true">&times;</span>
+									</button>
+
+									<h2>Stay in the know!</h2>
+									<p class="lead">
+										Sign up for emails to get updates about our upcoming events
+										and other UX/UI events around the DFW area.
+									</p>
+								</div>
+
+								<div class="modal-body no-border m-0 p-0">
+									<form
+										class="m-0 p-0"
+										action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
+										method="POST"
+									>
+										<div class="form-group row p-4">
+											<label for="user_email" class="sr-only">Email</label>
+											<input
+												name="EMAIL"
+												id="mce-EMAIL"
+												class="form-control col-8"
+												type="email"
+												placeholder="micheal@dundermifflin.com"
+											/>
+											<button type="submit" class="btn btn-dark-light col-4">
+												Sign Up!
+											</button>
+										</div>
+									</form>
+								</div>
+
+								<div class="modal-footer no-border m-0 p-0">
+									<div class="social-links">
+										<a href="https://www.facebook.com/uxutd/">
+											<i class="fab fa-facebook-square text-dark"></i>
+										</a>
+										<a href="https://twitter.com/UX_UTD">
+											<i class="fab fa-twitter-square text-dark"></i>
+										</a>
+										<a href="https://www.instagram.com/ux_utd/">
+											<i class="fab fa-instagram text-dark"></i>
+										</a>
+										<a href="mailto:uxutdallas@gmail.com">
+											<i class="fas fa-envelope-square text-dark"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="container-fluid splash-sub splash-uxperience text-center">
+			<div class="gradient-overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<img
+							src="../src/imgs/logos/ux/logo-white.png"
+							alt="UX UTD logo"
+							class="logo"
+						/>
+						<br />
+						<br />
+						<br />
+						<h2>Design Challenge</h2>
+						<p class="lead">March 13, 12:00PM - April 3, 11:59PM CST</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Information -->
+		<div class="main-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="font-weight-bold">Design with Determination</h2>
+						<p class="lead">
+							Join us in our biggest competition of the year!
+						</p>
+						<br />
+						<p class="lead">
+							UT Dallas students are invited to join our Capital One Design Challenge
+							where their work will be reviewed by UX/UI Designers from Capital One,
+							showcased at The UX Club’s banquet, and awarded with prizes if they win.
+						</p>
+						<p class="lead">
+							Those with UX/UI experience are encouraged to participate in order to
+							enhance their technical knowledge, collaboration skills, and design
+							abilities.
+						</p>
+					</div>
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<!-- Information cont... -->
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="font-weight-bold">How it's Going to Work</h2>
+						<p class="lead">
+							It ain't anarchy
+						</p>
+						<br />
+						<p class="lead">
+							There will be two categories that students may enter:
+							<span class="font-weight-bold">mobile or desktop</span>. Participants
+							must choose to enter
+							<span class="font-weight-bold"> only one</span> category.
+						</p>
+						<p class="lead">
+							There will be one winner from each category. The winner will be
+							determined by several UX/UI Designers from Capital One based upon the
+							judging criteria that the UX Club will develop.
+						</p>
+					</div>
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<!-- Awards -->
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="font-weight-bold">Awards</h2>
+						<p class="lead">
+							Prizes, Prizes, Prizes!!
+						</p>
+						<br />
+						<p class="lead">
+							The award ceremony will showcase the work of the
+							<span class="font-weight-bold">top 3 nominees in each category</span> at
+							The UX Club’s end of the year banquet on Saturday, April 25 at 6PM in
+							Blackstone Launchpad.
+						</p>
+						<p class="lead">
+							There will be one winner from each category. The winner will be
+							determined by several UX/UI Designers from Capital One based upon the
+							judging criteria that the UX Club will develop.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Awards Specification -->
+			<div class="container">
+				<br />
+				<hr />
+				<div class="row">
+					<div class="col-md-12">
+						<p class="award-name">First Place</p>
+						<p class="award-description">
+							First Place Trophy
+						</p>
+						<p class="award-description">
+							Certificate of Distinguishment
+						</p>
+						<p class="award-description">
+							Winning design will be presented to industry professionals
+						</p>
+						<p class="award-description">
+							<span class="font-weight-bold">$250</span> (per team) cash scholarship
+							provided by Capital One
+						</p>
+					</div>
+				</div>
+				<hr />
+				<div class="row">
+					<div class="col-md-12">
+						<p class="award-name">Second Place</p>
+						<p class="award-description">
+							Second Place Trophy
+						</p>
+						<p class="award-description">
+							Certificate of Distinguishment
+						</p>
+						<p class="award-description">
+							<i>
+								Second Place Valued Prize (TBA)
+							</i>
+						</p>
+					</div>
+				</div>
+				<hr />
+				<div class="row">
+					<div class="col-md-12">
+						<p class="award-name">Third Place</p>
+						<p class="award-description">
+							Third Place Trophy
+						</p>
+						<p class="award-description">
+							Certificate of Distinguishment
+						</p>
+						<p class="award-description">
+							<i>
+								Third Place Valued Prize (TBA)
+							</i>
+						</p>
+					</div>
+				</div>
+				<hr />
+				<div class="row">
+					<div class="col-md-12">
+						<p class="award-name">People's Favorite*</p>
+						<p class="award-description">
+							Certificate of Distinguishment
+						</p>
+						<p class="award-description">
+							<i>
+								People's Favorite Valued Prize (TBA)
+							</i>
+						</p>
+					</div>
+				</div>
+				<br />
+				<p class="lead peoples-favorite-sub-text">
+					* Attendees will vote on a "People's Favorite" during the banquet
+				</p>
+				<hr />
+			</div>
+
+			<br />
+			<br />
+			<br />
+			<br />
+			<!-- Eligibility-->
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="font-weight-bold">Eligibility</h2>
+						<p class="lead">
+							Are you eligible?
+						</p>
+						<br />
+						<p class="lead">
+							All students from The University of Texas at Dallas are eligible for
+							this competition. Students may enter the competition as a
+							<span class="font-weight-bold">Solo competitor</span> or a
+							<span class="font-weight-bold"
+								>Group with no more than 3 team members</span
+							>.
+						</p>
+						<br />
+						<p class="lead eligibility-officers-sub-text">
+							<i
+								>No officers from The UX Club at UT Dallas will be able to
+								participate due to knowledge of the competition prior to other
+								competitors.
+							</i>
+						</p>
+					</div>
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<!-- Tentative Schedule for Ceremony-->
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="font-weight-bold">Awards Ceremony</h2>
+						<p class="lead">
+							Celebrate in Style!
+						</p>
+						<br />
+
+						<p class="lead">
+							Award Ceremony will be hosted at
+							<span class="font-weight-bold">Blackstone Launchpad at UT Dallas</span>
+						</p>
+						<p class="lead">April 25th, 2020 | 6:00 PM - 9:00 PM</p>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26772.65714714634!2d-96.76853792533892!3d32.98842449169079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2200eb5e4307%3A0x2d7b2f973183c73a!2sBlackstone%20LaunchPad%20at%20UT%20Dallas!5e0!3m2!1sen!2sus!4v1583136335441!5m2!1sen!2sus"
+							width="300"
+							height="300"
+							frameborder="0"
+							style="border:0;"
+							allowfullscreen=""
+						></iframe>
+						<br>
+						<br>
+						<p class="lead eligibility-officers-sub-text">Stay posted for more information in the future!</p>
+					</div>
+				</div>
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<!-- Schedule body -->
+			<!--
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="font-weight-bold">Schedule Highlights</h2>
+                    </div>
+                </div>
+                <br />
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">10:30 AM - 11:00 AM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="award-name">Networking Booth and Breakfast</p>
+                        <p class="event-time">(Sponsored by Capital One)</p>
+                        <p class="award-description">
+                            <span class="font-weight-bold">Capital One</span>,
+                            <span class="font-weight-bold">Big Design</span> and
+                            <span class="font-weight-bold">Big Foresight</span> booth
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">11:00 AM - 11:45 AM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="award-name">Opening Ceremony & Speaker</p>
+                        <p class="award-description">
+                            <span class="font-weight-bold">Jen Blatz</span> - "How to Keep Cognitive
+                            Biases Out of Your Design and Research"
+                        </p>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">12:00 PM - 12:55 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="award-name">Lunch & Networking</p>
+                        <p class="award-description"></p>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">1:00 PM - 1:45 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="award-name">Workshop</p>
+                        <p class="award-description">
+                            <span class="font-weight-bold">Frances Yllana</span> - Soft Skills: How
+                            to be a Consultant or How to Ideate with Constraints
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">1:50 PM - 2:30 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="award-name">Speaker</p>
+                        <p class="award-description">
+                            <span class="font-weight-bold">Brandon Ward</span> - "UX without the
+                            User is Your X"
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">2:30 PM - 4:00 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="award-name">Panel</p>
+                        <div class="award-description">
+                            <ul>
+                                <li>
+                                    <span class="font-weight-bold">Michael Champlin</span>,
+                                    Experience Design at projekt202
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">Brittany Sumarsono</span>,
+                                    Product Designer at Intuit
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">Elisa Miller</span>, Learning
+                                    Transformation Coach at American Airlines
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">Brian Sullivan</span>, Founder of
+                                    the Big Design Conference & Director of Design Strategy at Sabre
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">Brandon Ward</span>, Director
+                                    User Experience at Precocity
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">4:00 PM - 4:10 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="award-name">
+                            Closing Ceremony & Raffle Winner Announcement
+                        </p>
+                        <p class="award-description"></p>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">4:15 PM - 5:00 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="award-name">Portfolio Review</p>
+                        <div class="award-description">
+                            <p>
+                                Sign up for one spot through this link for a 5-minute one-on-one
+                                review from some of our presenters.
+                            </p>
+                            <a href="https://www.signupgenius.com/go/9040d4aa5a923a6ff2-uxperience"
+                                >Reserve a spot!</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <p class="font-weight-light font-italic">
+                    For further information, email us at
+                    <a href="mailto:uxutdallas@gmail.com">uxutdallas@gmail.com</a>.
+                </p>
+            </div>-->
+
+			<!-- Sponsors -->
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="font-weight-bold">Thank You, Capital One!</h2>
+						<p class="lead">None of this would be possible with you :)</p>
+					</div>
+				</div>
+				<div class="m-3 design-challenge-sponsor">
+					<img src="../src/imgs/logos/sponsors/capital-one-logo.png" alt="Capital One" />
+				</div>
+				<br />
+				<br />
+				<br />
+				<div class="row">
+					<div class="col-12">
+						<p class="lead">
+							Want to be one of our sponsors and be featured on our website? Please
+							email us at
+							<a href="mailto:uxutdallas@gmail.com">uxutdallas@gmail.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--footer-->
+		<div class="container-fluid mailing-list">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-none d-md-block">
+						<br />
+						<br />
+						<h2>Stay in the know!</h2>
+						<p>
+							Sign up for emails to get updates about our upcoming events and other
+							UX/UI events around the DFW area.
+						</p>
+					</div>
+					<div class="col-12 col-md-6">
+						<form
+							action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
+							method="POST"
+						>
+							<div class="form-group">
+								<label for="user_email" class="d-md-none"
+									>Join our mailing list!</label
+								>
+								<input
+									type="email"
+									name="EMAIL"
+									class="form-control"
+									id="mce-EMAIL"
+									aria-describedby="emailHelp"
+									placeholder="micheal@dundermifflin.com"
+								/>
+								<small id="emailHelp" class="form-text text-muted"
+									>We'll never share your email with anyone else.
+								</small>
+							</div>
+							<button type="submit" class="btn btn-clear">Sign Up</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid footer text-center">
+			<div class="container py-4">
+				<div class="d-flex flex-column flex-md-row-reverse">
+					<div class="social-links">
+						<a href="https://www.facebook.com/uxutd/" target="_blank">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+						<a href="https://twitter.com/UX_UTD" target="_blank">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+						<a href="https://www.instagram.com/ux_utd/" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="mailto:uxutdallas@gmail.com">
+							<i class="fas fa-envelope-square"></i>
+						</a>
+					</div>
+					<div class="mr-md-auto copyright">
+						<p>
+							&copy; Copyright
+							<script>
+								document.write(String(new Date().getFullYear()));
+							</script>
+							UX UTD
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

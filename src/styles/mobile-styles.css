@@ -288,3 +288,27 @@ form {
     background: transparent;
 }
 
+.award-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.award-description {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.peoples-favorite-sub-text {
+    font-size: 15px !important;
+    text-align: center;
+}
+
+.eligibility-officers-sub-text {
+    font-size: 15px !important;
+}
+
+.design-challenge-sponsor {
+    width: 20rem;
+    padding-top: 2rem;
+}
