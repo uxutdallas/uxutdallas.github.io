@@ -288,6 +288,12 @@ form {
     background: transparent;
 }
 
+.splash-design-challenge {
+    background: #000 url("../imgs/design\ challenge/design-challenge-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .award-name {
     text-align: center;
     font-weight: bold;

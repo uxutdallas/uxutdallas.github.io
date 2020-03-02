@@ -58,7 +58,6 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .splash {
-    height: 50%;
     padding-right: 25rem;
     padding-left: 25rem;
     padding-top: 3rem;
