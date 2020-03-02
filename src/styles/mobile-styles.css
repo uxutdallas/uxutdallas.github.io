@@ -311,3 +311,7 @@ form {
     width: 25rem;
     padding-top: 2rem;
 }
+
+.design-challenge-flyer {
+    border:1px solid rgb(220, 218, 218);
+}
