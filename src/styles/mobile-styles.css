@@ -315,3 +315,7 @@ form {
 .design-challenge-flyer {
     border:1px solid rgb(220, 218, 218);
 }
+
+.design-challenge-timer{
+    font-size: 60px !important;
+}

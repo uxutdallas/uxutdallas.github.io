@@ -13,53 +13,49 @@ function timeDifferenceCalc(targetDate) {
 	var diff_hours = Math.floor(diff_minutes / 60);
 	var diff_days = Math.floor(diff_hours / 24);
 	var diff_months = Math.floor(diff_days / 30.4375);
-	var diff_years = Math.floor(diff_months / 12);
 
-	diff_years = Math.floor(diff_months / 12);
 	diff_months = diff_months % 12;
 	diff_days = Math.floor(diff_days % 30.4375);
 	diff_hours = diff_hours % 24;
 	diff_minutes = diff_minutes % 60;
 	diff_seconds = Math.floor(diff_seconds % 60);
 
-	if(diff_years > 1){
-        time_str += diff_years + " years "
+    if(diff_months > 9){
+        time_str += diff_months + ":"
     }
-    else if (diff_years == 1){
-        time_str += diff_years + " year "
+    else if (diff_months > 0){ // 0'd on purpose
+        time_str += "0" + diff_months + ":"
     }
-    if(diff_months > 1){
-        time_str += diff_months + " months "
+
+    if(diff_days > 9){
+        time_str += diff_days + ":"
     }
-    else if (diff_months == 1){
-        time_str += diff_months + " month "
+    else if (diff_days > -1){
+        time_str += "0" + diff_days + ":"
     }
-    if(diff_days > 1){
-        time_str += diff_days + " days "
+
+    if(diff_hours > 9){
+        time_str += diff_hours + ":"
     }
-    else if (diff_days == 1){
-        time_str += diff_days + " day "
+    else if (diff_hours > -1){
+        time_str += "0" + diff_hours + ":"
     }
-    if(diff_hours > 1){
-        time_str += diff_hours + " hours "
+
+    if(diff_minutes > 9){
+        time_str += diff_minutes + ":"
     }
-    else if (diff_hours == 1){
-        time_str += diff_hours + " hour "
+    else if (diff_minutes > -1){
+        time_str += "0" + diff_minutes + ":"
     }
-    if(diff_minutes > 1){
-        time_str += diff_minutes + " minutes "
+
+    if(diff_seconds > 9){
+        time_str += diff_seconds
     }
-    else if (diff_minutes == 1){
-        time_str += diff_minutes + " minute "
-    }
-    if(diff_seconds > 1){
-        time_str += diff_seconds + " seconds "
-    }
-    else if (diff_seconds == 1){
-        time_str += diff_seconds + " second "
+    else if (diff_seconds > -1){
+        time_str += "0" + diff_seconds
     }   
 
-	content.innerHTML = time_str + " until reveal";
+	content.innerHTML = time_str + "";
 }
 // before interval
 var today = new Date();
