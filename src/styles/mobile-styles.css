@@ -299,16 +299,15 @@ form {
     font-size: 1rem;
 }
 
-.peoples-favorite-sub-text {
-    font-size: 15px !important;
+.peoples-fav-info {
     text-align: center;
 }
 
-.eligibility-officers-sub-text {
+.sub-text {
     font-size: 15px !important;
 }
 
 .design-challenge-sponsor {
-    width: 20rem;
+    width: 25rem;
     padding-top: 2rem;
 }
