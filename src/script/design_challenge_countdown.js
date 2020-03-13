@@ -59,20 +59,20 @@ function timeDifferenceCalc(targetDate) {
 }
 // before interval
 var today = new Date();
-if(today - design_challenge_start >= 0){
-    content.innerHTML = "Topic is being revealed...";
+if(today - design_challenge_end >= 0){
+    content.innerHTML = "Submissions are closed.";
 }
 else{
-    timeDifferenceCalc(design_challenge_start);
+    timeDifferenceCalc(design_challenge_end);
 }
 
 // refreshing interval
 setInterval(() => {
     var today = new Date();
-    if(today - design_challenge_start >= 0){
-        content.innerHTML = "Topic is being revealed...";
+    if(today - design_challenge_end >= 0){
+        content.innerHTML = "Submissions are closed.";
     }
     else{
-        timeDifferenceCalc(design_challenge_start);
+        timeDifferenceCalc(design_challenge_end);
     }
 }, 1000);
