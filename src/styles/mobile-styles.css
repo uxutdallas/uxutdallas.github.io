@@ -295,7 +295,11 @@ form {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
+.btn-outline-light:hover {
+	color: grey;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
 .prompt-reveal-container {
 	padding: 3rem;
 	color: white;
@@ -311,7 +315,6 @@ form {
 .prompt-reveal-container a {
 	color: #e87500;
 	font-weight: bold;
-	font-style: italic;
 }
 
 .utd-monogram-svg {
