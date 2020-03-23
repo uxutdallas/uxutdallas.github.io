@@ -174,8 +174,8 @@ body {
 	margin: auto;
 }
 
-.past-events-container {
-	margin-top: 4rem;
+.fb_iframe_widget {
+    display: block;
 }
 
 .event img {
@@ -321,12 +321,6 @@ form {
 	display: block;
 	width: 7rem;
 	margin: auto;
-}
-
-.elearning-img {
-	display: block;
-	margin: 1rem auto;
-	width: 60%;
 }
 
 .indent {
