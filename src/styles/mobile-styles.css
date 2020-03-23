@@ -170,6 +170,7 @@ body {
 }
 
 .fb-page {
+	display: block;
 	text-align: center;
 	margin: auto;
 }
@@ -351,6 +352,10 @@ form {
 	font-size: 15px !important;
 }
 
+.line-through {
+	text-decoration: line-through;
+}
+
 .design-challenge-sponsor {
 	width: 25rem;
 	padding-top: 2rem;
@@ -363,6 +368,31 @@ form {
 .design-challenge-timer-text {
 	font-size: 40px !important;
 }
+
 .design-challenge-timer {
 	color: red;
+}
+
+.alert-color-yellow {
+	background-color: #fff3cd;
+	border-color: #fff3cd;
+	color: #856404;
+	border: 1px solid transparent;
+}
+
+.alert-color-blue {
+	color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+	border: 1px solid transparent;
+}
+
+.alert-contents {
+	display: flex;
+	padding: 1rem;
+}
+
+.fa-exclamation-circle {
+	font-size: 2rem;
+	padding: 0rem 1rem;
 }
