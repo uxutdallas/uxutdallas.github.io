@@ -1,5 +1,5 @@
 var design_challenge_start = new Date("Friday, March 13, 2020 12:00:00");
-var design_challenge_end = new Date("Friday, April 3, 2020 23:59:59");
+var design_challenge_end = new Date("Friday, April 10, 2020 23:59:59");
 var content = document.getElementById("time-until-date");
 
 function timeDifferenceCalc(targetDate) {
