@@ -357,7 +357,7 @@ form {
 }
 
 .design-challenge-sponsor {
-	width: 25rem;
+	width: 20rem;
 	padding-top: 2rem;
 }
 
@@ -371,6 +371,11 @@ form {
 
 .design-challenge-timer {
 	color: red;
+}
+
+.rubric-pdf {
+	height: 40rem;
+	width: 80%;
 }
 
 .alert-color-yellow {
