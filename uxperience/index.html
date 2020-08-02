@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
@@ -19,23 +19,6 @@
     <script src="../node_modules/popper.js/dist/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../src/script/main.js"></script>
-    <script>
-        (function () {
-            var qs, js, q, s, d = document,
-                gi = d.getElementById,
-                ce = d.createElement,
-                gt = d.getElementsByTagName,
-                id = "typef_orm_share",
-                b = "https://embed.typeform.com/";
-            if (!gi.call(d, id)) {
-                js = ce.call(d, "script");
-                js.id = id;
-                js.src = b + "embed.js";
-                q = gt.call(d, "script")[0];
-                q.parentNode.insertBefore(js, q)
-            }
-        })()
-    </script>
     <title>UX Club at UT Dallas | UXperience</title>
 </head>
 
@@ -46,12 +29,7 @@
             <a class="navbar-brand" href="/">
                 <img src="../src/imgs/logos/ux/logo-with-tagline.png" alt="UX UTD" onclick="window.open(index.html)">
             </a>
-            <button class="navbar-toggler" type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -69,56 +47,37 @@
                         <a class="nav-link events-link" href="../design challenge/">Design Challenge</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/uxperience">UXperience</a>
+                        <a class="nav-link" href="../uxperience">UXperience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link typeform-share button"
-                           data-mode="popup"
-                           href="https://utduxclub.typeform.com/to/LsNaLW">Apply</a>
+                        <a class="nav-link" href="../apply">Apply</a>
                     </li>
                 </ul>
                 <!-- Button trigger modal -->
-                <button type="button"
-                        class="btn btn-gradient ml-md-4"
-                        data-toggle="modal"
-                        data-target="#modal">
+                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
                     Join Us
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
-                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered"
-                         role="document">
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content p-4">
                             <div class="modal-header no-border flex-column m-0 p-0">
-                                <button type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
 
                                 <h2>Stay in the know!</h2>
-                                <p class="lead">Sign up for emails to get updates about our upcoming events and other
-                                    UX/UI events around the DFW area.</p>
-                                    <p class="lead">Also join us on <a target="_blank" href="https://www.remind.com/join/uxutd">  Remind 101</a>!</p>
+                                <p class="lead">Sign up for emails to get updates about our upcoming events and other UX/UI events around the DFW area.</p>
+                                <p class="lead">Also, join us on <a target="_blank" href="https://www.remind.com/join/uxutd">  Remind 101</a>!</p>
                             </div>
 
                             <div class="modal-body no-border m-0 p-0">
-                                <form class="m-0 p-0"
-                                      action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
-                                      method="POST">
+                                <form class="m-0 p-0" action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63" method="POST">
                                     <div class="form-group row p-4">
-                                        <label for="user_email"
-                                               class="sr-only">Email</label>
-                                        <input name="EMAIL"
-                                               id="mce-EMAIL"
-                                               class="form-control col-8"
-                                               type="email"
-                                               placeholder="micheal@dundermifflin.com">
-                                        <button type="submit"
-                                                class="btn btn-dark-light col-4">Sign Up!
+                                        <label for="user_email" class="sr-only">Email</label>
+                                        <input name="EMAIL" id="mce-EMAIL" class="form-control col-8" type="email" placeholder="micheal@dundermifflin.com">
+                                        <button type="submit" class="btn btn-dark-light col-4">Sign Up!
                                         </button>
                                     </div>
                                 </form>
@@ -150,6 +109,21 @@
         </nav>
     </div>
 
+    <div class="alert-color-yellow">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert-contents">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span class="lead">Due to the coronavirus outbreak, all UX Club events will be hosted
+							<a href="../events">online</a> for Fall 2020.
+						</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid splash-sub splash-uxperience text-center">
         <div class="gradient-overlay"></div>
         <div class="container">
@@ -176,7 +150,7 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <button id="subscribe" onclick="window.location.href = 'https://www.eventbrite.com/e/uxperience-conference-tickets-80974343441';" type="submit" class="btn btn-gradient ml-md-4">Register for UXperience</button>
+                    <button id="subscribe" onclick="window.location.href = 'https://www.eventbrite.com/e/uxperience-conference-tickets-80974343441';" type="submit" class="btn btn-gradient ml-md-4" disabled>Register for UXperience</button>
                 </div>
             </div>
         </div>
@@ -202,10 +176,8 @@
                                     <div class="position-relative officer-wrapper">
                                         <img src="../src/imgs/uxperience/presenters/jen-blatz.jpeg" alt="web" class="rounded-circle">
                                         <div class="external-links">
-                                            <a href="http://www.jenniferblatzdesign.com"
-                                               target="_blank"><i class="fas fa-globe"></i></a>
-                                            <a href="https://www.linkedin.com/in/jenniferblatz/"
-                                               target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="http://www.jenniferblatzdesign.com" target="_blank"><i class="fas fa-globe"></i></a>
+                                            <a href="https://www.linkedin.com/in/jenniferblatz/" target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -216,14 +188,10 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="position-relative officer-wrapper">
-                                        <img src="../src/imgs/uxperience/presenters/brandon-ward.jpeg"
-                                             alt="web"
-                                             class="rounded-circle">
+                                        <img src="../src/imgs/uxperience/presenters/brandon-ward.jpeg" alt="web" class="rounded-circle">
                                         <div class="external-links">
-                                            <a href="http://www.brandonebward.com/"
-                                               target="_blank"><i class="fas fa-globe"></i></a>
-                                            <a href="https://www.linkedin.com/in/brandonebward/"
-                                               target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="http://www.brandonebward.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                            <a href="https://www.linkedin.com/in/brandonebward/" target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -234,12 +202,9 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="position-relative officer-wrapper">
-                                        <img src="../src/imgs/uxperience/presenters/frances-y.jpeg"
-                                             alt="web"
-                                             class="rounded-circle">
+                                        <img src="../src/imgs/uxperience/presenters/frances-y.jpeg" alt="web" class="rounded-circle">
                                         <div class="external-links">
-                                            <a href="https://www.linkedin.com/in/francesy/"
-                                               target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://www.linkedin.com/in/francesy/" target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -253,12 +218,9 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="position-relative officer-wrapper">
-                                        <img src="../src/imgs/uxperience/presenters/elisa-miller.jpeg"
-                                             alt="web"
-                                             class="rounded-circle">
+                                        <img src="../src/imgs/uxperience/presenters/elisa-miller.jpeg" alt="web" class="rounded-circle">
                                         <div class="external-links">
-                                            <a href="https://www.linkedin.com/in/elisakmiller/"
-                                               target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://www.linkedin.com/in/elisakmiller/" target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -269,12 +231,9 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="position-relative officer-wrapper">
-                                        <img src="../src/imgs/uxperience/presenters/brittany-sumarsono.jpeg"
-                                             alt="web"
-                                             class="rounded-circle">
+                                        <img src="../src/imgs/uxperience/presenters/brittany-sumarsono.jpeg" alt="web" class="rounded-circle">
                                         <div class="external-links">
-                                            <a href="https://www.linkedin.com/in/bsumarsono/"
-                                               target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://www.linkedin.com/in/bsumarsono/" target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -285,14 +244,10 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="position-relative officer-wrapper">
-                                        <img src="../src/imgs/uxperience/presenters/michael-champlin.jpeg"
-                                             alt="web"
-                                             class="rounded-circle">
+                                        <img src="../src/imgs/uxperience/presenters/michael-champlin.jpeg" alt="web" class="rounded-circle">
                                         <div class="external-links">
-                                            <a href="https://mjchamplin.com/"
-                                               target="_blank"><i class="fas fa-globe"></i></a>
-                                            <a href="https://www.linkedin.com/in/michaeljchamplin/"
-                                               target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://mjchamplin.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                            <a href="https://www.linkedin.com/in/michaeljchamplin/" target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -306,12 +261,9 @@
                                 <div class="col-md-4"></div>
                                 <div class="col-md-4">
                                     <div class="position-relative officer-wrapper">
-                                        <img src="../src/imgs/uxperience/presenters/brian-sullivan.jpeg"
-                                             alt="web"
-                                             class="rounded-circle">
+                                        <img src="../src/imgs/uxperience/presenters/brian-sullivan.jpeg" alt="web" class="rounded-circle">
                                         <div class="external-links">
-                                            <a href="https://www.linkedin.com/in/briankeithsullivan/"
-                                               target="_blank"><i class="fab fa-linkedin"></i></a>
+                                            <a href="https://www.linkedin.com/in/briankeithsullivan/" target="_blank"><i class="fab fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                     <div class="officer-description mt-2">
@@ -484,7 +436,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
     <!--footer-->
     <div class="container-fluid mailing-list">
@@ -494,19 +446,15 @@
                     <br>
                     <br>
                     <h2>Stay in the know!</h2>
-                    <p>Sign up for emails to get updates about our upcoming events and other UX/UI events around the
-                        DFW
-                        area.</p>
-                        <p class="lead">Also join us on <a target="_blank" href="https://www.remind.com/join/uxutd">  Remind 101</a>!</p>
+                    <p>Sign up for emails to get updates about our upcoming events and other UX/UI events around the DFW area.
+                    </p>
+                    <p class="lead">Also, join us on <a target="_blank" href="https://www.remind.com/join/uxutd">  Remind 101</a>!</p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <form
-                            action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
-                            method="POST">
+                    <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63" method="POST">
                         <div class="form-group">
                             <label for="user_email" class="d-md-none">Join our mailing list!</label>
-                            <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL"
-                                   aria-describedby="emailHelp" placeholder="micheal@dundermifflin.com">
+                            <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" aria-describedby="emailHelp" placeholder="micheal@dundermifflin.com">
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                 anyone
                                 else.
@@ -519,7 +467,7 @@
         </div>
     </div>
 
-        <div class="container-fluid footer text-center">
+    <div class="container-fluid footer text-center">
         <div class="container py-4">
             <div class="d-flex flex-column flex-md-row-reverse">
                 <div class="social-links">

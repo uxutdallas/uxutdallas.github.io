@@ -1,178 +1,177 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
-
 html,
 body {
-	height: 100%;
-	width: 100%;
-	font-family: "Montserrat", sans-serif;
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
 }
 
 .splash-sub {
-	background-size: cover;
-	color: #ffffff;
-	height: 100%;
-	padding-top: 6rem;
-	position: relative;
+    background-size: cover;
+    color: #ffffff;
+    height: 100%;
+    padding-top: 6rem;
+    position: relative;
 }
 
 .splash-sub h2 {
-	font-weight: 700;
-	font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .splash-about {
-	background: #000 url("../imgs/officers.jpg");
-	background-size: cover;
+    background: #000 url("../imgs/officers.jpg");
+    background-size: cover;
 }
 
 .splash-event {
-	background: #000 url("../imgs/ATEC.jpg");
-	background-size: cover;
+    background: #000 url("../imgs/ATEC.jpg");
+    background-size: cover;
 }
 
 .splash-uxperience {
-	background: #000 url("../imgs/uxperience/blackstone_launchpad.jpg");
-	background-size: cover;
+    background: #000 url("../imgs/uxperience/blackstone_launchpad.jpg");
+    background-size: cover;
 }
 
 .about-content {
-	padding-top: 4rem;
-	padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
 }
 
 .officers {
-	position: relative;
+    position: relative;
 }
 
 .officers img {
-	height: 100%;
-	width: 100%;
-	position: relative;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
-.officers img:hover ~ .external-links,
+.officers img:hover~.external-links,
 .officers .external-links:hover {
-	display: inline-block;
+    display: inline-block;
 }
 
 .officers .external-links {
-	background: #00000066;
-	height: 100%;
-	width: 100%;
-	border-radius: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
-	color: #fff;
-	text-decoration: none;
-	font-size: 1.4rem;
-	padding-top: 35%;
+    background: #00000066;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-top: 35%;
 }
 
 .officer-wrapper {
-	width: 14rem;
-	margin: 0 auto;
+    width: 14rem;
+    margin: 0 auto;
 }
 
 .officer-description * {
-	padding-top: 0.25em;
-	padding-bottom: 0.5em;
-	margin: 0;
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
+    margin: 0;
 }
 
 .external-links a {
-	color: inherit;
+    color: inherit;
 }
 
 .external-links a:hover {
-	opacity: 0.8;
+    opacity: 0.8;
 }
 
 .gradient-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(135deg, #25336e 0%, #009fda 36%, #48c4e5 81%, #9cdbf1 100%);
-	opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #25336e 0%, #009fda 36%, #48c4e5 81%, #9cdbf1 100%);
+    opacity: 0.8;
 }
 
 .no-border {
-	border: none;
+    border: none;
 }
 
 .btn-dark-light {
-	border: solid 1.5px #000;
-	color: #000;
-	background: transparent;
+    border: solid 1.5px #000;
+    color: #000;
+    background: transparent;
 }
 
 .btn-dark-light:hover {
-	color: #fff;
-	background: #000;
+    color: #fff;
+    background: #000;
 }
 
 .logo {
-	height: 10rem;
-	margin: 1rem 0;
+    height: 10rem;
+    margin: 1rem 0;
 }
 
 .splash {
-	background: linear-gradient(135deg, #25336e 0%, #009fda 36%, #48c4e5 81%, #9cdbf1 100%);
-	color: #ffffff;
-	height: 100%;
-	padding-top: 6rem;
+    background: linear-gradient(135deg, #25336e 0%, #009fda 36%, #48c4e5 81%, #9cdbf1 100%);
+    color: #ffffff;
+    height: 100%;
+    padding-top: 6rem;
 }
 
 .splash h2 {
-	font-weight: 700;
-	font-size: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .navbar-brand img {
-	width: 10rem;
+    width: 10rem;
 }
 
 .navbar .nav-item a.nav-link {
-	color: #009fda;
-	font-weight: 700;
-	text-transform: uppercase;
-	position: relative;
+    color: #009fda;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
 }
 
 .navbar .nav-item a.nav-link:before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	background-color: #009fda;
-	visibility: hidden;
-	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #009fda;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar .nav-item a.nav-link:hover,
 .navbar .nav-item a.nav-link:active,
 .navbar .nav-item a.nav-link:focus {
-	color: #009fda;
+    color: #009fda;
 }
 
 .navbar .nav-item a.nav-link:hover:before {
-	visibility: visible;
-	-webkit-transform: scaleX(0.8);
-	transform: scaleX(0.8);
+    visibility: visible;
+    -webkit-transform: scaleX(0.8);
+    transform: scaleX(0.8);
 }
 
 .fb-page {
-	display: block;
-	text-align: center;
-	margin: auto;
+    display: block;
+    text-align: center;
+    margin: auto;
 }
 
 .fb_iframe_widget {
@@ -180,224 +179,227 @@ body {
 }
 
 .event img {
-	width: 20rem;
+    width: 20rem;
 }
 
 .event {
-	margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .event-time {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .event-activity-name {
-	font-weight: bold;
-	font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .event-activity-description {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
 #flyer img {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .collaborations img {
-	width: 8rem;
+    width: 8rem;
 }
 
 .mailing-list {
-	background: #222222;
-	color: #ffffff;
+    background: #222222;
+    color: #ffffff;
 }
 
 .btn-gradient {
-	text-decoration: none;
-	color: #ffffff;
-	transition: all 0.2s ease;
-	background: linear-gradient(135deg, #009fda 0%, #48c4e5 100%);
-	font-weight: 700;
-	box-shadow: 0 1.5px 3.5px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.14);
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    background: linear-gradient(135deg, #009fda 0%, #48c4e5 100%);
+    font-weight: 700;
+    box-shadow: 0 1.5px 3.5px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.14);
 }
 
 .btn-gradient:hover {
-	box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.24);
-	color: #ffffff;
+    box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.24);
+    color: #ffffff;
 }
 
 .btn-clear {
-	background: transparent;
-	color: #ffffff;
-	border: 1px solid #fff;
-	font-weight: normal;
-	font-size: 14px;
-	height: 43px;
-	transition: all 0.5s;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #fff;
+    font-weight: normal;
+    font-size: 14px;
+    height: 43px;
+    transition: all 0.5s;
 }
 
 .btn-clear:hover {
-	background-color: #fff;
-	color: #222;
-	font-weight: 700;
+    background-color: #fff;
+    color: #222;
+    font-weight: 700;
 }
 
 form {
-	padding: 4rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .footer {
-	background: #181d1f;
-	color: #ffffff;
+    background: #181d1f;
+    color: #ffffff;
 }
 
 .social-links a {
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
 }
 
 .social-links a:hover {
-	opacity: 0.8;
+    opacity: 0.8;
 }
 
 .ux-video {
-	display: block;
-	padding-top: 3rem;
-	margin: auto;
+    display: block;
+    padding-top: 3rem;
+    margin: auto;
 }
 
 .main-content {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .mailing-list .container {
-	padding: 4rem 0;
+    padding: 4rem 0;
 }
 
 .container.navbar-container {
-	padding: 0;
+    padding: 0;
 }
 
 .lead {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
 .parallax-window {
-	min-height: 400px;
-	background: transparent;
+    min-height: 400px;
+    background: transparent;
 }
 
 .splash-design-challenge {
-	background: #000 url("../imgs/design\ challenge/design-challenge-banner.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+    background: #000 url("../imgs/design\ challenge/design-challenge-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 .btn-outline-light:hover {
-	color: grey;
-	background-color: #ffffff;
-	border-color: #ffffff;
+    color: grey;
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
+
 .prompt-reveal-container {
-	padding: 3rem;
-	color: white;
-	background: linear-gradient(135deg, #3e57bd 0%, #009fda 36%, #48c4e5 81%, #8bd6f0 100%);
-	border-radius: 25px;
+    padding: 3rem;
+    color: white;
+    background: linear-gradient(135deg, #3e57bd 0%, #009fda 36%, #48c4e5 81%, #8bd6f0 100%);
+    border-radius: 25px;
 }
 
 .prompt-reveal-container hr {
-	border-color: white;
-	margin: 3rem 0;
+    border-color: white;
+    margin: 3rem 0;
 }
 
 .prompt-reveal-container a {
-	color: #e87500;
-	font-weight: bold;
+    color: #e87500;
+    font-weight: bold;
 }
 
 .utd-monogram-svg {
-	display: block;
-	width: 7rem;
-	margin: auto;
+    display: block;
+    width: 7rem;
+    margin: auto;
 }
 
 .indent {
-	margin-left: 3rem;
+    margin-left: 3rem;
 }
 
 .countdown-container hr {
-	margin: 3rem 0;
+    margin: 3rem 0;
 }
 
 .award-name {
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .award-description {
-	text-align: center;
-	font-size: 1rem;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .center-text {
-	text-align: center;
+    text-align: center;
 }
 
 .sub-text {
-	font-style: italic;
-	font-size: 15px !important;
+    font-style: italic;
+    font-size: 15px !important;
 }
 
 .line-through {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .design-challenge-sponsor {
-	width: 20rem;
-	padding-top: 2rem;
+    width: 20rem;
+    padding-top: 2rem;
 }
 
 .design-challenge-flyer {
-	border: 1px solid rgb(220, 218, 218);
+    border: 1px solid rgb(220, 218, 218);
 }
 
 .design-challenge-timer-text {
-	font-size: 40px !important;
+    font-size: 40px !important;
 }
 
 .design-challenge-timer {
-	color: red;
+    color: red;
 }
 
 .rubric-pdf {
-	height: 40rem;
-	width: 80%;
+    height: 40rem;
+    width: 80%;
 }
 
 .alert-color-yellow {
-	background-color: #fff3cd;
-	border-color: #fff3cd;
-	color: #856404;
-	border: 1px solid transparent;
+    background-color: #fff3cd;
+    border-color: #fff3cd;
+    color: #856404;
+    border: 1px solid transparent;
 }
 
 .alert-color-blue {
-	color: #004085;
+    color: #004085;
     background-color: #cce5ff;
     border-color: #b8daff;
-	border: 1px solid transparent;
+    border: 1px solid transparent;
 }
 
 .alert-contents {
-	display: flex;
-	padding: 1rem;
+    display: block;
+    padding: 1rem;
+    text-align: center;
 }
 
 .fa-exclamation-circle {
-	font-size: 2rem;
-	padding: 0rem 1rem;
+    font-size: 2rem;
+    padding: 0rem 1rem;
 }
