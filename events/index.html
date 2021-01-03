@@ -1,242 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700"
-    />
-    <link
-      rel="stylesheet"
-      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="../src/styles/mobile-styles.css" />
-    <link rel="stylesheet" href="../src/styles/desktop-style.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" />
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../src/styles/mobile-styles.css" />
+  <link rel="stylesheet" href="../src/styles/desktop-style.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 
-    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../src/script/main.js"></script>
-    <title>Events | UX Club at UT Dallas</title>
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
-  <body>
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"
-    ></script>
+  <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../src/script/main.js"></script>
+  <title>Events | UX Club at UT Dallas</title>
 
-    <div class="container my-0 py-0">
-      <!--menu bar-->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/">
-          <img
-            src="../src/imgs/logos/ux/logo-with-tagline.png"
-            alt="UX UTD"
-            onclick="window.open(index.html)"
-          />
-        </a>
+  <style>
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition: 0.4s;
+    }
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+    .active,
+    .accordion:hover {
+      background-color: #ccc;
+    }
+
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+
+  <div class="container my-0 py-0">
+    <!--menu bar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="/">
+        <img src="../src/imgs/logos/ux/logo-with-tagline.png" alt="UX UTD" onclick="window.open(index.html)" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link events-link" href="../events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link events-link" href="../design challenge/">Design Challenge</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../uxperience">UXperience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://uxutd.typeform.com/to/LsNaLW" target="_blank">Apply</a>
+          </li>
+        </ul>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
+          Join Us
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link events-link" href="../events">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link events-link" href="../design challenge/"
-                >Design Challenge</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../uxperience">UXperience</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://uxutd.typeform.com/to/LsNaLW"
-                target="_blank"
-                >Apply</a
-              >
-            </li>
-          </ul>
-          <!-- Button trigger modal -->
-          <button
-            type="button"
-            class="btn btn-gradient ml-md-4"
-            data-toggle="modal"
-            data-target="#modal"
-          >
-            Join Us
-          </button>
+        <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content p-4">
+              <div class="modal-header no-border flex-column m-0 p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="modal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="modalTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content p-4">
-                <div class="modal-header no-border flex-column m-0 p-0">
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <h2>Stay in the know!</h2>
+                <p class="lead">
+                  Sign up for emails to get updates about our upcoming events
+                  and other UX/UI events around the DFW area.
+                </p>
+              </div>
 
-                  <h2>Stay in the know!</h2>
-                  <p class="lead">
-                    Sign up for emails to get updates about our upcoming events
-                    and other UX/UI events around the DFW area.
-                  </p>
-                </div>
-
-                <div class="modal-body no-border m-0 p-0">
-                  <form
-                    class="m-0 p-0"
-                    action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
-                    method="POST"
-                  >
-                    <div class="form-group row p-4">
-                      <label for="user_email" class="sr-only">Email</label>
-                      <input
-                        name="EMAIL"
-                        id="mce-EMAIL"
-                        class="form-control col-8"
-                        type="email"
-                        placeholder="micheal@dundermifflin.com"
-                      />
-                      <button type="submit" class="btn btn-dark-light col-4">
-                        Sign Up!
-                      </button>
-                    </div>
-                  </form>
-                </div>
-
-                <div class="modal-footer no-border m-0 p-0">
-                  <div class="social-links">
-                    <a href="http://bit.ly/joinuxutd" target="_blank">
-                      <i class="fab fa-slack text-dark"></i>
-                    </a>
-                    <a href="https://www.facebook.com/uxutd/" target="_blank">
-                      <i class="fab fa-facebook-square text-dark"></i>
-                    </a>
-                    <a href="https://twitter.com/UX_UTD" target="_blank">
-                      <i class="fab fa-twitter-square text-dark"></i>
-                    </a>
-                    <a href="https://www.instagram.com/ux_utd/" target="_blank">
-                      <i class="fab fa-instagram text-dark"></i>
-                    </a>
-                    <a href="mailto:uxutdallas@gmail.com" target="_blank">
-                      <i class="fas fa-envelope-square text-dark"></i>
-                    </a>
+              <div class="modal-body no-border m-0 p-0">
+                <form class="m-0 p-0"
+                  action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
+                  method="POST">
+                  <div class="form-group row p-4">
+                    <label for="user_email" class="sr-only">Email</label>
+                    <input name="EMAIL" id="mce-EMAIL" class="form-control col-8" type="email"
+                      placeholder="micheal@dundermifflin.com" />
+                    <button type="submit" class="btn btn-dark-light col-4">
+                      Sign Up!
+                    </button>
                   </div>
+                </form>
+              </div>
+
+              <div class="modal-footer no-border m-0 p-0">
+                <div class="social-links">
+                  <a href="http://bit.ly/joinuxutd" target="_blank">
+                    <i class="fab fa-slack text-dark"></i>
+                  </a>
+                  <a href="https://www.facebook.com/uxutd/" target="_blank">
+                    <i class="fab fa-facebook-square text-dark"></i>
+                  </a>
+                  <a href="https://twitter.com/UX_UTD" target="_blank">
+                    <i class="fab fa-twitter-square text-dark"></i>
+                  </a>
+                  <a href="https://www.instagram.com/ux_utd/" target="_blank">
+                    <i class="fab fa-instagram text-dark"></i>
+                  </a>
+                  <a href="mailto:uxutdallas@gmail.com" target="_blank">
+                    <i class="fas fa-envelope-square text-dark"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
 
-    <div class="alert-color-yellow">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="alert-contents">
-              <i class="fas fa-exclamation-circle"></i>
-              <span class="lead"
-                >Due to the coronavirus outbreak, all UX Club events will be
-                hosted online for Fall 2020.
-              </span>
-            </div>
+  <div class="alert-color-yellow">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="alert-contents">
+            <i class="fas fa-exclamation-circle"></i>
+            <span class="lead">Due to the coronavirus outbreak, all UX Club events will be
+              hosted online for Fall 2020.
+            </span>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container-fluid splash-sub splash-event text-center">
-      <div class="gradient-overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <img
-              src="../src/imgs/logos/ux/logo-white.png"
-              alt="UX UTD logo"
-              class="logo"
-            />
-            <h2>
-              We host events to spread awareness about user-centered design.
-            </h2>
-            <!--
+  <div class="container-fluid splash-sub splash-event text-center">
+    <div class="gradient-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img src="../src/imgs/logos/ux/logo-white.png" alt="UX UTD logo" class="logo" />
+          <h2>
+            We host events to spread awareness about user-centered design.
+          </h2>
+          <!--
 						<p class="lead">Our events are mostly held on Wednesdays 7-9pm at ATEC.</p>
 						<p class="lead">Come join us!</p>
 						-->
-            <p class="lead">We are currently holding virtual events.</p>
-            <p class="lead">Stay safe and it'll be a superb time! :)</p>
-          </div>
+          <p class="lead">We are currently holding virtual events.</p>
+          <p class="lead">Stay safe and it'll be a superb time! :)</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="main-content">
-      <!-- Schedule body -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="font-weight-bold">Upcoming Events</h2>
-          </div>
+  <div class="main-content">
+    <!-- Schedule body -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="font-weight-bold">Upcoming Events</h2>
         </div>
-        <br />
-        <hr />
+      </div>
+      <br />
+      <hr />
 
-        <br />
-
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="font-weight-bold">Past Events</h2>
-          </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="event-time">Applications Open 01/01/2021</p>
         </div>
-        <br />
-        <hr />
+        <div class="col-md-8">
+          <p class="event-activity-name">
+            Officer Applications! </p>
+          <p class="event-activity-description">
+            Want to join the team? Apply to become an officer!
+          </p>
+        </div>
+      </div>
+      <hr />
 
+      <br />
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="font-weight-bold">Past Events</h2>
+        </div>
+      </div>
+      <br />
+      <hr />
+
+      <button class="accordion font-weight-bold">Fall 2020</button>
+      <div class="panel">
+        <br>
         <div class="row">
           <div class="col-md-4">
             <p class="event-time">11/18/2020, 7 PM CT</p>
@@ -251,12 +235,9 @@
               into the world of Conversational AI, what is happening with
               technology in the AI space, and what the future holds.
               <br /><br />Access the
-              recording link <a
-              href="https://www.youtube.com/watch?v=O0zYApa9-rA&feature=youtu.be"
-              target="_blank"
-              >here</a
-            >!
-          </p>
+              recording link <a href="https://www.youtube.com/watch?v=O0zYApa9-rA&feature=youtu.be"
+                target="_blank">here</a>!
+            </p>
           </div>
         </div>
         <hr />
@@ -276,15 +257,11 @@
               sharing her insights and experience as a former Product Designer
               and current Advisory Design Lead at IBM. <br /><br />Access the
               recording link
-              <a
-                href="https://www.youtube.com/watch?v=Ugw2byIHYFo&feature=youtu.be"
-                target="_blank"
-                >here</a
-              >!
+              <a href="https://www.youtube.com/watch?v=Ugw2byIHYFo&feature=youtu.be" target="_blank">here</a>!
             </p>
           </div>
         </div>
-        <hr/>
+        <hr />
 
         <div class="row">
           <div class="col-md-4">
@@ -328,11 +305,7 @@
               will be creating a webpage for tracking COVID-19 data and news.
               Join us on this super fun and interactive workshop and grow your
               web development skills.<br /><br />Access the recording link
-              <a
-                href="https://www.youtube.com/watch?v=GyH2ASUQuk4&feature=youtu.be"
-                target="_blank"
-                >here</a
-              >!
+              <a href="https://www.youtube.com/watch?v=GyH2ASUQuk4&feature=youtu.be" target="_blank">here</a>!
             </p>
           </div>
         </div>
@@ -372,11 +345,7 @@
               the need for timeless design and how the feel of the product
               should remain consistent over many years, even as the product
               matures.<br /><br />Access the recording link
-              <a
-                href="https://www.youtube.com/watch?v=chAAoDWNNbc&feature=youtu.be"
-                target="_blank"
-                >here</a
-              >!
+              <a href="https://www.youtube.com/watch?v=chAAoDWNNbc&feature=youtu.be" target="_blank">here</a>!
             </p>
           </div>
         </div>
@@ -392,11 +361,7 @@
               Interested in learning about where an ATEC degree can take you?
               Ask some alums! We are hosting a Q&A panel with ATEC Alumns. Feel
               free to ask questions! <br /><br />Access the recording link
-              <a
-                href="https://www.youtube.com/watch?v=DJ7A7wyh3Rc&feature=youtu.be"
-                target="_blank"
-                >here</a
-              >!
+              <a href="https://www.youtube.com/watch?v=DJ7A7wyh3Rc&feature=youtu.be" target="_blank">here</a>!
             </p>
           </div>
         </div>
@@ -418,11 +383,7 @@
               interaction! Participants are welcome at ANY skill level! Please
               install the latest version of Adobe XD prior to attending the
               workshop. <br /><br />Access the recording link
-              <a
-                href="https://www.youtube.com/watch?v=nboxv6hPLdU&feature=youtu.be"
-                target="_blank"
-                >here</a
-              >!
+              <a href="https://www.youtube.com/watch?v=nboxv6hPLdU&feature=youtu.be" target="_blank">here</a>!
             </p>
           </div>
         </div>
@@ -434,9 +395,7 @@
           </div>
           <div class="col-md-8">
             <p class="event-activity-name">
-              <a href="http://bigdesignevents.com/" target="_new"
-                >Big Design Conference</a
-              >
+              <a href="http://bigdesignevents.com/" target="_new">Big Design Conference</a>
             </p>
             <p class="event-activity-description">
               Do you want to attend one of the biggest UX conferences in Texas?!
@@ -464,94 +423,99 @@
           </div>
         </div>
         <hr />
+      </div>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-        <br />
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
 
-        <div class="lead">
-          Solidifying key concepts is valuable in learning anything. If you've
-          missed something from our workshops, we've compiled some useful
-          <a
-            href="https://drive.google.com/open?id=1hehMAkCUZLaas4WZI8ajbqhEnJ6aP2lb"
-            target="_blank"
-            >resources</a
-          >
-          for you!
+      <br>
+      <br>
+      <br>
+
+      <div class="lead">
+        Solidifying key concepts is valuable in learning anything. If you've
+        missed something from our workshops, we've compiled some useful
+        <a href="https://drive.google.com/open?id=1hehMAkCUZLaas4WZI8ajbqhEnJ6aP2lb" target="_blank">resources</a>
+        for you!
+      </div>
+    </div>
+  </div>
+
+  <!--footer-->
+  <div class="container-fluid mailing-list">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-none d-md-block">
+          <br />
+          <br />
+          <h2>Stay in the know!</h2>
+          <p>
+            Sign up for emails to get updates about our upcoming events and
+            other UX/UI events around the DFW area.
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <form action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
+            method="POST">
+            <div class="form-group">
+              <label for="user_email" class="d-md-none">Join our mailing list!</label>
+              <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" aria-describedby="emailHelp"
+                placeholder="micheal@dundermifflin.com" />
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.
+              </small>
+            </div>
+            <button type="submit" class="btn btn-clear">Sign Up</button>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--footer-->
-    <div class="container-fluid mailing-list">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 d-none d-md-block">
-            <br />
-            <br />
-            <h2>Stay in the know!</h2>
-            <p>
-              Sign up for emails to get updates about our upcoming events and
-              other UX/UI events around the DFW area.
-            </p>
-          </div>
-          <div class="col-12 col-md-6">
-            <form
-              action="https://uxutd.us9.list-manage.com/subscribe/post?u=b3eeeea1ecb7754e8a0f6cdca&amp;id=e1c6c0ac63"
-              method="POST"
-            >
-              <div class="form-group">
-                <label for="user_email" class="d-md-none"
-                  >Join our mailing list!</label
-                >
-                <input
-                  type="email"
-                  name="EMAIL"
-                  class="form-control"
-                  id="mce-EMAIL"
-                  aria-describedby="emailHelp"
-                  placeholder="micheal@dundermifflin.com"
-                />
-                <small id="emailHelp" class="form-text text-muted"
-                  >We'll never share your email with anyone else.
-                </small>
-              </div>
-              <button type="submit" class="btn btn-clear">Sign Up</button>
-            </form>
-          </div>
+  <div class="container-fluid footer text-center">
+    <div class="container py-4">
+      <div class="d-flex flex-column flex-md-row-reverse">
+        <div class="social-links">
+          <a href="http://bit.ly/joinuxutd" target="_blank">
+            <i class="fab fa-slack"></i>
+          </a>
+          <a href="https://www.facebook.com/uxutd/" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://twitter.com/UX_UTD" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a href="https://www.instagram.com/ux_utd/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:uxutdallas@gmail.com">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </div>
+        <div class="mr-md-auto copyright">
+          <p>
+            &copy; Copyright
+            <script>
+              document.write(String(new Date().getFullYear()));
+            </script>
+            UX UTD
+          </p>
         </div>
       </div>
     </div>
+  </div>
+</body>
 
-    <div class="container-fluid footer text-center">
-      <div class="container py-4">
-        <div class="d-flex flex-column flex-md-row-reverse">
-          <div class="social-links">
-            <a href="http://bit.ly/joinuxutd" target="_blank">
-              <i class="fab fa-slack"></i>
-            </a>
-            <a href="https://www.facebook.com/uxutd/" target="_blank">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="https://twitter.com/UX_UTD" target="_blank">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-            <a href="https://www.instagram.com/ux_utd/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="mailto:uxutdallas@gmail.com">
-              <i class="fas fa-envelope-square"></i>
-            </a>
-          </div>
-          <div class="mr-md-auto copyright">
-            <p>
-              &copy; Copyright
-              <script>
-                document.write(String(new Date().getFullYear()));
-              </script>
-              UX UTD
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
 </html>
