@@ -403,3 +403,27 @@ form {
     font-size: 2rem;
     padding: 0rem 1rem;
 }
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
