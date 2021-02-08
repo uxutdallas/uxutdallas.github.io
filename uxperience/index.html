@@ -188,7 +188,7 @@
             <div id="collaborators" class="d-flex flex-wrap justify-content-center collaborations text-center">
                 <div class="m-3 align-self-center">
                     <a href="https://www.stickermule.com" target="_blank"> <img
-                            src="../src/imgs/logos/sponsors/sticker-mule.svg" alt="Sticker Mule">
+                            src="../src/imgs/logos/sponsors/sticker-mule.svg" alt="Sticker Mule"></a>
                 </div>
                 <br>
             </div>
@@ -199,9 +199,9 @@
             <br>
             <br>
 
-            <button class="accordion font-weight-bold main-content" style="margin: 0 auto">UXperience Conference
+            <button class="accordion font-weight-bold">UXperience Conference
                 2020</button>
-            <div class="panel">
+<div class="panel">
                 <!-- Speakers -->
                 <div class="container">
                     <div class="row">
@@ -351,9 +351,38 @@
                         </div>
                     </div>
                 </div>
-                <br>
-                <br>
-                <br>
+            <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+      
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+            </script>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
 
                 <!-- Schedule body -->
                 <div class="container">
@@ -475,8 +504,8 @@
                                 <p>Sign up for one spot through this link for a 5-minute one-on-one review from some of
                                     our
                                     presenters.</p>
-                                <a href="https://www.signupgenius.com/go/9040d4aa5a923a6ff2-uxperience">Reserve a
-                                    spot!</a>
+                                <!-- <a href="https://www.signupgenius.com/go/9040d4aa5a923a6ff2-uxperience">Reserve a
+                                    spot!</a> -->
                             </div>
                         </div>
                     </div>
