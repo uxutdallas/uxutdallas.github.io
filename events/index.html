@@ -19,6 +19,7 @@
   <script src="../node_modules/popper.js/dist/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="../src/script/main.js"></script>
+  <script src="../src/script/event_images.js"></script>
   <title>Events | UX Club at UT Dallas</title>
 </head>
 
@@ -53,9 +54,15 @@
           <li class="nav-item">
             <a class="nav-link events-link" href="../design challenge/">Design Challenge</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../uxperience">UXperience</a>
-          </li>
+          <div class="dropdown">
+            <li class="nav-item">
+              <a class="nav-link drop">Conference</a>
+                <div class="dropdown-content">
+                  <a class="nav-link" href="../uxperience">UXperience</a>
+                  <a class="nav-link" href="../dfacw/">Design for a Changing World</a>
+                </div>
+            </li>
+          </div>
           <li class="nav-item">
             <a class="nav-link" href="https://uxutd.typeform.com/to/LsNaLW" target="_blank">Apply</a>
           </li>
@@ -149,15 +156,68 @@
           <h2>
             We host events to spread awareness about user-centered design.
           </h2>
-          <!--
-						<p class="lead">Our events are mostly held on Wednesdays 7-9pm at ATEC.</p>
-						<p class="lead">Come join us!</p>
-						-->
-          <p class="lead">Stay safe and it'll be a superb time!</p>
+					<p class="lead">Our events are mostly held on Tuesdays 7-9pm at ATEC.</p>
+					<p class="lead">Come join us!</p>
+          <!--<p class="lead">Stay safe and it'll be a superb time!</p>-->
         </div>
       </div>
     </div>
   </div>
+
+  <br/>
+  <section>
+    <div class="slider">
+      <div class="slide">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="st first">
+          <img src="../src/imgs/events/IMG_1337.JPG">
+        </div>
+
+        <div class="st">
+          <img src="../src/imgs/events/IMG_8944.JPG">
+        </div>
+
+        <div class="st">
+          <img src="../src/imgs/events/IMG_9008.JPG">
+        </div>
+
+        <div class="st">
+          <img src="../src/imgs/events/IMG_9009.JPG">
+        </div>
+
+        <div class="nav-auto">
+          <div class="a-b1"></div>
+          <div class="a-b2"></div>
+          <div class="a-b3"></div>
+          <div class="a-b4"></div>
+        </div>
+
+        <div class="nav-m">
+          <label for="radio1" class="m-btn"></label>
+          <label for="radio2" class="m-btn"></label>
+          <label for="radio3" class="m-btn"></label>
+          <label for="radio4" class="m-btn"></label>
+        </div>
+      </div>
+    </div>
+    <script>
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked=true;
+        document.getElementById('radio' + counter).style.color = "blue";
+        counter++;
+        if(counter > 4)
+          counter = 1;
+      }, 5000);
+    </script>
+      <!--
+        link: https://www.codegrepper.com/code-examples/javascript/how+to+check+if+a+button+is+clicked+javascript
+      -->
+  </section>
 
   <div class="main-content">
     <!-- Schedule body -->
@@ -173,43 +233,22 @@
 
       <div class="row">
         <div class="col-md-4">
-          <p class="event-time">02/15/2022, 7-8 PM CST</p>
+          <p class="event-time">03/01/2022, 7-8 PM CST</p>
         </div>
         <div class="col-md-8">
           <p class="event-activity-name">
-            Portfolio Gallery
-          </p>
+            Web Dev Series Part 2: HTML/CSS/JS Workshop with Hack To Help </p>
           <p class="event-activity-description">
-            This is your chance to meet with some fellow UX Designers at UTD. Show your portfolios to
-            give and receive feedback before the internship session is over.
-          </p>
-          <p class="event-activity-description">
-            Make sure to bring your computer to show your portfolio website.
+            This hands-on workshop continues from the past workshop with A.J. Wood. This time,
+            with Hack To Help, you will get to convert your wireframes into a website programmed in 
+            HTML, CSS, and JavaScript. If you did not attend the workshop with A.J. Wood, that is okay.
+            You can still come to attend this workshop. Try to make some wireframes on Adobe XD or Figma
+            so that you have something to convert into a website. Make sure to bring your laptop for this
+            workshop.
           </p>
         </div>
       </div>
       <hr />
-
-      <div class="row">
-        <div class="col-md-4">
-          <p class="event-time">02/22/2022, 7-9 PM CST</p>
-        </div>
-        <div class="col-md-8">
-          <p class="event-activity-name">
-            Web Dev Series: Adobe XD with AJ Wood </p>
-          <p class="event-activity-description">
-            This online hands-on workshop led by A.J. Wood will cover tips and tricks with Adobe XD 
-            including coediting, components, 3D, voice prototyping, easy animation, presentations, 
-            software sims, and more. Attendees will be following a live tutorial at the same time 
-            and have the chance to ask questions and learn together. This is also a series event where 
-            you will get an opportunity to convert your wireframes into a website using HTML/CSS/JS. 
-            Participants are welcome at any skill level and should have the latest version of Adobe XD 
-            installed prior to attending the workshop.
-          </p>
-        </div>
-      </div>
-      <hr />
-      -
       <!--Event with AIGA-->
 
       <div class="row">
@@ -237,6 +276,44 @@
               to become a UX Club member, and socialize with the officers and members. Also, get a chance to win
               a $20 Amazon gift card. This event is open to everyone! See the recording
               <a href="https://youtu.be/XCMcUIkc-hU" target="_blank">here</a>!
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-4">
+            <p class="event-time">02/15/2022, 7-8 PM CST</p>
+          </div>
+          <div class="col-md-8">
+            <p class="event-activity-name">
+              Portfolio Gallery
+            </p>
+            <p class="event-activity-description">
+              This is your chance to meet with some fellow UX Designers at UTD. Show your portfolios to
+              give and receive feedback before the internship session is over.
+            </p>
+            <p class="event-activity-description">
+              Make sure to bring your computer to show your portfolio website.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="row">
+          <div class="col-md-4">
+            <p class="event-time">02/22/2022, 7-9 PM CST</p>
+          </div>
+          <div class="col-md-8">
+            <p class="event-activity-name">
+              Web Dev Series Part 1: Adobe XD with AJ Wood </p>
+            <p class="event-activity-description">
+              This hands-on workshop led by A.J. Wood will cover tips and tricks with Adobe XD 
+              including coediting, components, 3D, voice prototyping, easy animation, presentations, 
+              software sims, and more. Attendees will be following a live tutorial at the same time 
+              and have the chance to ask questions and learn together. This is also a series event where 
+              you will get an opportunity to convert your wireframes into a website using HTML/CSS/JS. 
+              Participants are welcome at any skill level and should have the latest version of Adobe XD 
+              installed prior to attending the workshop.
             </p>
           </div>
         </div>
