@@ -120,7 +120,7 @@
  
 .slider{
   width: 900px;
-  height: 500px;
+  height: 600px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -130,7 +130,7 @@
  
 .slide{
   width: 500%;
-  height: 500px;
+  height: 600px;
   display: flex;
 }
  
@@ -145,13 +145,13 @@
  
 .st img{
   width: 900px;
-  height: 500px;
+  height: 600px;
 }
  
 .nav-m{
   position: absolute;
   width: 900px;
-  margin-top: 460px;
+  margin-top: 560px;
   justify-content: center;
   display: flex;
 }
@@ -187,11 +187,15 @@
 #radio4:checked ~.first{
   margin-left: -60%;
 }
+
+#radio5:checked ~.first{
+  margin-left: -80%;
+}
  
 .nav-auto{
   position: absolute;
   width: 900px;
-  margin-top: 460px;
+  margin-top: 560px;
   justify-content: center;
   display: flex;
 }
@@ -225,6 +229,11 @@
 }
  
 #radio4:checked ~.nav-auto .a-b4{
+  background-color: blue;
+  border: 2px solid blue;
+}
+
+#radio5:checked ~.nav-auto .a-b5{
   background-color: blue;
   border: 2px solid blue;
 }
