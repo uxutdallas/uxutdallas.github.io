@@ -225,6 +225,81 @@
       
   </section>-->
 
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="../src/imgs/events/IMG_1337.JPG" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="../src/imgs/events/IMG_8944.JPG" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="../src/imgs/events/IMG_8941.JPG" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="../src/imgs/events/IMG_9009.JPG" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="../src/imgs/events/IMG_1175.JPG" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
   <div class="main-content">
     <!-- Schedule body -->
     <div class="container">
@@ -238,24 +313,6 @@
       <hr />
       <!--Event with AIGA-->
 
-      <div class="row">
-        <div class="col-md-4">
-          <p class="event-time">04/20/2022, 12:00 PM-2:00 PM CST</p>
-          <h6 style="color: grey">Hosted at the ATEC Lobby</h6>
-        </div>
-        <div class="col-md-8">
-          <p class="event-activity-name">
-            UxI (End of Semester Mixer)</p>
-          <p class="event-activity-description">
-            Want to know more about the UX Club and us officers? Come to the ATEC Lobby where we will be holding
-            a social event. We will explain to you what we do as a club and what each of our roles are.
-            We will also talk about the UX field and how you can jump into UX. <br><br>
-
-            There's also free food! Come and get them!
-          </p>
-        </div>
-      </div>
-      <hr />
 
       <div class="row">
         <div class="col-md-12">
@@ -268,6 +325,42 @@
       <button class="accordion font-weight-bold">Spring 2022</button>
       <div class="panel">
         <br>
+        <div class="row">
+          <div class="col-md-4">
+
+            <p class="event-time">04/20/2022, 12:00 PM-2:00 PM CST</p>
+            <h6 style="color: grey">Hosted at the ATEC Lobby</h6>
+          </div>
+          <div class="col-md-8">
+            <p class="event-activity-name">
+              UxI (End of Semester Mixer)</p>
+            <p class="event-activity-description">
+              Want to know more about the UX Club and us officers? Come to the ATEC Lobby where we will be holding
+              a social event. We will explain to you what we do as a club and what each of our roles are.
+              We will also talk about the UX field and how you can jump into UX. <br><br>
+  
+              There's also free food! Come and get them!
+            <p class="event-time">03/26/2022, 8:30 AM-5:00 PM CST</p>
+            <h6 style="color: grey">Hosted in SCI 1.220</h6>
+          </div>
+          <div class="col-md-8">
+            <p class="event-activity-name">
+              Designing for a Changing World Conference</p>
+            <p class="event-activity-description">
+              The world has drastically changed since the COVID-19 pandemic began. 
+              In our rapidly changing world, what lessons can we take away to create improved 
+              and meaningful design?
+              <br><br>
+              Join us for an in-person UX Conference where you will have the opportunity to 
+              attend talks from various UX industry professionals. It is an excellent 
+              opportunity to network with others in the UX community and expand your UX 
+              knowledge.
+              <br><br>
+              Breakfast and lunch will be provided.
+            </p>
+          </div>
+        </div>
+        <hr />
         <div class="row">
           <div class="col-md-4">
             <p class="event-time">03/26/2022, 8:30 AM-5:00 PM CST</p>
@@ -297,6 +390,12 @@
           </div>
           <div class="col-md-8">
             <p class="event-activity-name">
+
+            <p class="event-time">03/08/2022, 7-8:30 PM CST</p>
+          </div>
+          <div class="col-md-8">
+            <p class="event-activity-name">
+
               Case Study with Mercedes Johnson</p>
             <p class="event-activity-description">
               This hands-on workshop led by Mercedes Johnson will cover what a case study 
@@ -367,6 +466,30 @@
       <div class="row">
         <div class="col-md-4">
           <p class="event-time">02/15/2022, 7-8 PM CST</p>
+        </div>
+        <div class="col-md-8">
+          <p class="event-activity-name">
+            Portfolio Gallery
+          </p>
+          <p class="event-activity-description">
+            This is your chance to meet with some fellow UX Designers at UTD. Show your portfolios to
+            give and receive feedback before the internship session is over.
+          </p>
+          <p class="event-activity-description">
+            Make sure to bring your computer to show your portfolio website.
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-md-4">
+          <p class="event-time">01/25/2022, 7-8 PM CST</p>
+          <!-- <a href="https://bit.ly/uxclubkickoff" target="_blank">Click here join the event</a> -->
+          <!-- <h6 style="color: grey">Hosted in SU Faculty Dining Hall</h6> -->
+        </div>
+        <div class="col-md-8">
+          <p class="event-activity-name">
         </div>
         <div class="col-md-8">
           <p class="event-activity-name">
