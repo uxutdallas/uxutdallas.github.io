@@ -120,10 +120,19 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 55%;
   position: relative;
   margin: auto;
 }
+
+.home-slideshow-container {
+  width: 500px;
+  position: relative;
+  
+}
+
+
+
 
 /* Next & previous buttons */
 .prev, .next {
