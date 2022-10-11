@@ -313,6 +313,18 @@ form {
     border-color: white;
     margin: 3rem 0;
 }
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {   
+    width: 100%;
+    height: 500px;
+  }
 
 .prompt-reveal-container a {
     color: #e87500;
