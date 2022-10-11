@@ -344,6 +344,13 @@ form {
     font-size: 1rem;
 }
 
+.container-packet {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 8.25%;
+}
+
 .center-text {
     text-align: center;
 }
