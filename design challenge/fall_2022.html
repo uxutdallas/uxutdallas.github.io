@@ -171,18 +171,143 @@
                             <p class="lead">
                                 The purpose of this booklet is to aid you through your design process, outline submission guidelines, and provide resources to help you!
                             </p>
-                            <div class="center-text prompt-reveal-container">
-                                <embed
-                                    class="rubric-pdf"
-                                    src="/src/pdf/design challenge/Design-Challenge-Booklet.pdf"
-                                />
-                            </div>
+                                <div class="">
+
+                                    <div class="">
+
+                                        <!-- Full-width images with number and caption text -->
+                                        <div class="mySlides">
+                                        
+                                            <img  class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-01.png" style="width: 80%; border-radius: 10px; "/>
+                                          </div>
+                                        
+                                          <div class="mySlides">
+                                            
+                                            <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-02.png" style="width: 80%; border-radius: 10px; " />
+                              
+                                          </div>
+                                        
+                                          <div class="mySlides">
+                                           
+                                            <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-03.png" style="width: 80%; border-radius: 10px; "/>
+                              
+                                          </div>
+                                          <div class="mySlides">
+                                            
+                                              <img  class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-04.png"style="width: 80%; border-radius: 10px; " />
+                                            </div>
+                                          
+                                            <div class="mySlides">
+                                             
+                                              <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-05.png" style="width: 80%; border-radius: 10px; "/>
+                                
+                                            </div>
+                                          
+                                            <div class="mySlides">
+                                            
+                                              <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-06.png" style="width: 80%; border-radius: 10px; "/>
+                                
+                                            </div>
+                                            <div class="mySlides">
+                                   
+                                              <img  class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-07.png" style="width: 80%; border-radius: 10px; "/>
+                                            </div>
+                                          
+                                              <div class="mySlides">
+                                                  
+                                                  <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-08.png" style="width: 80%; border-radius: 10px; "/>
+                                  
+                                              </div>
+                                          
+                                              <div class="mySlides">
+                                         
+                                                  <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-09.png" style="width: 80%; border-radius: 10px; "/>
+                                  
+                                              </div>
+                                            <div class="mySlides">
+                                               
+                                                <img  class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-10.png" style="width: 80%; border-radius: 10px; "/>
+                                              </div>
+                                            
+                                              <div class="mySlides">
+                                        
+                                                <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-11.png" style="width: 80%; border-radius: 10px; "/>
+                                  
+                                              </div>
+                                            
+                                              <div class="mySlides">
+                                             
+                                                <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-12.png" style="width: 80%; border-radius: 10px; "/>
+                                  
+                                              </div>
+                                              <div class="mySlides">
+                                              
+                                                  <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-13.png" style="width: 80%; border-radius: 10px; "/>
+                                    
+                                                </div>
+                                        <!-- Next and previous buttons -->
+                                        <a class="prev" onclick="plusSlides(-1)" style="color: white;">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)" style="color: white;">&#10095;</a>
+                                      </div>
+                                      <br>
+                                      
+                                      <!-- The dots/circles -->
+                                      <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                     <span class="dot" onclick="currentSlide(2)"></span>
+                                     <span class="dot" onclick="currentSlide(3)"></span>
+                                     <span class="dot" onclick="currentSlide(4)"></span>
+                                     <span class="dot" onclick="currentSlide(5)"></span>
+                                     <span class="dot" onclick="currentSlide(6)"></span>
+                                     <span class="dot" onclick="currentSlide(7)"></span>
+                                     <span class="dot" onclick="currentSlide(8)"></span>
+                                     <span class="dot" onclick="currentSlide(9)"></span>
+                                     <span class="dot" onclick="currentSlide(10)"></span>
+                                     <span class="dot" onclick="currentSlide(11)"></span>
+                                     <span class="dot" onclick="currentSlide(12)"></span>
+                                     <span class="dot" onclick="currentSlide(13)"></span> 
+                                      </div>
+                                    
+                                      <script>
+                                        let slideIndex = 1;
+                                        showSlides(slideIndex);
+                                        
+                                        function plusSlides(n) {
+                                          showSlides(slideIndex += n);
+                                        }
+                                        
+                                        function currentSlide(n) {
+                                          showSlides(slideIndex = n);
+                                        }
+                                        
+                                        function showSlides(n) {
+                                          let i;
+                                          let slides = document.getElementsByClassName("mySlides");
+                                          let dots = document.getElementsByClassName("dot");
+                                          if (n > slides.length) {slideIndex = 1}    
+                                          if (n < 1) {slideIndex = slides.length}
+                                          for (i = 0; i < slides.length; i++) {
+                                            slides[i].style.display = "none";  
+                                          }
+                                          for (i = 0; i < dots.length; i++) {
+                                            dots[i].className = dots[i].className.replace(" active", "");
+                                          }
+                                          slides[slideIndex-1].style.display = "block";  
+                                          dots[slideIndex-1].className += " active";
+                                        }
+                                        </script>
+                                   
+                                    
+                                        
+                                     
+                                </div>
                             <br>
                             <br>
-                            <a href="/src/pdf/design challenge/Design-Challenge-Booklet.pdf"> <button class="btn btn-gradient ">Download the PDF</button></a>
+                            <a href="../src/pdf/design challenge/Design-Challenge-Booklet.pdf"> <button class="btn btn-gradient center ">Download the PDF</button></a>
                     </div>
                 </div>
             </div>
+            
                 
 
 
@@ -202,7 +327,7 @@
                             </div>
                             <br>
                             <br>
-                            <a href="../src/pdf/design challenge/F22-Design-Challenge-Rubric.pdf"> <button class="btn btn-gradient ">Download the PDF</button></a>
+                            <a href="../src/pdf/design challenge/F22-Design-Challenge-Rubric.pdf"> <button class="btn btn-gradient center" >Download the PDF</button></a>
                             
                     </div>
                 </div>
@@ -324,18 +449,35 @@
 
             </div>
 
-            <h2 class="font-weight-bold">Thank you to our Sponsors</h2>
+            <h2 class="font-weight-bold center-text">Thank you to our Sponsors</h2>
                         
-                        <p >
+                        <p class="center-text" >
                             Without you, none of this would be possible!
                         </p>
-                        <br>
-                        <div class="col-12 row">
-                            <img style="width: 50%;" src="../src/imgs/logos/sponsors/bottle-rocket.png" />
-                            <img style="width: 50%; padding-left: 100px;" src="../src/imgs/logos/sponsors/paycom-logo.png" />
+                        
+
+                    <div class="col-12" >
+                        <div class="row center">
+                            <div id="collaborators" class="d-flex flex-wrap justify-content-center collaborations text-center">
+                                <div class="m-3 align-self-center">
+                                    <a href="https://www.bottlerocketstudios.com/" target="_blank"><img src="../src/imgs/logos/sponsors/bottle-rocket.png" alt="Big Design" /></a>
+                                    
+                                </div>
+                                <div class="m-3 align-self-center">
+                                    <a href="https://www.paycom.com/" target="_blank"> <img
+                                            src="../src/imgs/logos/sponsors/paycom-logo.png" alt="Bottle Rocket" />
+                                    </a>
+                                </div>
+                            
+                                <!-- <a href="https://www.bottlerocketstudios.com/" style="width: 50%;"> <img style="width: 55%;" src="../src/imgs/logos/sponsors/bottle-rocket.png" /></a>
+                           <a href="https://www.paycom.com/" style="width: 50%; "><img style="width: 45%; padding-left: 50px;" src="../src/imgs/logos/sponsors/paycom-logo.png" /></a>
+                             -->
+                           
 
                         </div>
-
+                    </div>
+                        
+                    </div>
 						
 				<br />
 
