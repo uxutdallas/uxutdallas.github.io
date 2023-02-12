@@ -243,6 +243,19 @@ body {
     font-weight: 700;
 }
 
+.btn-design-gradient {
+    width: 270px;
+    height: 70px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    background: linear-gradient(135deg, #354C88 23.9%, #4C74DC 137.61%);
+    font-weight: 700;
+    font-size: 25px;
+    box-shadow: 0 1.5px 3.5px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
+}
+
 form {
     padding: 4rem 2rem;
 }
@@ -319,6 +332,19 @@ form {
     font-weight: bold;
 }
 
+.design-conference-container {
+    padding: 3rem;
+    color: #ffffff;                             
+    background: linear-gradient(167deg, #0A1429 0.88%, #284480 32.03%, #355DB1 83.28%);
+    border-radius: 25px;
+}
+
+.design-conference-panel {
+    background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
 .utd-monogram-svg {
     display: block;
     width: 7rem;
@@ -363,7 +389,11 @@ form {
 }
 
 .design-challenge-flyer {
-    border: 1px solid rgb(220, 218, 218);
+    width: 100%;
+}
+
+.design-conference-flyer {
+    width: 100%;
 }
 
 .design-challenge-timer-text {
