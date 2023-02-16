@@ -256,6 +256,19 @@ body {
     border-radius: 8px;
 }
 
+.btn-design-blue {
+    width: 270px;
+    height: 70px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    background: #48C3E4;
+    font-weight: 700;
+    font-size: 25px;
+    box-shadow: 0 1.5px 3.5px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
+}
+
 form {
     padding: 4rem 2rem;
 }
@@ -342,7 +355,20 @@ form {
 .design-conference-panel {
     background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 20px;    
+}
+
+.uxperience-container {
+    padding: 3rem;
+    color: #ffffff;                             
+    background: linear-gradient(167deg, #142651 0.88%, #284480 32.03%, #355db1 83.28%);
+    border-radius: 25px;
+}
+
+.uxperience-panel {
+    background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;    
 }
 
 .utd-monogram-svg {
