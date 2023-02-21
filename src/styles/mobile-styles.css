@@ -132,6 +132,7 @@ body {
 
 .navbar-brand img {
     width: 10rem;
+    
 }
 
 .navbar .nav-item a.nav-link {
@@ -139,6 +140,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
 }
 
 .navbar .nav-item a.nav-link:before {

@@ -1,0 +1,14 @@
+{
+  "name": "uxutd.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/uxutdallas/uxutdallas.github.io.git",
+  "author": "Ata Gowani <atagowani@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.16.1"
+  }
+}

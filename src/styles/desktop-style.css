@@ -82,6 +82,7 @@
 
   .navbar-brand img {
     width: 13rem;
+    justify-content: flex-start;
   }
 }
 
@@ -220,11 +221,13 @@ img {
 .drop {
   font-size: 16px;
   border: none;
+  
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  text-align: center;
 }
 
 .dropdown-content {
