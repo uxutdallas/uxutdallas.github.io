@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" />
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/styles/mobile-styles.css" />
+    <link rel="stylesheet" href="../src/styles/desktop-style.css" />
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../src/script/main.js"></script>
+    <title>UX Club at UT Dallas | Design Challenge</title>
+</head>
+
+<body>
+    <div class="container my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">
+                <img src="../src/imgs/logos/ux/logo-with-tagline.png" alt="UX UTD" onclick="window.open(index.html)" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link events-link" href="../events">Events</a>
+                    </li>
+                    <div class="dropdown">
+                    <li class="nav-item">
+                      <a class="nav-link drop events-link" href="../design challenge/">Design Challenge</a>
+                      <div class="dropdown-content">
+                        <a class="nav-link" href="fall_2022.html">Fall 2022</a>
+                        <a class="nav-link" href="spring_2020.html">Spring 2020</a>
+                      </div>
+                    </li>
+                    </div>
+                    <div class="dropdown">
+                      <li class="nav-item">
+                        <a class="nav-link drop">Conference</a>
+                          <div class="dropdown-content">
+                            <a class="nav-link" href="../dfacw/">Designing for a Changing World</a>
+                            <a class="nav-link" href="../uxperience">UXperience</a>
+                          </div>
+                      </li>
+                    </div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://forms.office.com/Pages/ResponsePage.aspx?id=HR0ojU2c90uxbgMtFd6fbNvhWLMwJctPpJ2iOiKcpW1UQkg2WUNLUUVQMVYxMURZTDZQSTFQRDE5Si4u" target="_blank">Apply</a>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
+						Join Us
+					</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content p-4">
+                            <div class="modal-header no-border flex-column m-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+
+                                <h2>Stay in the know!</h2>
+                                <p class="lead">
+                                    Sign up for emails to get updates about our upcoming events and other UX/UI events around the DFW area.
+                                </p>
+                            </div>
+
+                            <div class="modal-body no-border m-0 p-0">
+                                <form class="m-0 p-0"
+                                    action="https://docs.google.com/forms/d/e/1FAIpQLSfsK7f1D7whW0AGTJS97xpqPdUru_e6SYNhyejdGkcowByRng/viewform"
+                                    >
+                                    <div class="form-group row p-4">
+                                        <button type="submit" class="btn btn-dark-light col-4">
+                                            Sign Up!
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer no-border m-0 p-0">
+                                <div class="social-links">
+                                    <a href="https://web.groupme.com/join_group/64481361/p9ihcCHe" target="_blank">
+                                        <i class="far fa-comment-dots text-dark"></i>
+                                    </a>
+                                    <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+                                        <i class="fab fa-discord text-dark"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/uxutd/" target="_blank">
+                                        <i class="fab fa-facebook-square text-dark"></i>
+                                    </a>
+                                    <a href="https://twitter.com/UX_UTD" target="_blank">
+                                        <i class="fab fa-twitter-square text-dark"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/ux_utd/" target="_blank">
+                                        <i class="fab fa-instagram text-dark"></i>
+                                    </a>
+                                    <a href="mailto:uxutdallas@gmail.com" target="_blank">
+                                        <i class="fas fa-envelope-square text-dark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <img style="width: 100%; height: 100%;" src="../src/imgs/design_challenge/Fall-22-design-challenge-banner.png">
+    </div>
+
+    <br>
+    <br>
+
+  
+
+
+    <div class="container prompt-reveal-container">
+        
+
+<!-- Awards Specification -->
+<div class="container">
+    <h2 class="font-weight-bold center-text">Winners</h2>
+    <hr>
+    <div class="row prompt-reveal-container">
+        <div class="col-md-6">
+            <p class="award-name">🥇</p>
+            <p class="award-name">First Place</p>
+            <p class="award-name">Cook Cool</p>
+            <p class="award-description">
+                Certificate of Distinguishment and awarded $300
+            </p>
+          
+            <p class="award-description">
+                This individual is recognized for developing an innovative solution extensive user research and creative problem solving. We applaud your efforts to designing a quality solution for the UTD community. 
+               
+            </p>
+            <a href="https://drive.google.com/file/d/1o6awb0R1JRb1EMi4DNrmioukIs_2qRkt/view?usp=share_link"> <button class="btn btn-gradient center ">Learn More</button></a>
+
+
+        </div>
+        <div class="col-md-6">
+            <p class="award-name ">Zia Kim</p>
+            <a><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/First Place.jpg" style="width:100%"/></a>
+
+        </div>
+    </div>
+    <hr />
+        <div class="row prompt-reveal-container">
+            <div class="col-md-6">
+                <p class="award-name">🥈</p>
+                <p class="award-name">Second Place</p>
+                <p class="award-name">Chef Daddy</p>
+                <p class="award-description">
+                    Certificate of Distinguishment and Awarded $200 (distributed among team members) 
+                </p>
+                <p class="award-description">
+                    These individuals are recognized for developing an innovative solution extensive user research and creative problem solving. We applaud their efforts to designing a quality solution for the UTD community. 
+                </p>
+                <a href="https://drive.google.com/open?id=1o_hT9_w9VWtVuCuRqzLs6Nne7LosUysb"> <button class="btn btn-gradient center ">Learn More</button></a>
+
+            </div>
+            <div class="col-md-6">
+                <p class="award-name">Jade Nguyen, Hafsa Siddiqui, Thaovy Nguyen</p>
+                <a><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/Second Place.jpg" style="width:100%"/></a>
+            </div>
+        </div>
+        <hr />
+        <div class="row prompt-reveal-container">
+            <div class="col-md-6">
+                <p class="award-name">🥉</p>
+                <p class="award-name">Third Place</p>
+                <p class="award-name">Comet Cuisine</p>
+          
+                <p class="award-description">
+                    Certificate of Distinguishment and Awarded $100 (distributed among team members)
+                </p>
+                <p class="award-description">
+                    These individuals are recognized for developing an innovative solution extensive user research and creative problem solving. We applaud their efforts to designing a quality solution for the UTD community. 
+
+                </p>
+                <a href="https://drive.google.com/open?id=1z-oDkm2Xx2vqqb6eJARR9UftrgpHVf-B"> <button class="btn btn-gradient center ">Learn More</button></a>
+
+            </div>
+            <div class="col-md-6">
+                <p class="award-name">Gia Kirk, Brandon Medrano, Thuy Vu</p>
+                <a ><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/Third place.jpg" style="width:100%"/></a>
+            </div>
+        </div>
+        <hr />
+
+        <h2 class="font-weight-bold center-text">Honorable Mention</h2>
+        <hr />
+        <div class="row prompt-reveal-container">
+            <div class="col-md-6">
+                <p class="award-name">FeedMe!</p>
+                <p class="award-name">Yadira Anguiano and <br> Faith Romero 
+                </p>
+          
+                <p class="award-description">
+                    Certificate of Honorable Mention
+                </p>
+               
+                <a href="https://drive.google.com/file/d/1BdniwIIJE5sfmY0yRfWcIKMmjP1WzMli/view?usp=sharing"> <button class="btn btn-gradient center ">Learn More</button></a>
+               <br>
+                <a ><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/Honorable Mention 2.jpg" style="width:100%"/></a>
+
+            </div>
+            <div class="col-md-6">
+                <p class="award-name">CollegeCuisine</p>
+                <p class="award-name">Riley Cotton and Christopher Gauthier
+                </p>
+          
+                <p class="award-description">
+                    Certificate of Honorable Mention
+                </p>
+               
+                <a href="https://drive.google.com/file/d/1z3KBBksXE5VKL1Ce84rvWcdCzySV_IPU/view?usp=sharing"> <button class="btn btn-gradient center ">Learn More</button></a>
+               <br>
+                <a ><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/Honerable Mention 1.jpg" style="width:100%"/></a>
+            </div>
+        </div>
+
+        
+        </div>
+
+    </div>
+    
+
+    </div> 
+
+		<!-- Prompt -->
+		<div class="main-content">
+			<div class="container prompt-reveal-container">
+				<div class="row">
+					<div class="col-12">
+						<br />
+						<h2 class="font-weight-bold">Prompt</h2>
+						<p class="lead">
+							Ready... Set... Design!
+						</p>
+						<br />
+						<p class="lead">
+                            <div>
+                                <h2 class="prompt-reveal-container" style=" padding: 15px; border-radius:10px; border-color: navy; color: white; text-align: center;">Design a mobile application that teaches UTD students easy, budget-friendly, and delicious recipes</h2>
+                            </div>
+							<!--<b class="font-weight-bold">Design a user experience solution that teaches easy, cheap, yet delicious recipes and shares on campus student life hacks!</b>--> <br> <br>
+                            You are allowed to work in groups of up to 3 people! We recommend signing up as a group, but you have the option to work as an individual or team. <br><br>
+                            <i>Registration closed October 19th</i><br><br>
+                            
+						</p>
+
+                        <div class="prompt-reveal-container">
+                            <p class="lead font-weight-bold">
+                                Events to look out for
+                            </p>
+                            <img src="../src/imgs/design challenge/dc-timeline.png" style="border-radius: 10px; width: 100%;">
+
+                        </div>
+
+                <hr/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="font-weight-bold">Deliverables</h2>
+        
+                            <p class="lead">
+                                The purpose of this booklet is to aid you through your design process, outline submission guidelines, and provide resources to help you!
+                            </p>
+                                <div class="">
+
+                                    <div class="">
+
+                                        <!-- Full-width images with number and caption text -->
+                                        <div class="mySlides">
+                                        
+                                            <img  class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-01.png" style="width: 80%; border-radius: 10px; "/>
+                                          </div>
+                                        
+                                          <div class="mySlides">
+                                            
+                                            <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-02.png" style="width: 80%; border-radius: 10px; " />
+                              
+                                          </div>
+                                        
+                                          <div class="mySlides">
+                                           
+                                            <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-03.png" style="width: 80%; border-radius: 10px; "/>
+                              
+                                          </div>
+                                          <div class="mySlides">
+                                            
+                                              <img  class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-04.png"style="width: 80%; border-radius: 10px; " />
+                                            </div>
+                                          
+                                            <div class="mySlides">
+                                             
+                                              <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-05.png" style="width: 80%; border-radius: 10px; "/>
+                                
+                                            </div>
+                                          
+                                            <div class="mySlides">
+                                            
+                                              <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-06.png" style="width: 80%; border-radius: 10px; "/>
+                                
+                                            </div>
+                                            <div class="mySlides">
+                                   
+                                              <img  class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-07.png" style="width: 80%; border-radius: 10px; "/>
+                                            </div>
+                                          
+                                              <div class="mySlides">
+                                                  
+                                                  <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-08.png" style="width: 80%; border-radius: 10px; "/>
+                                  
+                                              </div>
+                                          
+                                              <div class="mySlides">
+                                         
+                                                  <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-09.png" style="width: 80%; border-radius: 10px; "/>
+                                  
+                                              </div>
+                                            <div class="mySlides">
+                                               
+                                                <img  class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-10.png" style="width: 80%; border-radius: 10px; "/>
+                                              </div>
+                                            
+                                              <div class="mySlides">
+                                        
+                                                <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-11.png" style="width: 80%; border-radius: 10px; "/>
+                                  
+                                              </div>
+                                            
+                                              <div class="mySlides">
+                                             
+                                                <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-12.png" style="width: 80%; border-radius: 10px; "/>
+                                  
+                                              </div>
+                                              <div class="mySlides">
+                                              
+                                                  <img class="center" src="../src/pdf/Design-Challenge-Booklet/Design-Challenge-Booklet-13.png" style="width: 80%; border-radius: 10px; "/>
+                                    
+                                                </div>
+                                        <!-- Next and previous buttons -->
+                                        <a class="prev" onclick="plusSlides(-1)" style="color: white;">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)" style="color: white;">&#10095;</a>
+                                      </div>
+                                      <br>
+                                      
+                                      <!-- The dots/circles -->
+                                      <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                     <span class="dot" onclick="currentSlide(2)"></span>
+                                     <span class="dot" onclick="currentSlide(3)"></span>
+                                     <span class="dot" onclick="currentSlide(4)"></span>
+                                     <span class="dot" onclick="currentSlide(5)"></span>
+                                     <span class="dot" onclick="currentSlide(6)"></span>
+                                     <span class="dot" onclick="currentSlide(7)"></span>
+                                     <span class="dot" onclick="currentSlide(8)"></span>
+                                     <span class="dot" onclick="currentSlide(9)"></span>
+                                     <span class="dot" onclick="currentSlide(10)"></span>
+                                     <span class="dot" onclick="currentSlide(11)"></span>
+                                     <span class="dot" onclick="currentSlide(12)"></span>
+                                     <span class="dot" onclick="currentSlide(13)"></span> 
+                                      </div>
+                                    
+                                      <script>
+                                        let slideIndex = 1;
+                                        showSlides(slideIndex);
+                                        
+                                        function plusSlides(n) {
+                                          showSlides(slideIndex += n);
+                                        }
+                                        
+                                        function currentSlide(n) {
+                                          showSlides(slideIndex = n);
+                                        }
+                                        
+                                        function showSlides(n) {
+                                          let i;
+                                          let slides = document.getElementsByClassName("mySlides");
+                                          let dots = document.getElementsByClassName("dot");
+                                          if (n > slides.length) {slideIndex = 1}    
+                                          if (n < 1) {slideIndex = slides.length}
+                                          for (i = 0; i < slides.length; i++) {
+                                            slides[i].style.display = "none";  
+                                          }
+                                          for (i = 0; i < dots.length; i++) {
+                                            dots[i].className = dots[i].className.replace(" active", "");
+                                          }
+                                          slides[slideIndex-1].style.display = "block";  
+                                          dots[slideIndex-1].className += " active";
+                                        }
+                                        </script>
+                                   
+                                    
+                                        
+                                     
+                                </div>
+                            <br>
+                            <br>
+                            <a href="../src/pdf/design challenge/Design-Challenge-Booklet.pdf"> <button class="btn btn-gradient center ">Download the PDF</button></a>
+                    </div>
+                </div>
+            </div>
+            
+                
+
+
+				
+						<hr />
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="font-weight-bold">Points Rubric</h2>
+        
+                            <p class="lead">
+                                How your project will be judged.
+                            </p>
+                            <div class="center-text">
+                                <img src="../src/imgs/design challenge/F22 Design Challenge Rubric.png" style="border-radius: 10px; width: 80%;"/>
+                            </div>
+                            <br>
+                            <br>
+                            <a href="../src/pdf/design challenge/F22-Design-Challenge-Rubric.pdf"> <button class="btn btn-gradient center" >Download the PDF</button></a>
+                            
+                    </div>
+                </div>
+            </div>
+            <hr/>
+
+      
+
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6">
+                 
+                        <h2 class="font-weight-bold">Submissions</h2>
+        
+                        <p class="lead">
+                           <h3><i >Final Submissions were extended until November 8th 5:00PM!</i></h3>
+                        </p>
+                        <h4 class="font-weight-bold">
+                            Deliverables
+                        </h4>
+                        <ul>
+                            <li class="font-weight-bold">
+                                Create a Visual Presentation (Google Slides or PPT)
+                            </li>
+                            <ul>
+                                <li>
+                                    All files (Figma, documents, etc.) should be presented as a sharable link on the slides.
+                                </li>
+                                <li>
+                                    Include an Empathy Map, Research, and Brainstorming
+                                </li>
+                                <li>
+                                    Convert your presentation into a PDF Format
+                                </li>
+                            </ul>
+        
+                            <li class="font-weight-bold">
+                                Empathy Map
+                            </li>
+                            
+                            <li class="font-weight-bold">
+                                Research and Brainstorming solutions
+                            </li>
+                            <li class="font-weight-bold" >
+                                3 Lo-Fi Wireframe Screens
+                            </li>
+                            <li class="font-weight-bold" >
+                                3 Hi-Fi Screens Prototyped
+                            </li>
+                            <ul>
+                                
+                </div>
+                <br>
+                <div class="col-md-6">
+                    <img src="../src/imgs/design challenge/Upcoming Dates.png" style="width: 100%; border-radius: 5px;" class="center">
+                </div>
+        </div>
+            </div>
+        
+             <!-- Time -->
+         <div>
+            <div class=" countdown-container">
+                <div class="row">
+                    <div class="col-12">
+                        <br />
+                        
+        
+                     
+                        <p
+                            class="lead center-text design-challenge-timer-text design-challenge-timer" style="color: white;"
+                            id="time-until-date"
+                        >
+                            
+                            
+                        </p>
+                    
+        
+                        <!--<a href="https://forms.gle/oWs6CXswRXEqzEu27"> <button class="btn btn-gradient center" >Submit Your Project</button></a> -->
+                    
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+       
+          
+
+
+       
+        <hr>
+
+        <div class="row ">
+            <div class="col-md-6">
+         
+                <h2 class="font-weight-bold">Banquet</h2>
+                  
+                <p class="lead">
+                Join us for the 2022 Design Challenge Banquet! <br><br>
+                On <span class="font-weight-bold" >November 16th from 6:00 -8:00 PM</span> we will be hosting a banquet at the <span class="font-weight-bold">Alumni Center</span> to celebrate design and commemorate our 2022 Design Challenge participants. <br><br>
+                This will feature a networking mixer with industry professionals, esteemed UTD faculty and your peers! Dinner will be served, and we will conclude the night by awarding the top contestants! <br><br>
+                
+                Design challange participants that have submitted a project should use the RSVP sent to their email to confirm their spot! <br>
+                </p> 
+                <br>
+
+                
+                
+                        
+            </div>
+            <div class="col-md-6">
+                <img src="../src/imgs/design challenge/Banquet Invite - 1.png" style="width: 100%; border-radius: 5px;" class="center">
+            </div>
+            
+
+            <p class="lead" style="padding-top: 20px;">Those interested in attending should use this <a href="https://docs.google.com/forms/d/e/1FAIpQLScPP4Kz-LA3ii3JjFA6c8bSrL4yYF98m5M3albG5jON9Z2ELw/viewform" style="color: white;" >General RSVP</a>  to join the waitlist. 
+                Invites will be on a first come first serve basis, so please check your email near the banquet date to see if you were invited!</p>
+       
+            </div>
+        <br>
+
+  
+
+        <hr>
+    
+        
+
+        <p class="lead center-text"><b class="font-weight-bold">Thank you</b> to our sponsors Bottle Rocket, Paycom, and the AHT Department for helping us empower the next generation of designers!</p>
+
+        <div>
+            <div id="collaborators" class="d-flex flex-wrap justify-content-center collaborations text-center">
+                <div class="m-3 align-self-center">
+                    <a href="https://www.bottlerocketstudios.com/" target="_blank"><img src="../src/imgs/logos/sponsors/bottle-rocket.png" alt="Big Design" /></a>
+                    
+                </div>
+
+                <div class="m-3 align-self-center">
+                    <a href="https://aht.utdallas.edu/" target="_blank"> <img
+                            src="../src/imgs/logos/utd/Logos__AHT_Stacked_White 1.png" alt="Bottle Rocket" />
+                    </a>
+                </div>
+
+                <div class="m-3 align-self-center">
+                    <a href="https://www.paycom.com/" target="_blank"> <img
+                            src="../src/imgs/logos/sponsors/paycom-logo.png" alt="Bottle Rocket" />
+                    </a>
+                </div>
+                
+           
+
+        </div>
+        </div>
+						
+				<br />
+
+
+
+
+			</div>
+		</div>
+
+		<br />
+		<br />
+		<br />
+
+ 
+</div>
+</div>
+</body>
+    <!--footer-->
+    <div class="container-fluid mailing-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 d-none d-md-block">
+                    <br />
+                    <br />
+                    <h2>Stay in the know!</h2>
+                    <div>
+                        <p>
+                            Sign up for emails to get updates about our upcoming events and other UX/UI events around the
+                            DFW area. <br> Hope to see you soon!
+                        </p>
+                        
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-12 col-md-2">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfsK7f1D7whW0AGTJS97xpqPdUru_e6SYNhyejdGkcowByRng/viewform">
+                        <button type="submit" class="btn btn-clear">Sign Up</button>
+                    </form>
+                        
+                  
+                </div>
+				</div>
+			</div>
+		</div>
+
+		<div id="socials" class="container-fluid footer text-center">
+			<div class="container py-4">
+				<div class="d-flex flex-column flex-md-row-reverse">
+					<div class="social-links">
+						
+                        <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+							<i class="fab fa-discord"></i>
+						</a>
+						<a href="https://www.facebook.com/uxutd/" target="_blank">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+	
+						<a href="https://www.instagram.com/ux_utd/" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="mailto:uxutdallas@gmail.com">
+							<i class="fas fa-envelope-square"></i>
+						</a>
+					</div>
+					<div class="mr-md-auto copyright">
+						<p>
+							&copy; Copyright
+							<script>
+								document.write(String(new Date().getFullYear()));
+							</script>
+							UX UTD
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="../src/script/design_challenge_countdown.js"></script>
+</html>
