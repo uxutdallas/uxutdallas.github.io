@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/styles/mobile-styles.css">
+    <link rel="stylesheet" href="../src/styles/desktop-style.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../src/script/main.js"></script>
+    <title>UX Club at UT Dallas | UXperience</title>
+</head>
+
+
+<body>
+    <div class="container my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">
+                <img src="../src/imgs/logos/ux/logo-with-tagline.png" alt="UX UTD" onclick="window.open(index.html)">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link events-link" href="../events">Events</a>
+                    </li>
+                    <div class="dropdown">
+                        <li class="nav-item">
+                          <a class="nav-link drop events-link" href="../design challenge">Design Challenge</a>
+                          <div class="dropdown-content">
+                            <a class="nav-link" href="/design_challenge/fall_2022.html">2022</a>
+                            <a class="nav-link" href="/design_challenge/spring_2020.html">2020</a>
+                          </div>
+                        </li>
+                        </div>
+                    <div class="dropdown">
+                      <li class="nav-item">
+                        <a class="nav-link drop">Conference</a>
+                          <div class="dropdown-content">
+                            <a class="nav-link" href="../conference/dfacw.html">2022</a>
+                            <a class="nav-link" href="../conference/uxperience2021.html">2021</a>
+                          </div>
+                      </li>
+                    </div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://forms.office.com/Pages/ResponsePage.aspx?id=HR0ojU2c90uxbgMtFd6fbNvhWLMwJctPpJ2iOiKcpW1UQkg2WUNLUUVQMVYxMURZTDZQSTFQRDE5Si4u" target="_blank">Apply</a>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
+                    Join Us
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content p-4">
+                            <div class="modal-header no-border flex-column m-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+
+                                <h2>Stay in the know!</h2>
+                                <p class="lead">Sign up for emails to get updates about our upcoming events and other
+                                    UX/UI events around the DFW area.</p>
+                            </div>
+
+                            <div class="modal-body no-border m-0 p-0">
+                                <form class="m-0 p-0"
+                                    action="https://docs.google.com/forms/d/e/1FAIpQLSfsK7f1D7whW0AGTJS97xpqPdUru_e6SYNhyejdGkcowByRng/viewform"
+                                    >
+                                    <div class="form-group row p-4">
+                                        <button type="submit" class="btn btn-dark-light col-4">
+                                            Sign Up!
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer no-border m-0 p-0">
+                                <div class="social-links">
+                                    <a href="https://web.groupme.com/join_group/64481361/p9ihcCHe" target="_blank">
+                                        <i class="far fa-comment-dots text-dark"></i>
+                                    </a>
+                                    <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+                                        <i class="fab fa-discord text-dark"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/uxutd/" target="_blank">
+                                        <i class="fab fa-facebook-square text-dark"></i>
+                                    </a>
+                                    <a href="https://twitter.com/UX_UTD" target="_blank">
+                                        <i class="fab fa-twitter-square text-dark"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/ux_utd/" target="_blank">
+                                        <i class="fab fa-instagram text-dark"></i>
+                                    </a>
+                                    <a href="mailto:uxutdallas@gmail.com" target="_blank">
+                                        <i class="fas fa-envelope-square text-dark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- <div class="alert-color-yellow">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert-contents">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span class="lead">Due to the coronavirus outbreak, all UX Club events will be hosted
+                            <a href="../events">online</a> for Summer 2021.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <img class="design-conference-flyer" alt="Design For A Changing World"
+    src="../src/imgs/UXperience.jpg" />
+
+    <iframe class="ux-video" width="700" height="450" src="https://www.youtube.com/embed/n48lDkoOKCA" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <div class="main-content">
+        <div class="container">
+            <div class="container uxperience-container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="font-weight-bold">About this event</h2>
+                        <p class="lead">This conference connects young professionals to the UX industry by providing
+                            insightful speakers and networking opportunities.</p>
+                    </div>
+                </div>
+
+                <!-- <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="https://www.eventbrite.com/e/uxperience-conference-2021-tickets-136858650909"
+                            target="_blank"><button id="subscribe" type="submit" class="btn btn-gradient ml-md-4">Register
+                                for
+                                UXperience</button></a>
+                    </div>
+                </div> -->   
+
+                <br>
+                <div class="center-text">
+                    <a href="https://bit.ly/uxperience2021"> <button class="btn btn-design-blue">Register Here</button></a>
+                </div>
+                <br>
+
+                <!-- Speakers -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <br>
+                            <h2 class="font-weight-bold">Presenters</h2>
+                            <p class="lead">Meet our wonderful Speakers, Panelists, and Workshop Leaders</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap justify-content-center text-center officers uxperience-panel">
+                                <div class="container">
+                                    <br>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="position-relative officer-wrapper">
+                                                <img src="../src/imgs/uxperience/presenters/jen-blatz.jpeg" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="http://www.jenniferblatzdesign.com" target="_blank"><i
+                                                            class="fas fa-globe"></i></a>
+                                                    <a href="https://www.linkedin.com/in/jenniferblatz/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Jen Blatz</p>
+                                                <p class="font-weight-light font-italic">Senior Experience Designer at
+                                                    Fidelity
+                                                    Investments & Co-founder of User Research and Strategy Group</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="position-relative officer-wrapper">
+                                                <img src="../src/imgs/uxperience/presenters/brandon-ward.jpeg" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="http://www.brandonebward.com/" target="_blank"><i
+                                                            class="fas fa-globe"></i></a>
+                                                    <a href="https://www.linkedin.com/in/brandonebward/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Brandon Ward</p>
+                                                <p class="font-weight-light font-italic">Director User Experience at
+                                                    Precocity
+                                                </p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="position-relative officer-wrapper">
+                                                <img src="../src/imgs/uxperience/presenters/frances-y.jpeg" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/francesy/" target="_blank"><i
+                                                            class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Frances Yllana</p>
+                                                <p class="font-weight-light font-italic">Experience Director at
+                                                    Projekt202
+                                                </p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="position-relative officer-wrapper">
+                                                <img src="../src/imgs/uxperience/presenters/elisa-miller.jpeg" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/elisakmiller/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Elisa Miller</p>
+                                                <p class="font-weight-light font-italic">Learning Transformation Coach
+                                                    at
+                                                    American Airlines</p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="position-relative officer-wrapper">
+                                                <img src="../src/imgs/uxperience/presenters/brittany-sumarsono.jpeg"
+                                                    alt="web" class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/bsumarsono/" target="_blank"><i
+                                                            class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Brittany Sumarsono</p>
+                                                <p class="font-weight-light font-italic">Product Designer at Intuit</p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="position-relative officer-wrapper">
+                                                <img src="../src/imgs/uxperience/presenters/michael-champlin.jpeg"
+                                                    alt="web" class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://mjchamplin.com/" target="_blank"><i
+                                                            class="fas fa-globe"></i></a>
+                                                    <a href="https://www.linkedin.com/in/michaeljchamplin/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Michael Champlin</p>
+                                                <p class="font-weight-light font-italic">Experience Design at projekt202
+                                                </p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4">
+                                            <div class="position-relative officer-wrapper">
+                                                <img src="../src/imgs/uxperience/presenters/brian-sullivan.jpeg"
+                                                    alt="web" class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/briankeithsullivan/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Brian Sullivan</p>
+                                                <p class="font-weight-light font-italic">Founder of the Big Design
+                                                    Conference &
+                                                    Director of Design Strategy at Sabre</p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <!-- Schedule body -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="font-weight-bold">Schedule Highlights Day 1 (03/27)</h2>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="event-time">10:00 AM - 10:30 AM</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="event-activity-name">Opening Ceremony</p>
+                            <p class="event-activity-description"></p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="event-time">10:30 AM - 11:30 AM</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="event-activity-name">Speaker</p>
+                            <p class="event-activity-description"><span class="font-weight-bold">Cassini Nazir</span> -
+                                "Designing Curiosity Talk"</p>Watch as Cassini explains the differences between types of
+                            curiosity and challenges us to think about how we are curious.
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="event-time">11:30 AM - 11:45 AM</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="event-activity-name">Break</p>
+                            <p class="event-activity-description"></p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="event-time">11:45 AM - 12:45 PM</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="event-activity-name">Workshop</p>
+                            <p class="event-activity-description"><span class="font-weight-bold">Brian Sullivan</span> -
+                                "Remote Research with Mural"</p>In this interactive workshop, you will learn how to use
+                            Mural to do remote research with your users. A the end of this workshop, you will be able to
+                            conduct your own remote research using Mural to help you manage clients and get the data you
+                            need.
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">12:45 PM - 1:30 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Lunch Break</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">1:30 PM - 3:00 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Workshop</p>
+                        <p class="event-activity-description"><span class="font-weight-bold">Elisa Miller</span> -
+                            "Personal Branding + Resume Review"</p>Watch Elisa talk through how to make a personal brand
+                        and give tips on brushing up your resume for the next recruitment season!
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">3:00 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Wrap Up</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <hr>
+
+                <br><br><br><br><br>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="font-weight-bold">Schedule Highlights Day 2 (03/28)</h2>
+                    </div>
+                </div>
+                <br>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">10:00 AM - 11:30 AM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Panel</p>
+                        <p class="event-activity-description">UX Industry Panel</p>
+                        <ul>
+                            <li><span class="font-weight-bold">Ariel Martin</span>, Experience Director at projekt202
+                            </li>
+                            <li><span class="font-weight-bold">Brittany Sumarsono</span>, Senior Product Designer at
+                                Intuit
+                            </li>
+                            <li><span class="font-weight-bold">Jerry Zeng</span>, UX Designer at Walmart Technology</li>
+                            <li><span class="font-weight-bold">Michael Champlin</span>, Experience Design at projekt202
+                            </li>
+                            <li><span class="font-weight-bold">Sanjay Shah</span>, Sr. Product Designer at Dialexa</li>
+                            <li><span class="font-weight-bold">Stephanie Brisendine</span>, Interaction Designer at
+                                Google</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">11:30 AM - 12:30 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Workshop</p>
+                        <p class="event-activity-description"><span class="font-weight-bold">AJ Wood</span> -
+                            "Design, Prototype, Share – Oh My! Jump in with Adobe XD"</p>Join A.J. Wood for tips and
+                        tricks with Adobe XD including coediting, components, 3D, voice prototyping, easy animation,
+                        presentations, software sims, and more.
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">12:30 PM - 12:45 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Raffle Winners Announced</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">12:45 PM - 1:30 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Lunch Break</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">1:30 PM - 3:00 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Speed Networking</p>
+                        <p class="event-activity-description"></p>Meet individuals and build long-lasting relationships with
+                        professionals from <b>Apple, Amazon, HubSpot, Google, Capital One, Microsoft, IBM, Credera, and
+                            more!</b>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">3:00 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Closing Ceremony</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <hr>
+
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container uxperience-container">
+
+
+                <h2 class="font-weight-bold center-text">Thank you to our sponsors!</h2>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="font-weight-bold text-center">Premium Sponsor</h5>
+                        <div id="collaborators" class="m-3 collaborations align-self-center">
+                            <a href="https://www.bottlerocketstudios.com/" target="_blank"> <img
+                                src="../src/imgs/logos/sponsors/bottle-rocket.png" class ="center" alt="Bottle Rocket" />
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <h5 class="font-weight-bold text-center">Other Sponsor</h5>
+                        <div id="collaborators" class="m-3 collaborations align-self-center">
+                                <a href="https://mule.to/p1cy" target="_blank"> <img
+                                        src="../src/imgs/logos/sponsors/big-design-logo.png" class ="center" alt="Big Design"></a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div id="collaborators" class=" collaborations align-self-center">
+                    <a href="https://mule.to/p1cy" target="_blank"> <img
+                         src="../src/imgs/logos/sponsors/sticker-mule.svg" class ="center" alt="Sticker Mule"></a>
+                </div>  
+                <br>
+                <br>
+                <br>   
+                <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="lead center-text">A big thank you to our Premium sponsor</p>
+                            </div>
+                        </div>
+                            <div class=" text-center align-self-center">
+                                <img src="../src/imgs/logos/sponsors/precocity-white.png" alt="Precocity">
+                            </div>
+                            <br>
+                            <p class="lead center-text">And our other sponsors</p>
+                        <div id="collaborators" class="d-flex flex-wrap justify-content-center collaborations text-center">
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/capital-one-logo-white.png" alt="Capital One">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/sponsors/rosenfeld_media.png" alt="Rosenfeld">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/sponsors/big-design-logo.png" alt="Big Design">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/sponsors/axurelogo.png" alt="Axure">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/sponsors/balsamiq-logo.png" alt="Balsamiq">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/sponsors/big-foresight-logo.png" alt="Big Foresight">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+
+                <hr />
+
+                <br>
+                <br>
+                <br>
+
+                    <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                    panel.style.display = "none";
+                                } else {
+                                    panel.style.display = "block";
+                                }
+                            });
+                        }
+                    </script>
+                    <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                    panel.style.display = "none";
+                                } else {
+                                    panel.style.display = "block";
+                                }
+                            });
+                        }
+                    </script>
+
+                    <!-- Schedule body -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="font-weight-bold">Schedule Highlights</h2>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="event-time">10:30 AM - 11:00 AM</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="event-activity-name">Networking Booth and Breakfast</p>
+                                <p class="event-time">(Sponsored by Capital One)</p>
+                                <p class="event-activity-description"><span class="font-weight-bold">Capital One</span>,
+                                    <span class="font-weight-bold">Big Design</span> and <span class="font-weight-bold">Big
+                                        Foresight</span> booth
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="event-time">11:00 AM - 11:45 AM</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="event-activity-name">Opening Ceremony & Speaker</p>
+                                <p class="event-activity-description"><span class="font-weight-bold">Jen Blatz</span> - "How
+                                    to
+                                    Keep
+                                    Cognitive Biases Out of Your Design and Research"</p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="event-time">12:00 PM - 12:55 PM</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="event-activity-name">Lunch & Networking</p>
+                                <p class="event-activity-description"></p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="event-time">1:00 PM - 1:45 PM</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="event-activity-name">Workshop</p>
+                                <p class="event-activity-description"><span class="font-weight-bold">Frances Yllana</span> -
+                                    "Soft
+                                    Skills: How to be a Consultant or How to Ideate with Constraints"</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="event-time">1:50 PM - 2:30 PM</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="event-activity-name">Speaker</p>
+                                <p class="event-activity-description"><span class="font-weight-bold">Brandon Ward</span> -
+                                    "UX
+                                    without the User is Your X"</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="event-time">2:30 PM - 4:00 PM</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="event-activity-name">Panel</p>
+                                <div class="event-activity-description">
+                                    <ul>
+                                        <li><span class="font-weight-bold">Michael Champlin</span>, Experience Design at
+                                            projekt202
+                                        </li>
+                                        <li><span class="font-weight-bold">Brittany Sumarsono</span>, Product Designer at
+                                            Intuit
+                                        </li>
+                                        <li><span class="font-weight-bold">Elisa Miller</span>, Learning Transformation
+                                            Coach at
+                                            American Airlines</li>
+                                        <li><span class="font-weight-bold">Brian Sullivan</span>, Founder of the Big Design
+                                            Conference & Director of Design Strategy at Sabre</li>
+                                        <li><span class="font-weight-bold">Brandon Ward</span>, Director User Experience at
+                                            Precocity</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="event-time">4:00 PM - 4:10 PM</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="event-activity-name">Closing Ceremony & Raffle Winner Announcement</p>
+                                <p class="event-activity-description"></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="event-time">4:15 PM - 5:00 PM</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="event-activity-name">Portfolio Review</p>
+                                <div class="event-activity-description">
+                                    <p>Sign up for one spot through this link for a 5-minute one-on-one review from some of
+                                        our
+                                        presenters.</p>
+                                    <!-- <a href="https://www.signupgenius.com/go/9040d4aa5a923a6ff2-uxperience">Reserve a
+                                            spot!</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+            </div>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+        <br>
+        <br>
+        <br>
+
+        <!--footer-->
+        <div class="container-fluid mailing-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 d-none d-md-block">
+                        <br />
+                        <br />
+                        <h2>Stay in the know!</h2>
+                        <div>
+                            <p>
+                                Sign up for emails to get updates about our upcoming events and other UX/UI events around the
+                                DFW area. <br> Hope to see you soon!
+                            </p>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfsK7f1D7whW0AGTJS97xpqPdUru_e6SYNhyejdGkcowByRng/viewform">
+                            <button type="submit" class="btn btn-clear">Sign Up</button>
+                        </form>
+                            
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer text-center">
+            <div class="container py-4">
+                <div class="d-flex flex-column flex-md-row-reverse">
+                    <div class="social-links">
+                       
+                        <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://www.facebook.com/uxutd/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                     
+                        <a href="https://www.instagram.com/ux_utd/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:uxutdallas@gmail.com">
+                            <i class="fas fa-envelope-square"></i>
+                        </a>
+                    </div>
+                    <div class="mr-md-auto copyright">
+                        <p>
+                            &copy; Copyright
+                            <script>
+                                document.write(String(new Date().getFullYear()));
+                            </script>
+                            UX UTD
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
