@@ -254,10 +254,11 @@ body {
     font-size: 25px;
     box-shadow: 0 1.5px 3.5px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.14);
     border-radius: 8px;
+    border: none;
 }
 
 .btn-design-blue {
-    width: 270px;
+    width: 270px;   
     height: 70px;
     text-decoration: none;
     color: #ffffff;
@@ -369,6 +370,42 @@ form {
     background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 20px;    
+}
+
+.ptop-conference-container {
+    color: #283F78;                           
+    background: radial-gradient(100% 50% at 50% 50%, #86BAE8 0%, #CCECFE 100%);
+    background-size: contain;
+}
+
+.ptop-conference-panel {
+    background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
+    border:#354b89 4px solid;
+    box-shadow: 10px 0px 0px -5px #354b89, -10px 0px 0px -5px #354b89, -0px 10px 0px -5px #354b89, -0px -10px 0px -5px #354b89;
+
+}
+
+.ptop-panel {
+    background: #ffffff;
+    border:#354b89 9px solid;
+    box-shadow: 18px 0px 0px -9px #354b89, -18px 0px 0px -9px #354b89, -0px 18px 0px -9px #354b89, -0px -18px 0px -9px #354b89;
+}
+.ptop-sponsors {
+    background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
+    border:#354b89 3px solid;
+}
+
+.ptop-cursor {
+    position: relative;
+    top: -20px;
+    left: 620px;
+    width: 30px;
+}
+
+.ptop-banner {
+    width: auto;
+    height: 692px;
+    padding-left: 75px;
 }
 
 .utd-monogram-svg {
