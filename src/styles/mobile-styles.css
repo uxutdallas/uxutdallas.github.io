@@ -15,7 +15,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: "Montserrat", sans-serif;
-    background-color: #CCECFE;
+    
 }
 
 .splash-sub {
@@ -538,4 +538,8 @@ form {
     display: none;
     background-color: white;
     overflow: hidden;
+  }
+
+  .ptop-background{
+    background-color: #CCECFE;
   }
