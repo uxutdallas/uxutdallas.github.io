@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -127,25 +128,33 @@
         </nav>
     </div>
 
-    <!-- <div class="alert-color-yellow">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="alert-contents">
-                        <i class="fas fa-exclamation-circle"></i>
-                        <span class="lead">Due to the coronavirus outbreak, all UX Club events will be hosted
-                            <a href="../events">online</a> for Summer 2021.
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 
         <img class="design-conference-flyer" alt="UXPERIENCE CONFERENCE 2023"
                         src="../src/imgs/ptop/ptop-banner.png" />
+<!-- Time -->
+<div>
+    <div class=" countdown-container">
+        <div class="row">
+            <div class="col-12">
+                <br />
+                
+                <p class="lead center-text conference-timer-text">This Event Will Begin In</p>
+             
+                <p
+                    class="lead center-text conference-timer-text design-challenge-timer" 
+                    id="time-until-date"
+                >
 
+                    
+                    
+                </p>
+            
+            </div>
+                
+        </div>
+    </div>
+</div>
     <div class="main-content ptop-conference-container">
 
         <div class="container ptop-panel">
@@ -688,5 +697,5 @@
             </div>
         </div>
 </body>
-
+<script src="../src/script/conference_timer.js"></script>
 </html>

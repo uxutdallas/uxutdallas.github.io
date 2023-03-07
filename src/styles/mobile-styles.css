@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700");
+
+@font-face {
+    font-family: pixel;
+    src: url(/src/fonts/PixelatedDisplay.ttf);
+}
+
+@font-face {
+    font-family: vt323;
+    src: url(/src/fonts/VT323-Regular.ttf);
+}
+
 html,
 body {
     height: 100%;
     width: 100%;
     font-family: "Montserrat", sans-serif;
+    background-color: #CCECFE;
 }
 
 .splash-sub {
@@ -464,7 +476,14 @@ form {
 }
 
 .design-challenge-timer {
-    color: red;
+    color: white;
+}
+
+.conference-timer-text {
+    font-size: 100px !important;
+    font-family: VT323;
+    background-color: #CCECFE;
+    color: #354b89;
 }
 
 .rubric-pdf {
