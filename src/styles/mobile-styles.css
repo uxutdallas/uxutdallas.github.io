@@ -307,7 +307,7 @@ form {
 }
 
 .footer {
-    background: #181d1f;
+    background: linear-gradient(135deg, #3e57bd 0%, #009fda 36%, #48c4e5 81%, #8bd6f0 100%);
     color: #ffffff;
 }
 
