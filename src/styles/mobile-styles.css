@@ -15,6 +15,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    overflow-x:hidden;
     font-family: "Montserrat", sans-serif;
     
 }
@@ -411,9 +412,9 @@ form {
 }
 
 .ptop-conference-panel {
-    background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
     border:#354b89 4px solid;
-    box-shadow: 10px 0px 0px -5px #354b89, -10px 0px 0px -5px #354b89, -0px 10px 0px -5px #354b89, -0px -10px 0px -5px #354b89;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px #0000003b;
 
 }
 
@@ -439,6 +440,23 @@ form {
     height: 692px;
     padding-left: 75px;
 }
+
+.ptop-speaker-banner {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.ptop-speaker-panel {
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+}
+
 
 .utd-monogram-svg {
     display: block;
