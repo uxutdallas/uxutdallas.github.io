@@ -88,6 +88,11 @@ body {
     margin: 0 auto;
 }
 
+.dashborder {
+    border: 4px dashed #0075CD;
+    border-radius: 100%;
+}
+
 .officer-description * {
     padding-top: 0.25em;
     padding-bottom: 0.5em;
