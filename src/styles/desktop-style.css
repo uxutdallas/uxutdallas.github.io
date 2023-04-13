@@ -131,6 +131,12 @@ img {
   
 }
 
+.ptop-slideshow-container {
+  width: 100%;
+  position: relative;
+  
+}
+
 .no-padding {
   padding: 0;
 }
