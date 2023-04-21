@@ -111,6 +111,7 @@
 
 .mySlides {
   display: none;
+  border: 2px solid #ccc;
 }
 
 img {
