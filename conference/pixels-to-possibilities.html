@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/styles/mobile-styles.css">
+    <link rel="stylesheet" href="../src/styles/desktop-style.css">
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="../src/script/conference_stats.js"></script>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../src/script/main.js"></script>
+    <title>UX Club at UT Dallas | UXperience</title>
+</head>
+
+
+<body class="ptop-background">
+    <div class="container my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">
+                <img src="../src/imgs/logos/ux/logo-with-tagline.png" alt="UX UTD" onclick="window.open(index.html)">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link events-link" href="../events">Events</a>
+                    </li>
+                    <div class="dropdown">
+                        <li class="nav-item">
+                          <a class="nav-link drop events-link" href="../design challenge">Design Challenge</a>
+                          <div class="dropdown-content">
+                            <a class="nav-link" href="/design challenge/fall_2022.html">Fall 2022</a>
+                            <a class="nav-link" href="/design challenge/spring_2020.html">Spring 2020</a>
+                          </div>
+                        </li>
+                        </div>
+                    <div class="dropdown">
+                      <li class="nav-item">
+                        <a class="nav-link drop">Conference</a>
+                          <div class="dropdown-content">
+                            <a class="nav-link" href="ptop.html">Spring 2023</a>
+                  <a class="nav-link" href="dfcw.html">Spring 2022</a>
+                  <a class="nav-link" href="uxperience.html">Spring 2021</a>
+                          </div>
+                      </li>
+                    </div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://forms.office.com/Pages/ResponsePage.aspx?id=HR0ojU2c90uxbgMtFd6fbNvhWLMwJctPpJ2iOiKcpW1UQkg2WUNLUUVQMVYxMURZTDZQSTFQRDE5Si4u" target="_blank">Apply</a>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
+                    Join Us
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content p-4">
+                            <div class="modal-header no-border flex-column m-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+
+                                <h2>Stay in the know!</h2>
+                                <p class="lead">Sign up for emails to get updates about our upcoming events and other
+                                    UX/UI events around the DFW area.</p>
+                            </div>
+
+                            <div class="modal-body no-border m-0 p-0">
+                                <form class="m-0 p-0"
+                                    action="https://docs.google.com/forms/d/e/1FAIpQLSfsK7f1D7whW0AGTJS97xpqPdUru_e6SYNhyejdGkcowByRng/viewform"
+                                    >
+                                    <div class="form-group row p-4">
+                                        <button type="submit" class="btn btn-dark-light col-4">
+                                            Sign Up!
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer no-border m-0 p-0">
+                                <div class="social-links">
+                                    <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+                                        <i class="fab fa-discord text-dark"></i>
+                                      </a>
+                                      </a>
+                                      <a href="https://www.instagram.com/ux_utd/" target="_blank">
+                                        <i class="fab fa-instagram text-dark"></i>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+        <img class="design-conference-flyer" alt="UXPERIENCE CONFERENCE 2023"
+                        src="../src/imgs/ptop/ptop-banner.png" />
+<!-- Time -->
+<div >
+    <br>
+    <br>
+    <br>
+    <!-- <div class="countdown-container">
+        <div class="row">
+            <div class="col-12">
+                <br>
+                <p class="lead center-text conference-timer-top-text">THIS EVENT WILL BEGIN IN</p>
+                    <p
+                        class="lead center-text conference-timer-text design-challenge-timer col-12" 
+                        id="time-until-date"
+                    >
+                    </p>
+            </div>
+        </div>   
+    </div> -->
+</div>
+
+
+
+
+
+<div class="main-content ptop-conference-container">
+    <div class="container ptop-panel" >
+        <div class="container">
+            <br>
+            <h2 class="font-weight-bold center-text">Event Highlights</h2>
+            <div class="ptop-slideshow-container center"  >
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img class="design-challenge-flyer" alt="cover" src="../src/imgs/ptop/ptop-cover.jpg" style="width:100%; border-radius: 10px;"/>
+                  </div>
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                  <img class="design-challenge-flyer" alt="Attendees" src="../src/imgs/ptop/ptop-crowd.jpg" style="width:100%; border-radius: 10px;"/>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img class="design-challenge-flyer" alt="Networking" src="../src/imgs/ptop/ptop-panel.jpg" style="width:100%; border-radius: 10px;"/>
+      
+                  </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                  <img class="design-challenge-flyer" alt="Networking" src="../src/imgs/ptop/ptop-networking.jpg" style="width:100%; border-radius: 10px;"/>
+    
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                  <img class="design-challenge-flyer" alt="panel" src="../src/imgs/ptop/ptop-panel.jpg" style="width:100%; border-radius: 10px;"/>
+    
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img class="design-challenge-flyer" alt="Activities" src="../src/imgs/ptop/sticky-activity.jpg" style="width:100%; border-radius: 10px;"/>
+      
+                  </div>
+    
+                 <!-- Next and previous buttons -->
+                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+               </div>
+               <br>
+               
+               <!-- The dots/circles -->
+               <div style="text-align:center">
+                 <span class="dot" onclick="currentSlide(1)"></span>
+                 <span class="dot" onclick="currentSlide(2)"></span>
+                 <span class="dot" onclick="currentSlide(3)"></span>
+                 <span class="dot" onclick="currentSlide(4)"></span>
+                 <span class="dot" onclick="currentSlide(5)"></span>
+                 <span class="dot" onclick="currentSlide(6)"></span>
+    
+                    <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+     
+               </div>
+        <br>
+        <a href="https://www.flickr.com/photos/196731537@N03/albums/72177720307069940" target="_blank" > <button class="btn-ptop-gradient center" style="width: 250px; height: 50px;
+            font-size: 20px;">More Photos</button></a>
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <br>
+                    
+               <br>
+                <p class="center-text">
+                    The UXperience Conference started in 2019 with a goal of bringing together people passionate about designing for a better world. 
+                    Since then, our club has been steadily growing, and this year we are proud to say that exceeded our expectations. 
+                    We had over 130 attendees, a variety of topics covered in UX, more interactive activities based around design, photo booth options, and better food. 
+                    With the hard work and collaboration of our 18 officers, we were able to elevate the experience for everyone 💙✨
+                    <br>
+                    <br>
+                    This could not have been possible without the help of our premium sponsor!
+                </p>
+                <br>
+                <a href="https://www.intuit.com/" target="_blank"> <img
+                    src="../src/imgs/logos/sponsors/Intuit_logo.png" class ="center grow" alt="Intuit" />
+                </a>
+                <br>
+                </div>
+               
+                
+                <div class="container col-md-6">
+                    <br>
+                    <div id="conference-stats" style="width:100%; height:400px;"></div>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const chart = // Data retrieved from https://netmarketshare.com
+                            Highcharts.chart('conference-stats', {
+                        chart: {
+                            type: 'pie',
+                            backgroundColor: 'none',
+                        },
+                        title: {
+                            text: 'Attendee Statistics',
+                            align: 'center'
+                        },
+                        subtitle: {
+                            text: 'We were so grateful to have over 120 attendees at this years conference!',
+                            align: 'center'
+                        },
+                    
+                        accessibility: {
+                            announceNewData: {
+                                enabled: true
+                            },
+                            point: {
+                                valueSuffix: '%'
+                            }
+                        },
+                    
+                        plotOptions: {
+                            series: {
+                                dataLabels: {
+                                    enabled: true,
+                                    format: '{point.name}'
+                                }
+                            }
+                        },
+                    
+                        tooltip: {
+                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+                        },
+                    
+                        series: [
+                            {
+                                name: 'Attendees',
+                                colorByPoint: true,
+                                data: [
+                                    {
+                                        name: 'UTD Students',
+                                        y: 60,
+                                        color: '#354C88',
+                                      
+                                    },
+                                    {
+                                        name: 'Professionals',
+                                        y: 30,
+                                        color: '#4C74DC',
+                                       
+                                    },
+                                    {
+                                        name: 'DFW Students',
+                                        y: 10,
+                                        color: '#86BAE8',
+                                       
+                                    }
+                                ]
+                            }
+                        ]
+                    });
+                    
+                        });
+                    </script>
+                
+                   
+
+                    
+                
+                
+    
+               </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <div class="main-content ptop-conference-container">
+        <br>
+        <br>
+        <br>
+
+        <div class="container ptop-panel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <br>
+                        <br>
+                        <h2 class="font-weight-bold center-text">About this event</h2>
+                        <br>
+                        <p class="lead center-text">
+                            The UX Club is hosting our annual UXperience conference, featuring keynote speakers, panelists , live Q&A, and networking opportunities. Through this conference, we hope to share knowledge on user experience, foster innovation and invite diverse perspectives.
+                        </p>
+                    <br>
+                    <br>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ptop-container grow">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="about-icon center-text">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p class="font-weight-bold ptop-about-text"> Date & Time </p>
+                                    <p class="ptop-about-text"> Saturday, March 25th</p>
+                                    <p class="ptop-about-text"> 9:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ptop-container grow">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="about-icon center-text">
+                                        <i class="fas fa-location-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p class="font-weight-bold ptop-about-text"> Location </p>
+                                    <p class="ptop-about-text"> University of Texas at Dallas</p>
+                                    <p class="ptop-about-text"> SCI 1.210</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>  
+                </div>
+                <br>
+                <br>
+                <div class=" center-text">
+                    <a href="https://uxconference23.eventbrite.com/" target="_blank" > <button class="btn-ptop-gradient">Register Here</button></a>
+                </div>
+                <img class="ptop-cursor" alt="Cursor"
+                src="../src/imgs/ptop/cursor.png" />
+
+                <br>
+                <br>
+                <br>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <br>
+                            <!-- <h2 class="font-weight-bold center-text">Presenters</h2>
+                            <p class="lead center-text">Meet our wonderful Speakers, Panelists, and Workshop Leaders</p> -->
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap justify-content-center text-center officers ptop-conference-panel">
+                                <img class="ptop-speaker-banner grow" alt="Speakers"
+                                src="../src/imgs/ptop/speaker-banner.png" />
+                                <div class="container">
+                                    <br>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="position-relative officer-wrapper responsive dashborder">
+                                                <img src="../src/imgs/ptop/presenters/Suzanne-De-Silva.png" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://suzannedesilva.com/"
+                                                        target="_blank"><i class="fas fa-globe"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Suzanne De Silva</p>
+                                                <p class="font-weight-light font-italic">Head of Go-to-Market at Samsung
+                                                </p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="position-relative officer-wrapper responsive dashborder">
+                                                <img src="../src/imgs/ptop/presenters/Michael-Griffith.png" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/michaelscottgriffith/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Michael Griffith</p>
+                                                <p class="font-weight-light font-italic">User Exp Design Director at JPMorgan Chase
+                                                </p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <br>
+                                </div>
+                                    <img class="ptop-speaker-panel grow" alt="Seakers" src="../src/imgs/ptop/speaker-panel.png" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="position-relative officer-wrapper responsive dashborder">
+                                                <img src="../src/imgs/ptop/presenters/Angie-Nery.png" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/angie-nery-90273346/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Angie Nery</p>
+                                                <p class="font-weight-light font-italic">Director of Experience Design
+                                                </p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="position-relative officer-wrapper responsive dashborder">
+                                                <img src="../src/imgs/ptop/presenters/Brittany-Sumarsono.png" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/bsumarsono/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Brittany Sumarsono</p>
+                                                <p class="font-weight-light font-italic">Principal Product Designer
+                                                </p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="position-relative officer-wrapper responsive dashborder">
+                                                <img src="../src/imgs/ptop/presenters/Somin-Heo.png" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/sominheo/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Somin Heo</p>
+                                                <p class="font-weight-light font-italic">Senior Product Designer
+                                                </p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="position-relative officer-wrapper responsive dashborder">
+                                                <img src="../src/imgs/ptop/presenters/Garrett-Land.png" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/garrett-land/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Garrett Land</p>
+                                                <p class="font-weight-light font-italic">Senior UX Researcher
+                                                </p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <br>
+                                </div>
+                                    <img class="ptop-speaker-panel grow" alt="Seakers" src="../src/imgs/ptop/lightning-talks.png" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="position-relative officer-wrapper responsive dashborder">
+                                                <img src="../src/imgs/ptop/presenters/Mercedes-Johnson.png" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/mercedes-johnson-a37110111/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Mercedes Johnson</p>
+                                                <p class="font-weight-light font-italic">Senior Product Designer
+                                                </p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="position-relative officer-wrapper responsive dashborder">
+                                                <img src="../src/imgs/ptop/presenters/Mark-McKinney.png" alt="web"
+                                                    class="rounded-circle">
+                                                <div class="external-links">
+                                                    <a href="https://www.linkedin.com/in/markmckinney/"
+                                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="officer-description mt-2">
+                                                <p class="font-weight-bold">Dr. Mark McKinney</p>
+                                                <p class="font-weight-light font-italic">Professor at UTD
+                                                </p>
+                                                <p class="font-weight-light"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            <!-- <div class="row">
+                <div class="col-12 text-center">
+                    <a href="https://www.eventbrite.com/e/uxperience-conference-2021-tickets-136858650909"
+                        target="_blank"><button id="subscribe" type="submit" class="btn btn-gradient ml-md-4">Register
+                            for
+                            UXperience</button></a>
+                </div>
+            </div> -->
+
+            <br>
+            <br>
+            <br>
+
+            <!-- Schedule body 
+            <div class="container">-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="font-weight-bold">Schedule Highlights </h2>
+                    </div>
+                </div>
+                <br>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">9:00 AM - 9:30 AM </p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Breakfast</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">10:00 AM - 10:40 AM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">First Keynote Speech</p>
+                        <p class="event-activity-description"><span class="font-weight-bold">Suzanne De Silva from Samsung</span> -
+                            Followed by Q&A and a short break.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">11:00 AM - 11:40 AM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Panel with Intuit</p>
+                        <p class="event-activity-description"><span class="font-weight-bold">Angie Nery & Team</span> -
+                            Followed by Q&A and a short break.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">12:00 PM - 12:30 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Surprise Activity!</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">12:30 PM - 1:00 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Lunch Break</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">1:15 PM - 1:45 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Interactive Activity</p>
+                    </div>
+                </div>
+                <hr>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">1:45 PM - 2:30 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Lightning Talks</p>
+                        <p class="event-activity-description"> Featuring 2 Lightning talks, to inspire audience and spark curiosity.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">2:40 PM - 3:20 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Third Keynote Speech</p>
+                        <p class="event-activity-description"><span class="font-weight-bold">Michael Griffith</span> -
+                            Followed by Q&A and a short break.</p>
+                    </div>
+                </div>
+                <hr>
+    
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">3:30 PM - 4:00 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Closing Ceremony</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="event-time">4:20 PM - 5:00 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Speed Networking</p>
+                        <p class="event-activity-description">1 : 1 networking for students and industry experts </p>
+                            </span></p>
+                    </div>
+                </div>
+            <!--</div>-->
+
+        </div>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <h2 class="font-weight-bold text-center ">Thank you to our premium sponsor!</h2>
+            <br>
+            <br>
+                        <a href="https://www.intuit.com/" target="_blank"> <img
+                            src="../src/imgs/logos/sponsors/Intuit_logo.png" class ="center grow" alt="Intuit" />
+                        </a>
+            <br>
+            <br>
+            <br>
+        <!-- <div class="container ptop-sponsors">
+            <br>
+            <h2 class="font-weight-bold text-center ">Thank you to our sponsors!</h2>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="font-weight-bold text-center">Premium Sponsor</h5>
+                    <div id="collaborators" class="m-3 collaborations align-self-center">
+                        <a href="https://www.bottlerocketstudios.com/" target="_blank"> <img
+                            src="../src/imgs/logos/sponsors/bottle-rocket.png" class ="center" alt="Bottle Rocket" />
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <h5 class="font-weight-bold text-center">Other Sponsor</h5>
+                    <div id="collaborators" class="m-3 collaborations align-self-center">
+                            <a href="https://mule.to/p1cy" target="_blank"> <img
+                                    src="../src/imgs/logos/sponsors/big-design-logo.png" class ="center" alt="Big Design"></a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div id="collaborators" class=" collaborations align-self-center">
+                <a href="https://mule.to/p1cy" target="_blank"> <img
+                        src="../src/imgs/logos/sponsors/sticker-mule.svg" class ="center" alt="Sticker Mule"></a>
+            <br>
+        </div> -->
+        <!-- <div class="row">
+            <div class="col-md-4">
+                <h5 class="font-weight-bold text-center">Premium Sponsor</h5>
+                <div id="collaborators" class="d-flex flex-wrap collaborations text-center">
+                    <div class="m-3 align-self-center">
+                        <a href="https://www.bottlerocketstudios.com/" target="_blank"> <img
+                            src="../src/imgs/logos/sponsors/bottle-rocket.png" alt="Bottle Rocket" />
+                        </a>
+                    </div>
+                    <br>
+                </div>
+            </div>  
+
+            <br>
+            <br>
+            <br>
+
+            <div class="col-md-4">
+                <h5 class="font-weight-bold">Other Sponsors</h5>
+                <div id="collaborators" class="d-flex flex-wrap justify-content-center collaborations text-center">
+                    <div class="m-3 align-self-center">
+                        <a href="https://mule.to/p1cy" target="_blank"> <img
+                                src="../src/imgs/logos/sponsors/big-design-logo.png" alt="Big Design"></a>
+                    </div>
+                    <br>
+                </div>
+                <div id="collaborators" class="d-flex flex-wrap justify-content-center collaborations text-center">
+                    <div class="m-3 align-self-center">
+                        <a href="https://mule.to/p1cy" target="_blank"> <img
+                                src="../src/imgs/logos/sponsors/sticker-mule.svg" alt="Sticker Mule"></a>
+                    </div>
+                    <br>
+                </div>
+                <br>
+            </div>
+        </div> -->
+            <br>
+            <br>
+            <br>
+
+        
+                
+                
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
+                
+                <!-- <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="font-weight-bold text-center">Speed Networking Professionals</h2>
+                            <p class="lead text-center">A big thank you to the companies whose speed networking professionals showed up!</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container ptop-sponsors">
+                        <div id="collaborators" class="d-flex flex-wrap justify-content-center collaborations text-center">
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/Target-Logo.png" alt="Target">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/capital-one-logo-white.png" alt="Capital One">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/toyota-logo.png" alt="Toyota">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/DialexaLogo.png" alt="Dialexa">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/intuit-logo-black.png" alt="Intuit">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/cloudbees-logo-white.png" alt="Cloud Bees">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/Baylor-Scott-Logo-White.png" alt="Baylor Scott White Health">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/Key-Lime-Interactive-logo-white.png" alt="Key Lime Interactive">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/projeckt202Logo.png" alt="Projekt 202">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/AffirmLogo-white.png" alt="affirmLogo">
+                            </div>
+                            <div class="m-3 align-self-center">
+                                <img src="../src/imgs/logos/networking/SlalomBuildLogo.png" alt="Slalom Build">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div> -->
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+        <br>
+        <br>
+        <br>
+    </div>
+
+        <div class="container-fluid footer text-center">
+            <div class="container py-4">
+                <div class="d-flex flex-column flex-md-row-reverse">
+                    <div class="social-links">
+                        
+                        <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://www.facebook.com/uxutd/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                   
+                        <a href="https://www.instagram.com/ux_utd/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:uxutdallas@gmail.com">
+                            <i class="fas fa-envelope-square"></i>
+                        </a>
+                    </div>
+                    <div class="mr-md-auto copyright">
+                        <p>
+                            &copy; Copyright
+                            <script>
+                                document.write(String(new Date().getFullYear()));
+                            </script>
+                            UX UTD
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="../src/script/conference_timer.js"></script>
+</html>
