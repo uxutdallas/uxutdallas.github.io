@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="../src/styles/mobile-styles.css" />
   <link rel="stylesheet" href="../src/styles/desktop-style.css" />
 
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../node_modules/popper.js/dist/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -169,17 +171,128 @@
                 We noticed the absence of a prominent UX program on campus, and wanted to share the fruitful prospects of this niche career field. 
                 Even through the pandemic, with excellent leadership and keen understanding of our club members’ needs, our presence has been ever growing. 
                 Our club continues to bring more resources, pathways, and opportunities to our members each year, through various events such as our annual Design Conference, industry networking events, UX workshops, and much more. 
-                <br><br>User Experience is the practice of designing a product that is easy yet exciting to use for the consumer, also known as the user. 
-                UX encompasses multiple disciplines such as design, research, psychology, business analytics, and more to achieve a user-friendly product. 
-                At the UX Club, we help students find their path and assist them in entering the industry well-equipped with the tools they need to succeed.
+          
                 
               </p>
             </div>
           
         </div>
+        <br>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="font-weight-bold">Events</h2>
+            <p>
+              User Experience is the practice of designing a product that is easy yet exciting to use for the consumer, also known as the user. 
+              UX encompasses multiple disciplines such as design, research, psychology, business analytics, and more to achieve a user-friendly product. 
+              At the UX Club, we help students find their path and assist them in entering the industry well-equipped with the tools they need to succeed
+              <br><br>
+              The UX Club organizes events catered to design-curious students of all experience levels. 
+              We aim to address the lack of a UX program on campus by creating a space for students to learn, practice, and expand their skills. 
+            </p>
+
+            <img class="grow" alt="Casual Team Photo" src="../src/imgs/about/socials.png" style="width:100%;"/>
+          </div>
+          <div class="col-md-6">
+            <br>
+                    <div id="conference-stats" style="width:100%; height:400px;"></div>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const chart = // Data retrieved from https://netmarketshare.com
+                            Highcharts.chart('conference-stats', {
+                        chart: {
+                            type: 'pie',
+                            backgroundColor: 'none',
+                        },
+                        title: {
+                            text: 'Student Majors',
+                            align: 'center'
+                        },
+                        subtitle: {
+                            text: 'We have a diverse student turnout',
+                            align: 'center'
+                        },
+                    
+                        accessibility: {
+                            announceNewData: {
+                                enabled: true
+                            },
+                            point: {
+                                valueSuffix: '%'
+                            }
+                        },
+                    
+                        plotOptions: {
+                            series: {
+                                dataLabels: {
+                                    enabled: true,
+                                    format: '{point.name}'
+                                }
+                            }
+                        },
+                    
+                        tooltip: {
+                            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+                        },
+                    
+                        series: [
+                            {
+                                name: 'Student Major',
+                                colorByPoint: true,
+                                data: [
+                                    {
+                                        name: 'Arts, Humanities, and Technology',
+                                        y: 26.6,
+                                        color: '#25336E',
+                                      
+                                    },
+                                    {
+                                        name: 'Computer Science',
+                                        y: 24.8,
+                                        color: '#009FDA',
+                                       
+                                    },
+                                    {
+                                        name: 'Engineering',
+                                        y: 18.3,
+                                        color: '#25336E',
+                                       
+                                    },
+                                    {
+                                      name: 'Business',
+                                      y: 5.5,
+                                      color: '#9CDBF1',
+                                    
+                                  },
+                                  {
+                                      name: 'Cognitive Science',
+                                      y: 6.4,
+                                      color: '#071535',
+                                     
+                                  },
+                                  {
+                                      name: 'Information Technology Systems',
+                                      y: 12.8,
+                                      color: '#000000',
+                                     
+                                  }
+                                ]
+                            }
+                        ]
+                    });
+                    
+                        });
+                    </script>
+          </div>
+        
+      </div>
+      <br>
+      <hr>
   
 
-        <h2 class="font-weight-bold" style="text-align: center; padding-top: 100px;">Meet the Team</h2>
+        <h2 class="font-weight-bold" style="text-align: center; padding-top: 20px;">Meet the Team</h2>
         <p style="text-align: center;">
           We are an officer board composed of 18 diverse and hardworking students, along with a passionate club sponsor, professor Norm Cox,  who has dedicated his life and career to UX. 
           Our officers come from a variety of backgrounds–from software engineers to designers, to psychologists and business analysts alike, we are the dream team that converges all the principles of UX to bring you the optimal club experience.
