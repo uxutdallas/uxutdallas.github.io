@@ -678,4 +678,37 @@ form {
     from{--p:0}
   }
   
- 
+  .notification-top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background: #071535;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+  }
+  .notification-top-bar p {
+    padding: 0;
+    margin: 0;
+  }
+  .notification-top-bar p a {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #FFF;
+    color: #071535;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .notification-top-bar p a :hover{
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #32b8e1;
+    color: #071535;
+    font-weight: bold;
+    text-decoration: none;
+  }
