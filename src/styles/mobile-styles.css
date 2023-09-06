@@ -712,3 +712,20 @@ form {
     font-weight: bold;
     text-decoration: none;
   }
+
+  @media (max-width: 600px) {
+    .notification-top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: auto;
+        line-height: 60px;
+        width: 100%;
+        background: #071535;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        font-size: 12px;
+      }
+  }
