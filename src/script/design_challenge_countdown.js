@@ -1,5 +1,5 @@
-var design_challenge_start = new Date("Wednesday, October 19, 2022 12:00:00");
-var design_challenge_end = new Date("Tuesday, November 8, 2022 17:00:00");
+var design_challenge_start = new Date("Thursday, October 4, 2023 11:59:59");
+var design_challenge_end = new Date("Thursday, October 4, 2023 11:59:59");
 var content = document.getElementById("time-until-date");
 
 function timeDifferenceCalc(targetDate) {
@@ -21,31 +21,31 @@ function timeDifferenceCalc(targetDate) {
 	diff_seconds = Math.floor(diff_seconds % 60);
 
     if(diff_months > 9){
-        time_str += diff_months + ":"
+        time_str += diff_months + " : "
     }
     else if (diff_months > 0){ // 0'd on purpose
-        time_str += "0" + diff_months + ":"
+        time_str += "0" + diff_months + " : "
     }
 
     if(diff_days > 9){
-        time_str += diff_days + ":"
+        time_str += diff_days + " : "
     }
     else if (diff_days > -1){
-        time_str += "0" + diff_days + ":"
+        time_str += "0" + diff_days + " : "
     }
 
     if(diff_hours > 9){
-        time_str += diff_hours + ":"
+        time_str += diff_hours + " : "
     }
     else if (diff_hours > -1){
-        time_str += "0" + diff_hours + ":"
+        time_str += "0" + diff_hours + " : "
     }
 
     if(diff_minutes > 9){
-        time_str += diff_minutes + ":"
+        time_str += diff_minutes + " : "
     }
     else if (diff_minutes > -1){
-        time_str += "0" + diff_minutes + ":"
+        time_str += "0" + diff_minutes + " : "
     }
 
     if(diff_seconds > 9){

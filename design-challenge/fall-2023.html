@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" />
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/styles/mobile-styles.css" />
+    <link rel="stylesheet" href="../src/styles/desktop-style.css" />
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../src/script/main.js"></script>
+    <title>UX Club at UT Dallas | Design Challenge</title>
+</head>
+
+<body class="dc23-background">
+    <div class="container my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">
+                <img src="../src/imgs/logos/ux/logo-with-tagline-white.png" alt="UX UTD" onclick="window.open(index.html)" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link events-link" href="../events">Events</a>
+                    </li>
+                    <div class="dropdown">
+                    <li class="nav-item">
+                      <a class="nav-link drop events-link" style="background-color: #03060f" href="../design-challenge/">Design Challenge</a>
+                      <div class="dropdown-content" style="background-color: #03060f">
+                        <a class="nav-link" href="fall-2023.html">Fall 2023</a>
+                        <a class="nav-link" href="fall-2022.html">Fall 2022</a>
+                        <a class="nav-link" href="spring-2020.html">Spring 2020</a>
+                      </div>
+                    </li>
+                    </div>
+                    <div class="dropdown">
+                      <li class="nav-item">
+                        <a class="nav-link drop" style="background-color: #03060f">Conference</a>
+                          <div class="dropdown-content" style="background-color: #03060f">
+                            <a class="nav-link" href="/conference/pixels-to-possibilities.html">Spring 2023</a>
+                            <a class="nav-link" href="/conference/designing-for-a-changing-world.html">Spring 2022</a>
+                            <a class="nav-link" href="/conference/uxperience.html">Spring 2021</a>
+                          </div>
+                      </li>
+                    </div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/apply.html" target="_blank">Apply</a>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
+						Join Us
+					</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content p-4">
+                            <div class="modal-header no-border flex-column m-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+
+                                <h2>Stay in the know!</h2>
+                                <p class="lead">
+                                    Sign up for emails to get updates about our upcoming events and other UX/UI events around the DFW area.
+                                </p>
+                            </div>
+
+                            <div class="modal-body no-border m-0 p-0">
+                                <form class="m-0 p-0"
+                                    action="https://docs.google.com/forms/d/e/1FAIpQLSfsK7f1D7whW0AGTJS97xpqPdUru_e6SYNhyejdGkcowByRng/viewform"
+                                    >
+                                    <div class="form-group row p-4">
+                                        <button type="submit" class="btn btn-dark-light col-4">
+                                            Sign Up!
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer no-border m-0 p-0">
+                                <div class="social-links">
+                                    <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+                                        <i class="fab fa-discord text-dark"></i>
+                                      </a>
+                                      </a>
+                                      <a href="https://www.instagram.com/ux_utd/" target="_blank">
+                                        <i class="fab fa-instagram text-dark"></i>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <img style="width: 100%;" src="../src/imgs/design challenge/dc-2023-banner.png">
+    </div>
+
+    <br>
+    <br>
+
+
+    <!-- <div class="container prompt-reveal-container"> -->
+        
+
+<!-- Awards Specification -->
+<div class="container">
+    <!-- <h2 class="font-weight-bold center-text">Winners</h2>
+    <hr>
+    <div class="row prompt-reveal-container">
+        <div class="col-md-6">
+            <p class="award-name">🥇</p>
+            <p class="award-name">First Place</p>
+            <p class="award-name">Cook Cool</p>
+            <p class="award-description">
+                Certificate of Distinguishment and awarded $300
+            </p>
+          
+            <p class="award-description">
+                This individual is recognized for developing an innovative solution extensive user research and creative problem solving. We applaud your efforts to designing a quality solution for the UTD community. 
+               
+            </p>
+            <a href="https://drive.google.com/file/d/1o6awb0R1JRb1EMi4DNrmioukIs_2qRkt/view?usp=share_link"> <button class="btn btn-gradient center ">Learn More</button></a>
+
+
+        </div>
+        <div class="col-md-6">
+            <p class="award-name ">Zia Kim</p>
+            <a><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/First Place.jpg" style="width:100%"/></a>
+
+        </div>
+    </div>
+    <hr />
+        <div class="row prompt-reveal-container">
+            <div class="col-md-6">
+                <p class="award-name">🥈</p>
+                <p class="award-name">Second Place</p>
+                <p class="award-name">Chef Daddy</p>
+                <p class="award-description">
+                    Certificate of Distinguishment and Awarded $200 (distributed among team members) 
+                </p>
+                <p class="award-description">
+                    These individuals are recognized for developing an innovative solution extensive user research and creative problem solving. We applaud their efforts to designing a quality solution for the UTD community. 
+                </p>
+                <a href="https://drive.google.com/open?id=1o_hT9_w9VWtVuCuRqzLs6Nne7LosUysb"> <button class="btn btn-gradient center ">Learn More</button></a>
+
+            </div>
+            <div class="col-md-6">
+                <p class="award-name">Jade Nguyen, Hafsa Siddiqui, Thaovy Nguyen</p>
+                <a><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/Second Place.jpg" style="width:100%"/></a>
+            </div>
+        </div>
+        <hr />
+        <div class="row prompt-reveal-container">
+            <div class="col-md-6">
+                <p class="award-name">🥉</p>
+                <p class="award-name">Third Place</p>
+                <p class="award-name">Comet Cuisine</p>
+          
+                <p class="award-description">
+                    Certificate of Distinguishment and Awarded $100 (distributed among team members)
+                </p>
+                <p class="award-description">
+                    These individuals are recognized for developing an innovative solution extensive user research and creative problem solving. We applaud their efforts to designing a quality solution for the UTD community. 
+
+                </p>
+                <a href="https://drive.google.com/open?id=1z-oDkm2Xx2vqqb6eJARR9UftrgpHVf-B"> <button class="btn btn-gradient center ">Learn More</button></a>
+
+            </div>
+            <div class="col-md-6">
+                <p class="award-name">Gia Kirk, Brandon Medrano, Thuy Vu</p>
+                <a ><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/Third place.jpg" style="width:100%"/></a>
+            </div>
+        </div>
+        <hr />
+
+        <h2 class="font-weight-bold center-text">Honorable Mention</h2>
+        <hr />
+        <div class="row prompt-reveal-container">
+            <div class="col-md-6">
+                <p class="award-name">FeedMe!</p>
+                <p class="award-name">Yadira Anguiano and <br> Faith Romero 
+                </p>
+          
+                <p class="award-description">
+                    Certificate of Honorable Mention
+                </p>
+               
+                <a href="https://drive.google.com/file/d/1BdniwIIJE5sfmY0yRfWcIKMmjP1WzMli/view?usp=sharing"> <button class="btn btn-gradient center ">Learn More</button></a>
+               <br>
+                <a ><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/Honorable Mention 2.jpg" style="width:100%"/></a>
+
+            </div>
+            <div class="col-md-6">
+                <p class="award-name">CollegeCuisine</p>
+                <p class="award-name">Riley Cotton and Christopher Gauthier
+                </p>
+          
+                <p class="award-description">
+                    Certificate of Honorable Mention
+                </p>
+               
+                <a href="https://drive.google.com/file/d/1z3KBBksXE5VKL1Ce84rvWcdCzySV_IPU/view?usp=sharing"> <button class="btn btn-gradient center ">Learn More</button></a>
+               <br>
+                <a ><img class="design-challenge-flyer" alt="" src="../src/imgs/design challenge/Honerable Mention 1.jpg" style="width:100%"/></a>
+            </div>
+        </div> 
+
+        
+        </div>-->
+
+    </div>
+    
+
+    </div> 
+
+    <div>
+        <div class=" countdown-container">
+            <div class="row">
+                <div class="col-12">
+                    <br />
+                    
+    
+                    <p class="lead center-text design-challenge-timer-text design-challenge-timer" style="color: white;">
+                        <b>PROMPT REVEAL IN...</b>
+                    <p
+                        class="lead center-text design-challenge23-timer-text design-challenge-timer" style="color: white; margin-bottom: 0px;"
+                        id="time-until-date"
+                    >
+                    </p>
+                    <p class="lead center-text design-challenge-timer-text design-challenge-timer" style="color: white;">
+                        <b style="font-size: 24px; padding: 40px;">DAYS</b>
+                        <b style="font-size: 24px; padding: 40px;">HOURS</b>
+                        <b style="font-size: 24px; padding: 40px;">MINS</b>
+                        <b style="font-size: 24px; padding: 40px;">SECS</b>
+
+                    <br><br>
+                    <div class="center-text">
+                        <a href="https://tinyurl.com/2023DesignChallenge" target="_blank"> <button class="btn btn-design-gradient">Register Here</button></a>
+                    </div>
+                    <br><br>
+                
+    
+                    <!--<a href="https://forms.gle/oWs6CXswRXEqzEu27"> <button class="btn btn-gradient center" >Submit Your Project</button></a> -->
+                
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+
+		<!-- Prompt -->
+        <div class="container design-challenge23-container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="font-weight-bold">Overview</h2>
+                    <p class="lead">The UX Design Challenge is a <h class="font-weight-bold">4-week competition</h> open to all UTD students 
+                        to create either individually or in teams a design solution for the UTD community. 
+                        <br><br>
+                        The 2022 prompt will be announced on <h class="font-weight-bold">October 4th</h>, with submissions due by <h class="font-weight-bold">November 1st.</h> 
+                        Students will have the opportunity to work with <h class="font-weight-bold">industry mentors </h>throughout the competition. 
+                        The event culminates in a banquet on <h class="font-weight-bold">November 15th</h> where top competitors will be awarded monetary prizes.
+                        <br><br>
+                        Register your team for <h class="font-weight-bold">Design Challenge</h> today! 
+                        Teams can consist of <h class="font-weight-bold">1 to 3</h> people. 
+                        Registration is open to <h class="font-weight-bold">all current UTD students</h> and will close on <h class="font-weight-bold">October 4th at 11:59 pm!</h>
+                    </p>
+                </div>
+            </div>
+        </div>
+						
+				<br />
+
+
+
+
+			</div>
+		</div>
+
+		<br />
+		<br />
+		<br />
+        
+
+ 
+</div>
+</div>
+</body class="dc23-background">
+    <!--footer-->
+
+
+		<div id="socials" class="container-fluid footer text-center">
+			<div class="container py-4">
+				<div class="d-flex flex-column flex-md-row-reverse">
+					<div class="social-links">
+						
+                        <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+							<i class="fab fa-discord"></i>
+						</a>
+						<a href="https://www.facebook.com/uxutd/" target="_blank">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+	
+						<a href="https://www.instagram.com/ux_utd/" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="mailto:uxutdallas@gmail.com">
+							<i class="fas fa-envelope-square"></i>
+						</a>
+					</div>
+					<div class="mr-md-auto copyright">
+						<p>
+							&copy; Copyright
+							<script>
+								document.write(String(new Date().getFullYear()));
+							</script>
+							UX UTD
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="../src/script/design_challenge_countdown.js"></script>
+</html>
