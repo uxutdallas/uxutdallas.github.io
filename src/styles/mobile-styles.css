@@ -395,7 +395,8 @@ form {
 .design-conference-panel {
     background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;    
+    border-radius: 20px;   
+    color: white; 
 }
 
 .uxperience-container {
@@ -729,3 +730,25 @@ form {
         font-size: 12px;
       }
   }
+
+  .dc23-background{
+    background-color: #03060f;
+  }
+
+  .design-challenge23-timer-text {
+    font-size: 80px !important;
+    font-weight: 800;
+}
+
+.design-challenge23-container {
+    padding: 3rem;
+    color: #ffffff;                             
+    background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
+    border-radius: 25px;
+}
+.design-conference-panel {
+    background: linear-gradient(117.88deg, rgba(67, 128, 255, 0.16) 0%, rgba(24, 42, 79, 0.16) 100%);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;   
+    color: white; 
+}
