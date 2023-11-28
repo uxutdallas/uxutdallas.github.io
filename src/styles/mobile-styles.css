@@ -34,7 +34,7 @@ body {
 }
 
 .splash-about {
-    background: #000 url("../imgs/officers.jpg");
+    background: #000 url("../imgs/officers/all_officers.png");
     background-size: cover;
 }
 
@@ -72,7 +72,7 @@ body {
     background: #00000066;
     height: 100%;
     width: 100%;
-    border-radius: 100%;
+    border-radius: 15px;
     position: absolute;
     top: 0;
     left: 0;
