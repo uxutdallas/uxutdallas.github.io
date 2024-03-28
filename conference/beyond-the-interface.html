@@ -43,6 +43,20 @@
             background-image: url("../src/imgs/conf24/Arrow_BG.svg");
             background-size: cover;
         }
+        .navbar .nav-item a.nav-link:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
     </style>
     
 </head>
@@ -72,22 +86,22 @@
                     </li>
                     <div class="dropdown">
                     <li class="nav-item">
-                      <a class="nav-link drop events-link" style="color: white;" href="../design-challenge/">Design Challenge</a>
-                      <div class="dropdown-content" style="background-color: #1f2d6c">
-                        <a class="nav-link" style="color: white" href="fall-2023.html">Fall 2023</a>
-                        <a class="nav-link" style="color: white" href="fall-2022.html">Fall 2022</a>
-                        <a class="nav-link" style="color: white" href="spring-2020.html">Spring 2020</a>
+                      <a class="nav-link drop events-link" style="color: white; background-color: transparent;" href="../design-challenge/">Design Challenge</a>
+                      <div class="dropdown-content" style="background-color: #427ded">
+                        <a class="nav-link" style="color: white; background-color: transparent;" href="fall-2023.html">Fall 2023</a>
+                        <a class="nav-link" style="color: white; background-color: transparent;" href="fall-2022.html">Fall 2022</a>
+                        <a class="nav-link" style="color: white; background-color: transparent;" href="spring-2020.html">Spring 2020</a>
                       </div>
                     </li>
                     </div>
                     <div class="dropdown">
                       <li class="nav-item">
-                        <a class="nav-link drop" style="color: white;" href="../conference/">Conference</a>
-                          <div class="dropdown-content" style="background-color: #1f2d6c">
-                            <a class="nav-link" style="color: white" href="/conference/beyond-the-interface.html">Spring 2024</a>
-                            <a class="nav-link" style="color: white" href="/conference/pixels-to-possibilities.html">Spring 2023</a>
-                            <a class="nav-link" style="color: white" href="/conference/designing-for-a-changing-world.html">Spring 2022</a>
-                            <a class="nav-link" style="color: white" href="/conference/uxperience.html">Spring 2021</a>
+                        <a class="nav-link drop"style=" color: white; background-color: transparent;" href="../conference/">Conference</a>
+                          <div class="dropdown-content" style="background-color: #427ded">
+                            <a class="nav-link" style="color: white; background-color: transparent;" href="/conference/beyond-the-interface.html">Spring 2024</a>
+                            <a class="nav-link" style="color: white; background-color: transparent;" href="/conference/pixels-to-possibilities.html">Spring 2023</a>
+                            <a class="nav-link" style="color: white; background-color: transparent;" href="/conference/designing-for-a-changing-world.html">Spring 2022</a>
+                            <a class="nav-link" style="color: white; background-color: transparent;" href="/conference/uxperience.html">Spring 2021</a>
                           </div>
                       </li>
                     </div>
@@ -96,7 +110,7 @@
                     </li>
                 </ul>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
+                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal" style="background: white; color:#418eeb">
 						Join Us
 					</button>
 
@@ -194,7 +208,7 @@
         </div>
         <br><br>
         <h1 class="conf24-title pb-3">Beyond the <br>Experiences.</h1>
-        <iframe width="1100" height="600" src="https://www.youtube.com/embed/mMlVFjzoF04?si=6Fv-gPUIh_Swxipc&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="1100" height="600" src="https://www.youtube.com/embed/mMlVFjzoF04?si=6Fv-gPUIh_Swxipc&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br><br><br><br><br><br>
         <h1 class="conf24-title">Beyond the <br>Journey.</h1>
         <br>
@@ -272,7 +286,7 @@
                             </div>
                             <div class="officer-description mt-2">
                                 <p class="conf24-text font-weight-bold">Lauren Hasson</p>
-                                <p class="conf24-text font-weight-light font-italic">Director of Software Engineering of <br>Silicon Valley Fintech
+                                <p class="conf24-text font-weight-light font-italic">Founder at <br>Developher
                                 </p>
                                 <p></p>
                             </div>
@@ -404,7 +418,7 @@
     </div>
     <script src="../src/script/design_challenge_countdown.js"></script>
         <br><br><br><br><br>
-    <div class="container-fluid footer text-center">
+    <div class="container-fluid footer text-center" style="background: #4290ed;">
         <div class="container py-4">
             <div class="d-flex flex-column flex-md-row-reverse">
                 <div class="social-links">
