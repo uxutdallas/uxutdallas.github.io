@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" />
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/styles/mobile-styles.css" />
+    <link rel="stylesheet" href="../src/styles/desktop-style.css" />
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../src/script/main.js"></script>
+
+    <script src="../src/script/webGL-script.js"></script>
+    <title>UX Club at UT Dallas | Design Challenge</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            background-image: url("../src/imgs/conf24/Arrow_BG.svg");
+            background-size: cover;
+        }
+    </style>
+    
+</head>
+
+<body class="conf24-background">
+<div class="background-container">
+    <div class="background-image"></div>
+    </div>
+    <div class="container my-0 py-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">
+                <img src="../src/imgs/logos/ux/logo-with-tagline-white.png" alt="UX UTD" onclick="window.open(index.html)" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" style="color: white" href="../">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" style="color: white" href="../about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link events-link" style="color: white" href="../events">Events</a>
+                    </li>
+                    <div class="dropdown">
+                    <li class="nav-item">
+                      <a class="nav-link drop events-link" style="color: white;" href="../design-challenge/">Design Challenge</a>
+                      <div class="dropdown-content" style="background-color: #1f2d6c">
+                        <a class="nav-link" style="color: white" href="fall-2023.html">Fall 2023</a>
+                        <a class="nav-link" style="color: white" href="fall-2022.html">Fall 2022</a>
+                        <a class="nav-link" style="color: white" href="spring-2020.html">Spring 2020</a>
+                      </div>
+                    </li>
+                    </div>
+                    <div class="dropdown">
+                      <li class="nav-item">
+                        <a class="nav-link drop" style="color: white;">Conference</a>
+                          <div class="dropdown-content" style="background-color: #1f2d6c">
+                            <a class="nav-link" style="color: white" href="/conference/pixels-to-possibilities.html">Spring 2023</a>
+                            <a class="nav-link" style="color: white" href="/conference/designing-for-a-changing-world.html">Spring 2022</a>
+                            <a class="nav-link" style="color: white" href="/conference/uxperience.html">Spring 2021</a>
+                          </div>
+                      </li>
+                    </div>
+                    <li class="nav-item">
+                      <a class="nav-link" style="color: white" href="/apply.html" target="_blank">Apply</a>
+                    </li>
+                </ul>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-gradient ml-md-4" data-toggle="modal" data-target="#modal">
+						Join Us
+					</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content p-4">
+                            <div class="modal-header no-border flex-column m-0 p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+
+                                <h2>Stay in the know!</h2>
+                                <p class="lead">
+                                    Sign up for emails to get updates about our upcoming events and other UX/UI events around the DFW area.
+                                </p>
+                            </div>
+
+                            <div class="modal-body no-border m-0 p-0">
+                                <form class="m-0 p-0"
+                                    action="https://docs.google.com/forms/d/e/1FAIpQLSfsK7f1D7whW0AGTJS97xpqPdUru_e6SYNhyejdGkcowByRng/viewform"
+                                    >
+                                    <div class="form-group row p-4">
+                                        <button type="submit" class="btn btn-dark-light col-4">
+                                            Sign Up!
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer no-border m-0 p-0">
+                                <div class="social-links">
+                                    <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+                                        <i class="fab fa-discord text-dark"></i>
+                                      </a>
+                                      </a>
+                                      <a href="https://www.instagram.com/ux_utd/" target="_blank">
+                                        <i class="fab fa-instagram text-dark"></i>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- style="background-image: url('../src/imgs/conf24/bti-bvackground.png'); background-size: fit;" -->
+    <div class="full-screen-div">
+        <canvas></canvas>
+        <div class="conf24-small-text" id="middleText">UX CONFERENCE 2024</div>
+        <div class="conf24-centered-text" id="middleText2">Beyond the Interface</div>
+        <div class="conf24-button center text-center" id="middleText3">March 30th | 9am - 5pm</div>
+        <img class="conf24-mascot" src="../src/imgs/conf24/ux_mascot.png" alt="Mascot" id="middleText4"/>
+        <img class="conf24-arrow" src="../src/imgs/conf24/big_ahh_arrow.svg" alt="Arrow" id="middleText5"/>
+
+    </div>
+    <div class="animated-text-strip">
+        <span class="marquee">UX CONFERENCE 2024 • BEYOND THE INTERFACE • MARCH 30TH • 9AM - 5PM • SCIENCES BUILDING • UTD •&nbsp;</span>
+        <span class="marquee">UX CONFERENCE 2024 • BEYOND THE INTERFACE • MARCH 30TH • 9AM - 5PM • SCIENCES BUILDING • UTD •&nbsp;</span>
+        <span class="marquee">UX CONFERENCE 2024 • BEYOND THE INTERFACE • MARCH 30TH • 9AM - 5PM • SCIENCES BUILDING • UTD •&nbsp;</span>
+        <span class="marquee">UX CONFERENCE 2024 • BEYOND THE INTERFACE • MARCH 30TH • 9AM - 5PM • SCIENCES BUILDING • UTD •&nbsp;</span>
+        <span class="marquee">UX CONFERENCE 2024 • BEYOND THE INTERFACE • MARCH 30TH • 9AM - 5PM • SCIENCES BUILDING • UTD •&nbsp;</span>
+    </div>
+
+
+    <div class="container">
+        <div>
+            <div class="countdown-container">
+                <div class="row">
+                    <div class="col-12">
+                        <br />
+                        
+        
+                        <p class="lead center-text design-challenge-timer-text design-challenge-timer" style="color: white;">
+                            <b>CONFERENCE STARTS IN...</b>
+                        <p
+                            class="lead center-text design-challenge23-timer-text design-challenge-timer" style="color: white; margin-bottom: 0px;"
+                            id="time-until-date"
+                        >
+                        </p>
+                        <p class="lead center-text" style="color: white;">
+                            <b style="font-size: 24px; padding: 40px;">DAYS</b>
+                            <b style="font-size: 24px; padding: 40px;">HOURS</b>
+                            <b style="font-size: 24px; padding: 40px;">MINS</b>
+                            <b style="font-size: 24px; padding: 40px;">SECS</b>
+    
+                        <br><br>
+                    
+                        <br>    
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <h1 class="conf24-title pb-3">Beyond the <br>Experiences.</h1>
+        <iframe width="1100" height="600" src="https://www.youtube.com/embed/mMlVFjzoF04?si=6Fv-gPUIh_Swxipc&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br><br><br><br><br><br>
+        <h1 class="conf24-title">Beyond the <br>Journey.</h1>
+        <br>
+        <p class="conf24-text" style="color: #fcffee;">The UX Club is organizing our annual UXperience conference, showcasing keynote speakers, panel discussions, live Q&A sessions, and networking opportunities. Our aim with this conference is to disseminate insights on user experience, cultivate innovation, and embrace diverse perspectives.</p>
+        <br>
+
+
+        <div class="row">
+            <div class="col-6">
+                <div class="conf24-conference-panel grow" style="padding: 7vh; margin-left:2vh; margin-bottom:3vh;">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="about-icon center-text">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <p class="font-weight-bold conf24-text" styles="color: white;"> Date & Time </p>
+                            <p class="conf24-text"> Saturday, March 25th</p>
+                            <p class="conf24-text"> 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="conf24-conference-panel grow" style="padding: 7vh; margin-right:2vh; margin-bottom:3vh;">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="about-icon center-text">
+                                <i class="fas fa-location-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <p class="font-weight-bold conf24-text"> Location </p>
+                            <p class="conf24-text"> UT Dallas</p>
+                            <p class="conf24-text"> SCI 1.210</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>  
+        </div>
+
+        <div class="col-12">
+            <div class="d-flex flex-wrap justify-content-center text-center officers conf24-conference-panel">
+                <img class="ptop-speaker-banner grow" alt="Speakers"
+                src="../src/imgs/conf24/beyond_the_speakers.png" />
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="position-relative officer-wrapper responsive">
+                                <img src="../src/imgs/conf24/j_schuh.jpg" alt="web"
+                                    class="rounded-circle" style="border: 4px solid #4268ed;">
+                                <div class="external-links rounded-circle">
+                                    <a href="https://www.linkedin.com/in/jschuh/"
+                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="officer-description mt-2">
+                                <p class="conf24-text font-weight-bold ">J.Schuh</p>
+                                <p class="conf24-text font-weight-light font-italic">Creative Director/Founder of <br>Toons-N-Design
+                                </p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="position-relative officer-wrapper responsive">
+                                <img src="../src/imgs/conf24/Lauren_Hasson.jpg" alt="web"
+                                    class="rounded-circle" style="border: 4px solid #4268ed;">
+                                <div class="external-links rounded-circle">
+                                    <a href="https://www.linkedin.com/in/laurenhasson/"
+                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="officer-description mt-2">
+                                <p class="conf24-text font-weight-bold">Lauren Hasson</p>
+                                <p class="conf24-text font-weight-light font-italic">Director of Software Engineering of <br>Silicon Valley Fintech
+                                </p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="position-relative officer-wrapper responsive">
+                                <img src="../src/imgs/conf24/Brandon_Ward.jpg" alt="web"
+                                    class="rounded-circle" style="border: 4px solid #4268ed;">
+                                <div class="external-links rounded-circle">
+                                    <a href="https://www.linkedin.com/in/brandonebward/"
+                                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="officer-description mt-2">
+                                <p class="conf24-text font-weight-bold">Brandon Ward</p>
+                                <p class="conf24-text font-weight-light font-italic">Chief Experience Officer of <br>Precocity
+                                </p>
+                                <p class="font-weight-light"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+            <br><br><br><br><br>
+        <div class="col-12">
+            <div class="-flex flex-wrap justify-content-center officers conf24-conference-panel p-5">
+                <div class="col-12 text-center">
+                    <h1 class="conf24-title" style="color: #4268ed">Schedule</h1>
+                </div>
+                <br>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">8:30 AM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Sign In and Breakfast</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">9:30 AM </p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Opening Ceremony</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">9:45 AM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Keynote Speaker 1</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">11:00 AM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Keynote Speaker 2</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">11:45 AM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Lunch</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">12:45 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Interactive Activity</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">1:30 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Keynote Speaker 3</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">2:30 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Keynote Speaker 4</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">3:15 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Closing Ceremony</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+                <div class="schedule-item row" style="padding-left: 12rem;">
+                    <div class="col-md-4">
+                        <p class="event-time">3:45 PM</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="event-activity-name">Speed Networking</p>
+                        <p class="event-activity-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../src/script/design_challenge_countdown.js"></script>
+        <br><br><br><br><br>
+    <div class="container-fluid footer text-center">
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row-reverse">
+                <div class="social-links">
+                    
+                    <a href="https://discord.gg/r3aUHAYv35" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.facebook.com/uxutd/" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+               
+                    <a href="https://www.instagram.com/ux_utd/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:uxutdallas@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                </div>
+                <div class="mr-md-auto copyright">
+                    <p>
+                        &copy; Copyright
+                        <script>
+                            document.write(String(new Date().getFullYear()));
+                        </script>
+                        UX UTD
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>

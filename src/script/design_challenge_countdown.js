@@ -1,5 +1,5 @@
-var design_challenge_start = new Date("Thursday, October 4, 2023 19:30:00");
-var design_challenge_end = new Date("Thursday, November 17, 2023 17:59:59");
+var design_challenge_start = new Date("March 28, 2024 09:00:00");
+var design_challenge_end = new Date("March 30, 2024 09:00:00");
 var content = document.getElementById("time-until-date");
 
 function timeDifferenceCalc(targetDate) {
