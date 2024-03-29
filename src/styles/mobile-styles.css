@@ -19,6 +19,7 @@ body {
     overflow-x:hidden;
     font-family: "Montserrat", sans-serif;
     
+    
 }
 
 .splash-sub {
@@ -928,4 +929,14 @@ form {
 
 .align-left {
     align-items: left;
+}
+
+.conf24-banner {
+    position: sticky;
+    top: 0;
+    left: 90vw;
+    width: 8vw;
+    height: auto;
+    z-index: 999;
+    margin-bottom: -150px;
 }
